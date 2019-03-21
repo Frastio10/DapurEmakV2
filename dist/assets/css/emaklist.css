@@ -1,0 +1,639 @@
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.py-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-grey {
+  background: #888888;
+}
+
+.b-box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.top {
+  top: 0;
+}
+
+.none {
+  display: none;
+}
+
+.none-2 {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bshadow {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.f-48 {
+  font-size: 48px !important;
+}
+
+.f-19 {
+  font-size: 19px !important;
+}
+
+.f-20 {
+  font-size: 20px !important;
+}
+
+.f-41 {
+  font-size: 41px !important;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+.f-30 {
+  font-size: 30px !important;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.f-25 {
+  font-size: 25px !important;
+}
+
+.f-26 {
+  font-size: 26px !important;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.f-17 {
+  font-size: 17px !important;
+}
+
+.f-31 {
+  font-size: 31px !important;
+}
+
+.f-15 {
+  font-size: 15px !important;
+}
+
+.f-13 {
+  font-size: 13px !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.ff-seg {
+  font-family: 'Segoe UI';
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.ff-osbold {
+  font-family: OpenSans-Bold;
+}
+
+.doww {
+  margin-top: 40px;
+}
+
+.mt-2 {
+  margin-top: 15px;
+}
+
+header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+#logo {
+  border-radius: 100%;
+  background: #FBB72B;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 5px;
+}
+
+.logo-top {
+  text-decoration: none;
+  color: #000;
+  font-family: OpenSans-Bold;
+}
+
+.lower-nav h3 {
+  font-family: OpenSans-Bold;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  float: left;
+  margin: 0;
+}
+
+.lower-menu {
+  float: right;
+}
+
+.lower-menu ul {
+  float: right;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 8px;
+}
+
+.lower-menu ul li {
+  float: left;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.lower-menu ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: OpenSans-Regular;
+}
+
+#nav-icon1 {
+  margin-top: 20px;
+  width: 40px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 24px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.banner {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: url(../images/content/bg_hdr.png);
+  color: #fff;
+  display: block;
+  height: 470px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner:before {
+  width: 100%;
+  height: 7px;
+  background-position: top center;
+  display: block;
+  background-repeat: no-repeat;
+  background: url(../images/page/index.png);
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background-size: auto 100%;
+}
+
+.banner-left {
+  display: block;
+  max-width: 65%;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+
+.banner-left h2 {
+  max-width: 60%;
+}
+
+.location {
+  width: 100%;
+  height: 37px;
+  background: #fff;
+  padding: 15px 12px 16px 12px;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 30px;
+}
+
+#cari {
+  width: calc(100% - 10px);
+  height: 35px;
+  border-radius: 8px;
+  border: 1px #888888 solid;
+  padding-left: 10px;
+}
+
+#lokasi {
+  width: calc(100% - 10px);
+  height: 100%;
+  border-radius: 8px;
+  border: 1px #888888 solid;
+  padding-left: 10px;
+}
+
+.cari-wrapper {
+  width: 350px;
+  height: 35px;
+  float: left;
+}
+
+.lokasi-wrapper {
+  width: 200px;
+  height: 35px;
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+
+.lokasi-wrapper::after {
+  content: "";
+  display: block;
+  background: url(../images/icon/MapPin.png);
+  height: 30px;
+  position: absolute;
+  margin-left: -35px;
+  background-repeat: no-repeat;
+  width: 25px;
+  border: none;
+  background-position: center;
+  cursor: pointer;
+  right: 0;
+  top: 3px;
+}
+
+#submit {
+  float: right;
+  background: #FBB72B;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  width: 180px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-line-grey {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-top: 25px;
+}
+
+.row-2 {
+  width: 100%;
+}
+
+.slngkp {
+  float: right;
+  color: #FBB72B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.row-3 {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.masakan-wrapper {
+  position: relative;
+  width: calc(20% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  height: 305.45px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.masakan {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.masakan-img {
+  height: 100%;
+  width: calc(100%);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.masakan-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.zoom {
+  border-radius: 5px;
+  width: 105%;
+  float: left;
+  z-index: 1;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=2, M12=-0, M21=0, M22=2);
+}
+
+.image-food {
+  margin: 0;
+  border: 0;
+}
+
+.nama-masakan {
+  position: absolute;
+  background-color: #fff;
+  width: calc(100% - 10px);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  bottom: 0;
+  z-index: 11;
+  right: 0;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nama-masakan .logo-masakan {
+  background: #FBB72B;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 8px;
+}
+
+.nama-masakan p {
+  color: #888888;
+  font-family: Segoe UI;
+  padding-top: 4px;
+  font-size: 14px;
+}
+
+.overlay-price {
+  position: absolute;
+  bottom: 25%;
+  left: 7%;
+  font-family: Segoe UI, sans-serif;
+  z-index: 4;
+  width: 80%;
+}
+
+.overlay-price h3 {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.overlay-price h4 {
+  margin: 0;
+  color: #FBB72B;
+  font-family: Segoe UI;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.row-4 {
+  width: 100%;
+}
+
+.row-5 {
+  width: 100%;
+}
+
+.row-6 {
+  width: 100%;
+}
+
+.row-7 {
+  width: 100%;
+}

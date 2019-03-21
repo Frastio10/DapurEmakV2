@@ -15,6 +15,14 @@ body{
 	padding: 0;
 }
 
+.textcenter{
+	text-align:center;
+}
+
+.top{
+	top:0;
+}
+
 .none{
 	display: none;
 }
@@ -27,6 +35,10 @@ body{
 	position: fixed;
 }
 
+.bshadow{
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.0);
+}
+
 .relative{
 	position: relative;
 }
@@ -36,61 +48,77 @@ body{
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1160px;
   margin: 0 auto;
   position: relative;
 }
 
+.radius-5{
+	border-radius: 5px;
+}
+
 .f-48{
-	font-size: 48px;
+	font-size: 48px !important;
 }
 
 .f-19{
-	font-size: 19px;
+	font-size: 19px !important;
 }
 
 .f-20{
-	font-size: 20px;
+	font-size: 20px !important;
 }
 
 .f-41{
-	font-size: 41px;
+	font-size: 41px !important;
 }
 
 .f-40{
-	font-size: 40px;
+	font-size: 40px !important;
 }
 
 .f-30{
-	font-size: 30px;
+	font-size: 30px !important;
 }
 
 .f-16{
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 .f-25{
-	font-size: 25px; 
+	font-size: 25px !important; 
 }
 
 .f-26{
-	font-size: 26px; 
+	font-size: 26px !important; 
 }
 
 .f-18{
-	font-size: 18px;
+	font-size: 18px !important;
+}
+
+.f-17{
+	font-size: 17px !important;
 }
 
 .f-31{
-	font-size: 31px;
+	font-size: 31px !important;
 }
 
 .f-15{
-	font-size: 15px;
+	font-size: 15px !important;
 }
 
 .f-13{
-	font-size: 13px;
+	font-size: 13px !important;
+}
+
+.bold{
+	font-weight: bold !important;
+}
+
+.fw-700{
+	font-weight: 700 !important;
 }
 
 .ff-seg{
@@ -105,6 +133,9 @@ body{
 	margin-top: 40px;
 }
 
+.mt-2{
+	margin-top: 15px;
+}
 
 header{
 	padding-top: 15px;
@@ -189,25 +220,25 @@ header{
 
 #nav-line{
 	width: 100%;
-	height: 2.3px;
-	background:#000;
+	height: 0.5px;
+	background:#999;
 	display:block;
 	position: relative;
 }
 
-#nav-line::before{
-	width: 100%;
-	height: 2px;
-	background-position: top center;
-	display: block;
-	background-repeat: no-repeat;
-	background: url(../images/page/index.png);
-	position: absolute;
-	content: '';
-	top: 0;
-	left:0;
-	background-size: auto 100%;
-}
+// #nav-line::before{
+// 	width: 100%;
+// 	height: 2px;
+// 	background-position: top center;
+// 	display: block;
+// 	background-repeat: no-repeat;
+// 	background: url(../images/page/index.png);
+// 	position: absolute;
+// 	content: '';
+// 	top: 0;
+// 	left:0;
+// 	background-size: auto 100%;
+// }
 
 
 
@@ -460,9 +491,10 @@ p{
 }
 
 .banner{
+	display: flex;
 	position: relative;
 	width: 100%;
-	background: url(../images/page/bgbanner.jpg);
+	background: url(../images/content/bg_hdr.png);
 	color: #fff;
 	display: block;
 	padding-top: 50px;
@@ -486,14 +518,15 @@ p{
 }
 
 .banner-left{
-	width:50%;
-	float: left;
+	display: block;
+	max-width:65%;
 	padding-top: 90px;
+	margin: 0 auto;
 }
 
 
 .banner-left h2{
-	max-width: 80%;
+	max-width: 60%;
 }
 
 .location{
@@ -523,13 +556,13 @@ p{
 }
 
 .cari-wrapper{
-	width: 220px;
+	width: 350px;
 	height: 35px;
 	float: left;
 }
 
 .lokasi-wrapper{
-	width: 180px;
+	width: 200px;
 	height: 35px;
 	float: left;
 	margin-left: 10px;
@@ -559,16 +592,11 @@ p{
 	border: none;
 	border-radius: 40px;
 	height: 40px;
-	width: 150px;
+	width: 180px;
 	color: #fff;
 	cursor: pointer;
 }
 
-.banner-right{
-	width: 30%;
-	float: left;
-	position: relative;
-}
 
 
 .row-2{
@@ -603,17 +631,17 @@ p{
 
 .masakan-wrapper{
 	position: relative;
-	width: calc(20% - 19px);
-	margin-left: 8px;
-	margin-right: 8px;
+	width: calc(20% - 30px);
+	margin-left: 15px;
+	margin-right: 15px;
 	float: left;
-	height: 302.45px;
+	height: 305.45px;
 	cursor: pointer;
 	z-index: 10;
-	overflow: hidden;
-}
+		
+	}
 
-.masakan{
+	.masakan{
 	position: absolute;	
 	width: 100%;
 	height: 100%;
@@ -621,8 +649,8 @@ p{
 }
 
 .masakan-img{
-	height: 302.44px;
-	width: 211px;
+	height: 100%;
+	width: calc(100%);
 	z-index: 0;
 	overflow:hidden;
 }
@@ -634,7 +662,8 @@ p{
 }
 
 .zoom { 
-	width: 250px; 
+	border-radius: 5px;
+	width: 105%; 
 	float:left;
 	z-index: 1;
     -webkit-transition: all .3s ease-out; 
@@ -874,20 +903,13 @@ border: 0 ;
 	height: 380px;
 }
 
-.favorit-wrapper{
-	position: relative;
-	width: calc(20% - 19px);
-	margin-left: 8px;
-	margin-right: 8px;
-	float: left;
-	height: 302.45px;
-	cursor: pointer;
+
 
 	.rating{
 		position: absolute;
-		left:10px;
-		top: 10px;
 		float: left;
+		margin-top: 5px;
+
 
 		img{
 			position: relative;
@@ -895,18 +917,14 @@ border: 0 ;
 		}
 	}
 
-	.masakan{
-	position: absolute;	
-	width: 100%;
-	height: 302.45px;
-	transition: .3s;
 
-		.overlay-price{
+.overlay-price{
 			position: absolute;
 			bottom: 25%;
 			left: 7%;
 			font-family: Segoe UI, sans-serif;
 			z-index: 4;
+			width: 80%;
 
 			h3{
 				margin: 0;
@@ -921,48 +939,6 @@ border: 0 ;
 			 	font-size:20px;
 			 }
 		}
-	}
-
-
-	.masakan-img{
-		width: 100%;
-
-		img{
-			width: 100%;
-			border-radius: 5px;
-		}
-	}
-
-	.nama-masakan{
-		position: absolute;	
-		background-color: #fff;
-		width: calc(100% - 10px);
-		border-radius:3px;
-		padding-left: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		bottom: 0;
-		z-index: 99;
-		right: 0;
-		box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
-	
-	.logo-masakan{
-		background: #FBB72B;
-		border-radius: 100%;
-		height: 30px;
-		width: 30px;
-		float: left;
-		margin-right: 8px;
-	}
-
-	p{
-		color: #888888;
-		font-family: Segoe UI;
-		padding-top: 4px;
-		font-size: 14px;
-	}
-}
-}
 
 .row-8{
 	width: 100%;
@@ -1406,8 +1382,26 @@ footer{
 		max-width: 90%;
 	}
 
+	.upper-nav{
+		display: none;
+	}	
+
+	#nav-line{
+		display: none;
+	}
+
 	.lower-menu{
 		display: none;
+	}
+
+	header{
+		height: 70px;
+		padding-top: 0;
+
+	}
+
+	#nav-icon1{
+		display: block;
 	}
 	
 	.banner{
@@ -1420,20 +1414,40 @@ footer{
 
 	.banner-left{
 		padding-top: 70px;
-		width: 80%;
+		width: 85%;
+
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	.cari-wrapper{
+		width: calc(40%);
 	}
 
 	#cari{
-		width: 180px;	
+		width: 100%;	
+	}
+	
+
+
+	.location{
+		min-width: 100%;
 	}
 
 	#lokasi{
 		margin-left: 5px;
-		width: 150px;
+		width: 100%;
+	}
+
+	.lokasi-wrapper{
+		width: 30%;
 	}
 
 	#submit{
-		width: 150px;
+		width: 22%;
+		margin-left: 5px;
 
 	}
 
@@ -1442,13 +1456,15 @@ footer{
 	}
 
 	.masakan-wrapper{
-		width: calc(25% - 19px);
+		width: calc(25% - 30px);
 		height: 250px;
+
 
 		.masakan{
 			height: 250px;
 
 			.masakan-img{
+				width: 100%;
 
 				img{
 					width: 100%;
@@ -1478,7 +1494,7 @@ footer{
 	}
 
 	.row-7{
-		height: 320px;
+		height: 400px;
 	}
 
 	.favorit-wrapper{
@@ -1716,7 +1732,7 @@ footer{
 			}
 
 			.cari-wrapper{
-				width: 100%;
+				width: 100% !important;
 			}
 
 			#lokasi{
@@ -1733,7 +1749,7 @@ footer{
 	}
 
 	.row-2{
-		height: 3	0px;	
+		height: 30px;	
 
 		.slngkp{
 			margin-top: 10px;
@@ -1744,11 +1760,12 @@ footer{
 	.row-3{
 		margin-top: 20px;
 		height: 600px;
+	}
 
-		.masakan-wrapper{
-			width: calc(50% - 19px);
+	.masakan-wrapper{
+			width: calc(50% - 30px);
 			margin-top: 20px;
-			overflow: hidden;
+
 
 			.zoom{
 				width: 100%;
@@ -1760,7 +1777,6 @@ footer{
 				height: 100%;	
 			}
 		}
-	}
 
 	.row-4{
 		height: 40px;
@@ -1788,12 +1804,11 @@ footer{
 		.favorit-wrapper{
 			width: calc(50% - 19px);
 			margin-top:20px;
-
-			.rating{
-				position: absolute;	
-				z-index: 3;
-			}
 		}
+	}
+	.rating{
+		position: absolute;	
+		z-index: 3;
 	}
 
 	.row-9{
@@ -1841,4 +1856,183 @@ footer{
 			}
 		}
 	}
+}
+
+@include breakpoint-down(xs){
+	.banner-left{
+		max-width: 100%;
+
+		h2{
+			max-width: 100%;
+		}
+
+		.location{
+			width: calc(100% - 30px) !important;
+			@include padding(15px);	
+			height: 163px;
+			position: relative;	
+			box-sizing: border-box;
+
+			#cari{
+				width: calc(100% - 10px);
+				position: relative;
+			}
+
+			.cari-wrapper{
+				width: 100%;
+				position: relative;
+			}
+
+			#lokasi{
+				width: calc(100% - 10px);
+				position: relative;
+			}
+
+			.lokasi-wrapper{
+				width: 100%;
+				position: relative;
+			}
+		
+			.lokasi-wrapper:after{
+				margin-right: 10px;
+			}
+
+			#submit{
+				width: 100%;
+				position: relative;
+			}
+		}
+	}
+
+
+	.masakan-wrapper{
+		height: 228px;
+
+
+		.masakan{
+			height: 228px;
+
+			.masakan-img{
+				height: 180px;
+
+				 img{
+				 	height: 180px;
+				 }
+			}
+		}
+	}
+
+	.overlay-price{
+		h4{
+			font-size: 15px !important;
+		}
+	}
+
+	.rating{
+		
+
+		img{
+			width: 15px;
+		}
+	}
+
+
+
+
+	.row-11{
+
+		.main-news{
+			
+
+			.main-img{
+				height: 160px !important;
+			}
+
+			.news-overlay{
+				width: 100%;
+				position: relative;
+				padding: 8px !important;
+				height: 40px !important;
+				bottom: 173px !important;
+
+				h3{
+					font-size:15px;
+				}
+
+				p{
+					font-size: 12px;
+				}
+
+				img{
+					margin-top: 2px !important;
+					margin-left: 10px !important;
+				}
+			}
+		}
+	}
+
+
+	.row-12{
+		height: 610px;
+
+		.col-1{
+			max-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+	}
+
+}
+
+@include breakpoint-down(md){
+	.cari-wrapper{
+		width: 	40% !important;
+	}
+
+	.lokasi-wrapper{
+		width: 30%;
+	}
+
+	#submit{
+		width: 20%;
+	}
+}
+
+
+//lazy
+img.lazy{
+	width: 100%;
+	height: 100%;
+	display: block;
+    background-image: url('../images/page/load.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }

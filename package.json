@@ -14,11 +14,7 @@
     "compile": "node bin/compile.js",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tofikhidayat/Kayuku.git"
-  },
-  "author": "Flips-Flops team",
+  "author": "Klandestin",
   "license": "ISC",
   "dependencies": {
     "ajv": "^6.9.2",
@@ -40,9 +36,5 @@
     "path": "^0.12.7",
     "recursive-readdir": "^2.2.2",
     "shelljs": "^0.7.8"
-  },
-  "bugs": {
-    "url": "https://github.com/tofikhidayat/Kayuku/issues"
-  },
-  "homepage": "https://github.com/tofikhidayat/Kayuku#readme"
+  }
 }
