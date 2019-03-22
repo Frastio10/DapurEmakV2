@@ -2,5 +2,6 @@
     "/dist/assets/css/style.css": "/dist/assets/css/style.css",
     "/dist/assets/css/component.css": "/dist/assets/css/component.css",
     "/dist/assets/css/register.css": "/dist/assets/css/register.css",
-    "/dist/assets/css/emaklist.css": "/dist/assets/css/emaklist.css"
+    "/dist/assets/css/emaklist.css": "/dist/assets/css/emaklist.css",
+    "/dist/assets/css/login.css": "/dist/assets/css/login.css"
 }

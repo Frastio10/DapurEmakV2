@@ -9,6 +9,7 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/component.scss', 'dist/assets/css')
    .sass('resources/sass/register.scss', 'dist/assets/css')
    .sass('resources/sass/emaklist.scss', 'dist/assets/css')
+   .sass('resources/sass/login.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

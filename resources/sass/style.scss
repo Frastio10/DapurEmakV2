@@ -105,6 +105,7 @@ body{
 	font-size: 31px !important;
 }
 
+
 .f-15{
 	font-size: 15px !important;
 }
@@ -327,7 +328,7 @@ p{
 	color: #000;
 }
 
-#nav-kanan #daftar{
+.daftar{
 	border: 1px solid #000;
 	padding: 5px 30px 8px 30px;
 	border-radius: 20px; 
@@ -337,7 +338,7 @@ p{
  background:none;
   color: #000;
   padding: 0px;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
 
   img{
@@ -345,6 +346,10 @@ p{
   }
 }
 
+.dropbtn-2{
+	margin-top: 1px;
+	font-family: OpenSans-Regular;
+}
 
 .dropdown {
   position: relative;
@@ -399,6 +404,10 @@ p{
 	color: #000;
 }
 
+.lower-nav{
+	position: relative;
+}
+
 .lower-nav h3{
 	font-family: OpenSans-Bold;
 	padding-top: 5px;
@@ -432,8 +441,8 @@ p{
 
 
 #nav-icon1 {
-  margin-top: 20px;
-  width: 40px;
+  margin-top: 22px;
+  width: 30px;
   height: 25px;
   position: relative;
   transform: rotate(0deg);
@@ -447,7 +456,7 @@ p{
 #nav-icon1 span{
   display: block;
   position: absolute;
-  height: 7px;
+  height: 3px;
   width: 100%;
   background: #000;
   border-radius: 9px;
@@ -462,11 +471,11 @@ p{
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 12px;
+  top: 10px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 24px;
+  top: 20px;
 }
 
 #nav-icon1.open span:nth-child(1) {
@@ -1378,12 +1387,18 @@ footer{
 
 //iPad
 @include breakpoint-down(lg){
+	.none-res{
+		display: block;
+	}
+
 	.container{
 		max-width: 90%;
+		position: relative;
 	}
 
 	.upper-nav{
 		display: none;
+
 	}	
 
 	#nav-line{
@@ -1391,17 +1406,63 @@ footer{
 	}
 
 	.lower-menu{
-		display: none;
+		padding-top: 0;
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+		float: left;
+		transition: 1s;
+		position: fixed;
+		top: 62px;
+
+		ul{
+
+			width: 100%;
+
+			li{
+				width: calc(100% - 10px);
+				height: 100px;
+				box-sizing: border-box;
+				padding-top: 10px;
+				padding-bottom: 15px;
+				height: 40px;
+				position: relative;
+				overflow: hidden;		
+				background: #fff;
+				border-bottom: 1px solid #888;
+
+
+				a{
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+
+	.lower-menu-active{
+		height: 300px;
+		display: block;
+		top: 62px;
+		position: fixed;
+		z-index: 50;
+		transition: 1s;
 	}
 
 	header{
 		height: 70px;
 		padding-top: 0;
+		position: fixed;
+		z-index: 99;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #000;	
 
 	}
 
 	#nav-icon1{
 		display: block;
+		float: right;
 	}
 	
 	.banner{

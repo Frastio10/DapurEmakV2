@@ -374,7 +374,7 @@ p {
   color: #000;
 }
 
-#nav-kanan #daftar {
+.daftar {
   border: 1px solid #000;
   padding: 5px 30px 8px 30px;
   border-radius: 20px;
@@ -384,12 +384,17 @@ p {
   background: none;
   color: #000;
   padding: 0px;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
 }
 
 .dropbtn img {
   width: 13px;
+}
+
+.dropbtn-2 {
+  margin-top: 1px;
+  font-family: OpenSans-Regular;
 }
 
 .dropdown {
@@ -446,6 +451,10 @@ p {
   color: #000;
 }
 
+.lower-nav {
+  position: relative;
+}
+
 .lower-nav h3 {
   font-family: OpenSans-Bold;
   padding-top: 5px;
@@ -478,8 +487,8 @@ p {
 }
 
 #nav-icon1 {
-  margin-top: 20px;
-  width: 40px;
+  margin-top: 22px;
+  width: 30px;
   height: 25px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -494,7 +503,7 @@ p {
 #nav-icon1 span {
   display: block;
   position: absolute;
-  height: 7px;
+  height: 3px;
   width: 100%;
   background: #000;
   border-radius: 9px;
@@ -511,11 +520,11 @@ p {
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 12px;
+  top: 10px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 24px;
+  top: 20px;
 }
 
 #nav-icon1.open span:nth-child(1) {
@@ -1430,8 +1439,12 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
+  .none-res {
+    display: block;
+  }
   .container {
     max-width: 90%;
+    position: relative;
   }
   .upper-nav {
     display: none;
@@ -1440,14 +1453,56 @@ footer {
     display: none;
   }
   .lower-menu {
-    display: none;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: fixed;
+    top: 62px;
+  }
+  .lower-menu ul {
+    width: 100%;
+  }
+  .lower-menu ul li {
+    width: calc(100% - 10px);
+    height: 100px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #888;
+  }
+  .lower-menu ul li a {
+    margin-top: 0;
+  }
+  .lower-menu-active {
+    height: 300px;
+    display: block;
+    top: 62px;
+    position: fixed;
+    z-index: 50;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   header {
     height: 70px;
     padding-top: 0;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    border-bottom: 1px solid #000;
   }
   #nav-icon1 {
     display: block;
+    float: right;
   }
   .banner {
     height: 420px;

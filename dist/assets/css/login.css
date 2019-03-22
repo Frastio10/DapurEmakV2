@@ -72,6 +72,10 @@
   text-decoration: none;
 }
 
+.right-0 {
+  right: 0;
+}
+
 .relative {
   position: relative;
 }
@@ -86,6 +90,10 @@
 
 .f-15 {
   font-size: 15px;
+}
+
+.f-14 {
+  font-size: 14px;
 }
 
 .m-0 {
@@ -256,37 +264,7 @@ img {
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.right .nama-depan {
-  width: calc(50% - 15px);
-  float: left;
-  margin-right: 15px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.right .nama {
-  width: 100%;
-  height: 40px;
-  padding-left: 12px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 0.5px #999 solid;
-  margin-top: 5px;
-}
-
-.right .nama-belakang {
-  width: calc(50% - 15px);
-  float: left;
-  margin-left: 15px;
-}
-
-.right .nama-wrapper {
-  margin-top: 45px;
-  width: 100%;
-  overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .right .register {
@@ -312,10 +290,27 @@ img {
 }
 
 .right #submit {
-  margin-top: 20px;
+  margin-top: 30px;
   background: #FBB72B;
   color: #fff;
+  width: 150px;
   border: none;
+  float: none;
+}
+
+.right .masuk {
+  position: relative;
+  float: right;
+  margin-top: 40px;
+}
+
+.right .line {
+  margin-top: 70px;
+  display: block;
+  background: #999999;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
 }
 
 .slick-arrow {

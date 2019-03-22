@@ -2,6 +2,7 @@
 $(document).ready(function(){
   $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
     $(this).toggleClass('open');
+    $('.lower-menu').toggleClass('lower-menu-active');
   });
 });
 
@@ -48,3 +49,4 @@ $('.popup-area').click(function(e){
 $('.popup-vid').click(function(e){
   event.stopPropagation();
 });
+
