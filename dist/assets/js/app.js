@@ -8,20 +8,21 @@ $(document).ready(function(){
 
 
 
-// $(document).ready(function() {
-//   $(window).scroll(function() {
-//     if ($(document).scrollTop() > 5) {
-//        $(".scroll-animate").removeClass("none");
-//       $(".scroll-up").addClass("none");
-//       $(".scroll-animate").css({"width": "100%"});
-//       // $(".upper-nav").addClass("fixed");
-//       $(".lower-nav").addClass("none");
-//     } else {
-//       $(".scroll-up").removeClass("none");
-//       $(".scroll-animate").addClass("none");
-//     }
-//   });
-// });
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 5) {
+       $(".scroll-animate").removeClass("none");
+        $(".scroll-animate").addClass("block");
+      $(".scroll-up").addClass("none");
+
+      $(".upper-nav").addClass("fixed");
+      $(".lower-nav").addClass("none");
+    } else {
+      $(".scroll-up").removeClass("none");
+      $(".scroll-animate").addClass("none");
+    }
+  });
+});
 
 
 $('#vid-1').click(function(e){

@@ -1,6 +1,11 @@
-var email = document.getElementById('e-mail');
-var password = document.getElementById('password');
+// var $email = $('.e-mail').val();
+// var $password = $('.password').val();
+// var $login = $('.login').val();
 
-if (email == "admin" && password) {
-
-}
+// $('#submit').click(function(){
+// 	if ($email == "admin" && $password=="admin") {
+// 		$login.attr('action','index.html');
+// 	} else {
+// 		$login.removeAttr('action');
+// 	}
+// });

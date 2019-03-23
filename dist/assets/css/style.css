@@ -79,6 +79,10 @@ body {
   padding: 0;
 }
 
+.block {
+  display: block;
+}
+
 .textcenter {
   text-align: center;
 }
@@ -100,8 +104,8 @@ body {
 }
 
 .bshadow {
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .relative {
@@ -268,6 +272,7 @@ header {
   width: 530px;
   height: 100%;
   float: left;
+  z-index: 9999;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -407,9 +412,9 @@ p {
   position: absolute;
   background-color: #fff;
   min-width: 80px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
 }
 
 .dropdown-content a {
@@ -431,6 +436,15 @@ p {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.lower-nav {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  background: #fff;
+  z-index: 999;
 }
 
 .logo-wrapper {
@@ -748,8 +762,8 @@ p {
   bottom: 0;
   z-index: 11;
   right: 0;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nama-masakan .logo-masakan {
