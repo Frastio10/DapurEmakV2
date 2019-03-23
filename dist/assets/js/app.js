@@ -7,9 +7,9 @@ $(document).ready(function(){
 });
 
 
-
-
-  $(window).scroll(function() {
+$(window).resize(function(){
+  if ($(window).width() >= 980){  
+  $(this).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $(".header-wrapper").addClass("bg-white");
         $(".header-wrapper").addClass("pt-10");
@@ -33,7 +33,8 @@ $(document).ready(function(){
       $("#nav-line").removeClass("none");
     }
   });
-
+  } 
+});
 
 $('#vid-1').click(function(e){
   $('.popup-area').addClass('activex');
