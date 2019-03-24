@@ -3,5 +3,7 @@
     "/dist/assets/css/component.css": "/dist/assets/css/component.css",
     "/dist/assets/css/register.css": "/dist/assets/css/register.css",
     "/dist/assets/css/emaklist.css": "/dist/assets/css/emaklist.css",
-    "/dist/assets/css/login.css": "/dist/assets/css/login.css"
+    "/dist/assets/css/login.css": "/dist/assets/css/login.css",
+    "/dist/assets/css/home.css": "/dist/assets/css/home.css",
+    "/dist/assets/css/menulist.css": "/dist/assets/css/menulist.css"
 }

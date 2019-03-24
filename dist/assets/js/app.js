@@ -7,10 +7,13 @@ $(document).ready(function(){
 });
 
 
-$(window).resize(function(){
-  if ($(window).width() >= 980){  
-  $(this).scroll(function() {
-    if ($(document).scrollTop() > 50) {
+
+
+$(window).bind("load", function() {
+  var width = $(window).width();
+  if (width >= 980) {
+   $(window).scroll(function() {
+    if ($(document).scrollTop() > 60) {
         $(".header-wrapper").addClass("bg-white");
         $(".header-wrapper").addClass("pt-10");
          $(".header-wrapper").addClass("top");
@@ -33,7 +36,9 @@ $(window).resize(function(){
       $("#nav-line").removeClass("none");
     }
   });
-  } 
+   } else {
+
+   }
 });
 
 $('#vid-1').click(function(e){
