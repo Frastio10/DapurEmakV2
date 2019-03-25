@@ -600,7 +600,7 @@ p {
   background: url(../images/content/bg_hdr.png);
   color: #fff;
   display: block;
-  padding-top: 50px;
+  padding-top: 100px;
   height: 470px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -801,24 +801,6 @@ p {
   border-radius: 5px;
 }
 
-.zoom {
-  border-radius: 5px;
-  width: 105%;
-  float: left;
-  z-index: 1;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-}
-
-.zoom:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=2, M12=-0, M21=0, M22=2);
-}
-
 .image-food {
   margin: 0;
   border: 0;
@@ -828,7 +810,10 @@ p {
   position: absolute;
   background-color: #fff;
   width: calc(100% - 10px);
-  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;

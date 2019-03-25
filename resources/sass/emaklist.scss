@@ -200,7 +200,7 @@ body{
 }
 
 header{
-
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
 	box-sizing: border-box;
 	background: #fff;
 	height: 60px;
@@ -760,6 +760,8 @@ border: 0 ;
 	bottom: 0;
 	z-index: 11;
 	right: 0;
+		border-top-right-radius: 0;
+	border-top-left-radius:0;
 	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 	
 	.logo-masakan{
@@ -803,8 +805,8 @@ border: 0 ;
 			 }
 		}
 
-.card {
-    width: calc(100% / 4 - 33px);
+a .card {
+    width: calc(100% / 4 - 30px);
     height: 344px;
     float: left;
     border-radius: 8px;
@@ -813,11 +815,11 @@ border: 0 ;
     position: relative;
     top: 0;
  
-    margin-right:41px;
+    margin-right:30px;
     transition: all 0.25s;
 
     &:nth-child(4) {
-      margin: 0;
+      margin: 0 !important;
     }
 
 
@@ -1017,8 +1019,14 @@ footer{
 }
 
 @include breakpoint-down(lg){
-
-
+	.row-2, .row-4, .row-6, .row-8{
+		padding-top: 30px;
+	}
+	
+	.row-3, .row-5, .row-7, .row-9{
+		padding-top: 0px;
+	}
+	
 	.card{
 		width: calc();
 		height: 220px;
@@ -1028,6 +1036,10 @@ footer{
 		display: none;
 
 	}	
+
+	#nav-icon1{
+		display: block;
+	}
 
 	#nav-line{
 		display: none;
@@ -1066,6 +1078,28 @@ footer{
 
 			}
 		}
+
+			.row-12{
+
+		.col-1{
+
+		}
+
+		.col-2{
+			margin-left: 50px;
+
+		}
+
+		.col-3{
+			margin-left: 50px; 
+		}
+
+		.col-4{
+			margin-left: 50px; 
+		}
+	}
+
+}
 	}
 
 	.lower-menu-active{
@@ -1088,10 +1122,7 @@ footer{
 
 	}
 
-	#nav-icon1{
-		display: block;
-		float: right;
-	}
+	
 	
 	.banner{
 		height: 420px;
@@ -1159,7 +1190,7 @@ footer{
 			margin-left: 50px; 
 		}
 	}
-}
+	
 
 @include breakpoint-down(md){
 	header{
@@ -1185,12 +1216,18 @@ footer{
 	.card{
 		width: calc(50% - 25px);
 		margin-top: 25px;
-		margin-right: 25px;
+		margin-right: 15px;
+		margin-left: 10px;
+	}
+	
+	.card:nth-child(even){
+		margin-right: 0;
+		margin-left: 15px;
 	}
 
 	.card:nth-child(4){
 		margin-top: 25px;
-		margin-right: 25px;
+
 	}
 
 	.none-3{
@@ -1245,11 +1282,15 @@ footer{
 			#lokasi{
 				width: calc(100% - 10px);
 				position: relative;
+				margin-left: 0;
+
 			}
 
 			.lokasi-wrapper{
 				width: 100%;
 				position: relative;
+					margin-left: 0;
+					margin-top: 10px;
 			}
 		
 			.lokasi-wrapper:after{
@@ -1259,10 +1300,16 @@ footer{
 			#submit{
 				width: 100%;
 				position: relative;
+				margin-top: 10px;
 			}
 		}
 	}
 }
+
+@include breakpoint-down(xl){
+
+}
+
 
 @include breakpoint-down(xs){
 	.card{
@@ -1310,6 +1357,44 @@ footer{
 			#submit{
 				width: 100%;
 				position: relative;
+			}
+		}
+	}
+
+	.row-10{
+		height: 610px;
+
+		.col-1{
+			max-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
 			}
 		}
 	}
