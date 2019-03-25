@@ -1544,8 +1544,7 @@ footer{
 		z-index: 99;
 		background: #fff;
 		width: 100%;
-		border-bottom: 1px solid #000;	
-
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 	}
 
 	#nav-icon1{
@@ -2172,6 +2171,13 @@ footer{
 
 	#submit{
 		width: 20%;
+	}
+
+	.rating{
+
+		img{
+			width: 15px;
+		}
 	}
 }
 

@@ -1527,7 +1527,7 @@ footer {
 
 @media screen and (max-width: 980px) {
   .none-res {
-    display: block;
+    display: block !important;
   }
   .container {
     max-width: 90%;
@@ -1585,7 +1585,8 @@ footer {
     z-index: 99;
     background: #fff;
     width: 100%;
-    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.5);
   }
   #nav-icon1 {
     display: block;

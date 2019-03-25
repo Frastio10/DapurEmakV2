@@ -10,30 +10,45 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="lower-nav">
-				<a href="index.html" class="logo-top">
-					<div class="logo-wrapper">
-						<div id="logo"></div>
-						<h3>DAPUR EMAK</h3>
+		<div class="header-wrapper">
+			<div class="container">
+				
+				<div class="lower-nav nav-none">
+					<a href="home.html" class="logo-top">
+						<div class="logo-wrapper">
+							<div id="logo"></div>
+							<h3>DAPUR EMAK</h3>
+						</div>
+					</a>
+					<div id="nav-icon1">
+				  		<span></span>
+				  		<span></span>
+				 		<span></span>
 					</div>
-				</a>
-				<div class="lower-menu">
-					<ul class="f-14">
-						<li><a href="home.html">Beranda</a></li>
+					<div class="lower-menu relative">
+						<ul class="f-14">
+							<li><a href="home.html">Beranda</a></li>
 							<li><a href="dapurlist.html">Masakan</a></li>
 							<li><a href="menulist.html">Menu</a></li>
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
-					</ul>			
+							<li class="none none-res">
+								<div class="dropdown">
+								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
+								  <div class="dropdown-content">
+								    <a href="#"><img src="assets/images/icon/id.svg"> ID</a>
+								    <a href="#"><img src="assets/images/icon/en.svg"> EN</a>
+								  </div>
+								</div>
+							</li>
+							<li class="none none-res">
+								<a href="login.html">Masuk</a> / <a href="register.html">Register</a>
+							</li>
+							<li><a href="register.html" class="daftar">Daftar</a></li>
+						</ul>			
+					</div>
 				</div>
 			</div>
-			<div id="nav-icon1">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-			</div>
-		</div>
 	</header>
 
 	<div class="banner pt-50">
@@ -349,11 +364,11 @@
 			<div class="col-2">
 				<span>Navigation</span>
 				<ul>
-					<li><a href="index.html">Beranda</a></li>
-					<li><a href="dapurlist.html">Masakan</a></li>
-					<li><a href="mailto:dapuremak@gmail.com">Menu</a></li>
-					<li><a href="">Cari Emak</a></li>
-					<li><a href="">Berita</a></li>
+					<li><a href="home.html">Beranda</a></li>
+							<li><a href="dapurlist.html">Masakan</a></li>
+							<li><a href="menulist.html">Menu</a></li>
+							<li><a href="emaklist.html">Cari Emak</a></li>
+							<li><a href="articlelist.html">Berita</a></li>
 				</ul>
 			</div>
 
@@ -404,5 +419,5 @@
 
 </body>
 	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/menulist.js"></script>
+	<!-- <script src="assets/js/app.js"></script> -->
 </html>

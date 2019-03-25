@@ -1476,7 +1476,7 @@ footer{
 //iPad
 @include breakpoint-down(lg){
 	.none-res{
-		display: block;
+		display: block !important;
 	}
 
 	.container{
@@ -1544,7 +1544,7 @@ footer{
 		z-index: 99;
 		background: #fff;
 		width: 100%;
-		border-bottom: 1px solid #000;	
+		box-shadow: 0 0px 3px 0px rgba(0,0,0,0.5);
 
 	}
 

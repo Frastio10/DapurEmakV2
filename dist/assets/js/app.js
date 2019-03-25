@@ -13,7 +13,7 @@ $(window).bind("load", function() {
   var width = $(window).width();
   if (width >= 980) {
    $(window).scroll(function() {
-    if ($(document).scrollTop() > 60) {
+    if ($(document).scrollTop() > 35) {
         $(".header-wrapper").addClass("bg-white");
         $(".header-wrapper").addClass("pt-10");
          $(".header-wrapper").addClass("top");
