@@ -74,6 +74,11 @@
   src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: Segoe-UI;
+  src: url("../fonts/Segoe-UI.ttf");
+}
+
 .bshad-thin {
   -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
@@ -204,7 +209,7 @@ body {
 }
 
 .ff-seg {
-  font-family: 'Segoe UI';
+  font-family: 'Segoe-UI';
 }
 
 .f-14 {
@@ -852,7 +857,7 @@ p {
 
 .nama-masakan p {
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   padding-top: 4px;
   font-size: 14px;
 }
@@ -1075,7 +1080,7 @@ p {
   position: absolute;
   bottom: 25%;
   left: 7%;
-  font-family: Segoe UI, sans-serif;
+  font-family: Segoe-UI, sans-serif;
   z-index: 4;
   width: 80%;
 }
@@ -1089,7 +1094,7 @@ p {
 .overlay-price h4 {
   margin: 0;
   color: #FBB72B;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: normal;
   font-size: 20px;
 }
@@ -1136,7 +1141,7 @@ p {
 }
 
 .row-9 .emak-card .emak-detail span {
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   color: #888888;
   font-weight: 700;
   font-size: 12px;
@@ -1144,13 +1149,13 @@ p {
 
 .row-9 .emak-card .emak-detail .nama {
   padding-top: 10px;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   color: #FBB72B;
   font-weight: 700;
 }
 
 .row-9 .emak-card .emak-detail .ket {
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   color: #888888;
   font-weight: 500;
   font-size: 14px;
@@ -1161,7 +1166,7 @@ p {
   border: solid 1px #FBB72B;
   text-decoration: none;
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   border-radius: 30px;
   padding: 1px 20px 1px 20px;
   font-size: 14px;
@@ -1227,13 +1232,13 @@ p {
   margin: 0;
   color: #fff;
   font-weight: 500;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
 }
 
 .row-11 .news .main-news .news-overlay p {
   float: left;
   color: #fff;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
 }
 
 .row-11 .news .main-news .news-overlay img {
@@ -1276,7 +1281,7 @@ p {
 }
 
 .row-11 .news .secondary-news .news-1 .news-desc h4 {
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: 500;
   margin: 0;
 }
@@ -1284,7 +1289,7 @@ p {
 .row-11 .news .secondary-news .news-1 .news-desc p {
   color: #707070;
   font-size: 13px;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   float: left;
 }
 
@@ -1297,7 +1302,7 @@ p {
 
 .row-11 .news .secondary-news .news-1 .news-desc .tgl {
   margin-top: 2.2px;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 11px;
   color: #707070;
   float: right;
@@ -1340,7 +1345,7 @@ p {
 }
 
 .row-11 .news .secondary-news .news-2 .news-desc h4 {
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: 500;
   margin: 0;
 }
@@ -1348,7 +1353,7 @@ p {
 .row-11 .news .secondary-news .news-2 .news-desc p {
   color: #707070;
   font-size: 11px;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   float: left;
 }
 
@@ -1361,7 +1366,7 @@ p {
 
 .row-11 .news .secondary-news .news-2 .news-desc .tgl {
   margin-top: 2.2px;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 11px;
   color: #707070;
   float: right;
@@ -1413,7 +1418,7 @@ p {
 
 .row-12 .col-1 p {
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 13px;
 }
 
@@ -1427,7 +1432,7 @@ p {
 .row-12 .col-2 span {
   font-size: 12px;
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: bold;
 }
 
@@ -1444,7 +1449,7 @@ p {
 .row-12 .col-2 ul li a {
   color: #888888;
   text-decoration: none;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 11px;
 }
 
@@ -1458,7 +1463,7 @@ p {
 .row-12 .col-3 span {
   font-size: 12px;
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: bold;
 }
 
@@ -1475,7 +1480,7 @@ p {
 .row-12 .col-3 ul li a {
   color: #888888;
   text-decoration: none;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 11px;
 }
 
@@ -1489,7 +1494,7 @@ p {
 .row-12 .col-4 span {
   font-size: 12px;
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: bold;
 }
 
@@ -1518,7 +1523,7 @@ p {
 .row-12 .col-4 ul li a {
   color: #888888;
   text-decoration: none;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-size: 11px;
 }
 

@@ -1,4 +1,9 @@
 @import "./header";
+
+@font-face{
+	font-family:Segoe-UI;
+	src:url("../fonts/Segoe-UI.ttf");
+}
 .absolute{
 	position: absolute;
 }
@@ -16,7 +21,7 @@
 }
 
 .ff-seg{
-	font-family: 'Segoe Ui';
+	font-family: 'Segoe-UI';
 }
 
 .f-23{

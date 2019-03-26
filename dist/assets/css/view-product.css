@@ -74,6 +74,11 @@
   src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: Segoe-UI;
+  src: url("../fonts/Segoe-UI.ttf");
+}
+
 .m-center {
   margin: 0 auto !important;
 }
@@ -273,7 +278,7 @@ body {
 }
 
 .ff-seg {
-  font-family: 'Segoe UI';
+  font-family: 'Segoe-UI';
 }
 
 .f-14 {
@@ -718,7 +723,7 @@ p {
   position: absolute;
   bottom: 25%;
   left: 7%;
-  font-family: Segoe UI, sans-serif;
+  font-family: Segoe-UI, sans-serif;
   z-index: 4;
   width: 80%;
 }
@@ -732,7 +737,7 @@ p {
 .overlay-price h4 {
   margin: 0;
   color: #FBB72B;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   font-weight: normal;
   font-size: 20px;
 }
@@ -766,7 +771,7 @@ p {
 
 .nama-masakan p {
   color: #888888;
-  font-family: Segoe UI;
+  font-family: Segoe-UI;
   padding-top: 4px;
   font-size: 14px;
 }

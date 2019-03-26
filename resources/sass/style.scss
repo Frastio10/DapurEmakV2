@@ -11,8 +11,8 @@
 }
 
 @font-face{
-	font-family:Segoe UI;
-	src:url(../fonts/Segoe UI.ttf);
+	font-family:Segoe-UI;
+	src: url(../fonts/Segoe-UI.ttf);
 }
 
 .bshad-thin{
@@ -144,7 +144,7 @@ body{
 }
 
 .ff-seg{
-	font-family: 'Segoe UI';
+	font-family: 'Segoe-UI';
 }
 
 .f-14{
@@ -797,7 +797,7 @@ border: 0 ;
 
 	p{
 		color: #888888;
-		font-family: Segoe UI;
+		font-family: Segoe-UI;
 		padding-top: 4px;
 		font-size: 14px;
 	}
@@ -1004,7 +1004,7 @@ border: 0 ;
 			position: absolute;
 			bottom: 25%;
 			left: 7%;
-			font-family: Segoe UI, sans-serif;
+			font-family: Segoe-UI, sans-serif;
 			z-index: 4;
 			width: 80%;
 
@@ -1016,7 +1016,7 @@ border: 0 ;
 			 h4{
 			 	margin: 0;
 			 	color: #FBB72B;	
-			 	font-family: Segoe UI;
+			 	font-family: Segoe-UI;
 			 	font-weight: normal;
 			 	font-size:20px;
 			 }
@@ -1061,7 +1061,7 @@ border: 0 ;
 			
 
 			span{
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color: #888888;
 				font-weight: 700;
 				font-size: 12px;
@@ -1069,7 +1069,7 @@ border: 0 ;
 
 			.nama{
 				padding-top: 10px;
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color:#FBB72B;
 				font-weight: 700;
 				padding-left: 0;
@@ -1077,7 +1077,7 @@ border: 0 ;
 			}
 
 			.ket{
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color: #888888;
 				font-weight: 500;
 				font-size: 14px;
@@ -1090,7 +1090,7 @@ border: 0 ;
 				border: solid 1px #FBB72B;
 				text-decoration:none;
 				color: #888888;
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				border-radius: 30px;
 				padding: 1px 15px 1px 15px;
 				font-size: 14px;
@@ -1157,13 +1157,13 @@ border: 0 ;
 					margin: 0;
 					color:#fff;
 					font-weight: 500;
-					font-family: Segoe UI	;
+					font-family: Segoe-UI	;
 				}
 
 				p{
 					float: left;
 					color: #fff;
-					font-family:Segoe UI;
+					font-family:Segoe-UI;
 				}
 				img{
 					float: left;
@@ -1204,7 +1204,7 @@ border: 0 ;
 					padding: 3px;
 					padding-left: 10px;
 					h4{
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-weight: 500;
 						margin:0;
 					}
@@ -1212,7 +1212,7 @@ border: 0 ;
 					p{
 						color: #707070;
 						font-size: 13px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						float: left;
 					}
 
@@ -1225,7 +1225,7 @@ border: 0 ;
 
 					.tgl{
 						margin-top: 2.2px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-size: 11px;
 						color: #707070;
 						float: right;
@@ -1268,7 +1268,7 @@ border: 0 ;
 					padding: 3px;
 					padding-left: 10px;
 					h4{
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-weight: 500;
 						margin:0;
 					}
@@ -1276,7 +1276,7 @@ border: 0 ;
 					p{
 						color: #707070;
 						font-size: 11px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						float: left;
 					}
 
@@ -1289,7 +1289,7 @@ border: 0 ;
 
 					.tgl{
 						margin-top: 2.2px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-size: 11px;
 						color: #707070;
 						float: right;
@@ -1320,7 +1320,7 @@ border: 0 ;
 	padding-top: 45px;
 	
 	.col-1{
-		max-width: 200px;
+		width: calc(100% / 4);
 		float: left;
 
 		.wrapper{
@@ -1345,7 +1345,7 @@ border: 0 ;
 
 		p{
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-size:13px;
 		}
 	}
@@ -1353,13 +1353,13 @@ border: 0 ;
 	.col-2{
 		float: left;
 		padding-top: 5px;
-		max-width: 80px;
+		width: calc(100% / 4);
 		margin-left: 120px;
 
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1373,7 +1373,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 				}
 			}
@@ -1381,15 +1381,16 @@ border: 0 ;
 	}
 
 	.col-3{
+
 		float: left;
 		padding-top: 5px;
-		max-width: 100px;
+		width: calc(100% / 4);
 		margin-left: 120px;
 
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1403,7 +1404,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 				}
 			}
@@ -1413,13 +1414,13 @@ border: 0 ;
 	.col-4{
 		float: left;
 		padding-top: 5px;
-		max-width: 150px;
+		width: calc(100% / 4);
 		margin-left: 120px;
 
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1447,7 +1448,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 
 				}

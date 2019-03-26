@@ -10,6 +10,11 @@
 	src:url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
+@font-face{
+	font-family:Segoe-UI;
+	src:url("../fonts/Segoe-UI.ttf");
+}
+
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
 }
@@ -139,7 +144,7 @@ body{
 }
 
 .ff-seg{
-	font-family: 'Segoe UI';
+	font-family: 'Segoe-UI';
 }
 
 .f-14{
@@ -814,7 +819,7 @@ border: 0 ;
 
 	p{
 		color: #888888;
-		font-family: Segoe UI;
+		font-family: Segoe-UI;
 		padding-top: 4px;
 		font-size: 14px;
 	}
@@ -1021,7 +1026,7 @@ border: 0 ;
 			position: absolute;
 			bottom: 25%;
 			left: 7%;
-			font-family: Segoe UI, sans-serif;
+			font-family: Segoe-UI, sans-serif;
 			z-index: 4;
 			width: 80%;
 
@@ -1033,7 +1038,7 @@ border: 0 ;
 			 h4{
 			 	margin: 0;
 			 	color: #FBB72B;	
-			 	font-family: Segoe UI;
+			 	font-family: Segoe-UI;
 			 	font-weight: normal;
 			 	font-size:20px;
 			 }
@@ -1078,7 +1083,7 @@ border: 0 ;
 			
 
 			span{
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color: #888888;
 				font-weight: 700;
 				font-size: 12px;
@@ -1086,13 +1091,13 @@ border: 0 ;
 
 			.nama{
 				padding-top: 10px;
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color:#FBB72B;
 				font-weight: 700;
 			}
 
 			.ket{
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				color: #888888;
 				font-weight: 500;
 				font-size: 14px;
@@ -1104,7 +1109,7 @@ border: 0 ;
 				border: solid 1px #FBB72B;
 				text-decoration:none;
 				color: #888888;
-				font-family: Segoe UI;
+				font-family: Segoe-UI;
 				border-radius: 30px;
 				padding: 1px 20px 1px 20px;
 				font-size: 14px;
@@ -1170,13 +1175,13 @@ border: 0 ;
 					margin: 0;
 					color:#fff;
 					font-weight: 500;
-					font-family: Segoe UI	;
+					font-family: Segoe-UI	;
 				}
 
 				p{
 					float: left;
 					color: #fff;
-					font-family:Segoe UI;
+					font-family:Segoe-UI;
 				}
 				img{
 					float: left;
@@ -1217,7 +1222,7 @@ border: 0 ;
 					padding: 3px;
 					padding-left: 10px;
 					h4{
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-weight: 500;
 						margin:0;
 					}
@@ -1225,7 +1230,7 @@ border: 0 ;
 					p{
 						color: #707070;
 						font-size: 13px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						float: left;
 					}
 
@@ -1238,7 +1243,7 @@ border: 0 ;
 
 					.tgl{
 						margin-top: 2.2px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-size: 11px;
 						color: #707070;
 						float: right;
@@ -1281,7 +1286,7 @@ border: 0 ;
 					padding: 3px;
 					padding-left: 10px;
 					h4{
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-weight: 500;
 						margin:0;
 					}
@@ -1289,7 +1294,7 @@ border: 0 ;
 					p{
 						color: #707070;
 						font-size: 11px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						float: left;
 					}
 
@@ -1302,7 +1307,7 @@ border: 0 ;
 
 					.tgl{
 						margin-top: 2.2px;
-						font-family: Segoe UI;
+						font-family: Segoe-UI;
 						font-size: 11px;
 						color: #707070;
 						float: right;
@@ -1358,7 +1363,7 @@ border: 0 ;
 
 		p{
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-size:13px;
 		}
 	}
@@ -1372,7 +1377,7 @@ border: 0 ;
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1386,7 +1391,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 				}
 			}
@@ -1402,7 +1407,7 @@ border: 0 ;
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1416,7 +1421,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 				}
 			}
@@ -1432,7 +1437,7 @@ border: 0 ;
 		span{
 			font-size:12px;
 			color: #888888;
-			font-family: Segoe UI;
+			font-family: Segoe-UI;
 			font-weight: bold;
 		}
 
@@ -1460,7 +1465,7 @@ border: 0 ;
 				a{
 					color: #888888;
 					text-decoration: none;
-					font-family: Segoe UI;
+					font-family: Segoe-UI;
 					font-size:11px;
 
 				}
