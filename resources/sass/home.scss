@@ -15,6 +15,16 @@
 	src:url("../fonts/Segoe-UI.ttf");
 }
 
+@font-face{
+	font-family:Segoe-UI-Bold;
+	src: url(../fonts/Segoe-UI-Bold.ttf);
+}
+
+.ff-segbold{
+	font-family: Segoe-UI-Bold;
+}
+
+
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
 }
@@ -1094,6 +1104,7 @@ border: 0 ;
 				font-family: Segoe-UI;
 				color:#FBB72B;
 				font-weight: 700;
+				padding-left: 0;
 			}
 
 			.ket{
@@ -1102,6 +1113,7 @@ border: 0 ;
 				font-weight: 500;
 				font-size: 14px;
 				margin-bottom: 40px;
+				padding-left: 0;
 			}
 
 			a{
@@ -1175,7 +1187,7 @@ border: 0 ;
 					margin: 0;
 					color:#fff;
 					font-weight: 500;
-					font-family: Segoe-UI	;
+					font-family: Segoe-UI-Bold	;
 				}
 
 				p{
@@ -1338,7 +1350,7 @@ border: 0 ;
 	padding-top: 45px;
 	
 	.col-1{
-		max-width: 200px;
+		width: calc(100% / 4);
 		float: left;
 
 		.wrapper{
@@ -1371,8 +1383,8 @@ border: 0 ;
 	.col-2{
 		float: left;
 		padding-top: 5px;
-		max-width: 80px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 30px);
+		margin-left: 150px;
 
 		span{
 			font-size:12px;
@@ -1399,10 +1411,11 @@ border: 0 ;
 	}
 
 	.col-3{
+
 		float: left;
 		padding-top: 5px;
-		max-width: 100px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 40px);
+
 
 		span{
 			font-size:12px;
@@ -1431,8 +1444,8 @@ border: 0 ;
 	.col-4{
 		float: left;
 		padding-top: 5px;
-		max-width: 150px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 100px);
+	
 
 		span{
 			font-size:12px;

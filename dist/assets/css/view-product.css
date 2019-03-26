@@ -79,6 +79,15 @@
   src: url("../fonts/Segoe-UI.ttf");
 }
 
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url("../fonts/Segoe-UI-Bold.ttf");
+}
+
+.ff-segbold {
+  font-family: Segoe-UI-Bold;
+}
+
 .m-center {
   margin: 0 auto !important;
 }

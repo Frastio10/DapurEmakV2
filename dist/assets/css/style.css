@@ -79,14 +79,27 @@
   src: url(../fonts/Segoe-UI.ttf);
 }
 
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url(../fonts/Segoe-UI-Bold.ttf);
+}
+
 .bshad-thin {
   -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
 }
 
+.f-yellow {
+  color: #FBB72B !important;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.ff-segbold {
+  font-family: Segoe-UI-Bold;
 }
 
 .pt-10 {
@@ -1124,7 +1137,7 @@ p {
 }
 
 .row-9 .emak-card .emak-detail span {
-  font-family: Segoe-UI;
+  font-family: Segoe-UI-Bold;
   color: #888888;
   font-weight: 700;
   font-size: 12px;
@@ -1132,7 +1145,7 @@ p {
 
 .row-9 .emak-card .emak-detail .nama {
   padding-top: 10px;
-  font-family: Segoe-UI;
+  font-family: Segoe-UI-Bold;
   color: #FBB72B;
   font-weight: 700;
   padding-left: 0;
@@ -1217,7 +1230,7 @@ p {
   margin: 0;
   color: #fff;
   font-weight: 500;
-  font-family: Segoe-UI;
+  font-family: Segoe-UI-Bold;
 }
 
 .row-11 .news .main-news .news-overlay p {
@@ -1266,7 +1279,7 @@ p {
 }
 
 .row-11 .news .secondary-news .news-1 .news-desc h4 {
-  font-family: Segoe-UI;
+  font-family: Segoe-UI-Bold;
   font-weight: 500;
   margin: 0;
 }
@@ -1410,8 +1423,8 @@ p {
 .row-12 .col-2 {
   float: left;
   padding-top: 5px;
-  width: calc(100% / 4);
-  margin-left: 120px;
+  width: calc(100% / 4 - 30px);
+  margin-left: 150px;
 }
 
 .row-12 .col-2 span {
@@ -1441,8 +1454,7 @@ p {
 .row-12 .col-3 {
   float: left;
   padding-top: 5px;
-  width: calc(100% / 4);
-  margin-left: 120px;
+  width: calc(100% / 4 - 40px);
 }
 
 .row-12 .col-3 span {
@@ -1472,8 +1484,7 @@ p {
 .row-12 .col-4 {
   float: left;
   padding-top: 5px;
-  width: calc(100% / 4);
-  margin-left: 120px;
+  width: calc(100% / 4 - 100px);
 }
 
 .row-12 .col-4 span {

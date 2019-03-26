@@ -15,13 +15,27 @@
 	src: url(../fonts/Segoe-UI.ttf);
 }
 
+
+@font-face{
+	font-family:Segoe-UI-Bold;
+	src: url(../fonts/Segoe-UI-Bold.ttf);
+}
+
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
+}
+
+.f-yellow{
+	color: #FBB72B !important;
 }
 
 body{
 	margin: 0;
 	padding: 0;
+}
+
+.ff-segbold{
+	font-family: Segoe-UI-Bold;
 }
 
 .pt-10{
@@ -1061,7 +1075,7 @@ border: 0 ;
 			
 
 			span{
-				font-family: Segoe-UI;
+				font-family: Segoe-UI-Bold;
 				color: #888888;
 				font-weight: 700;
 				font-size: 12px;
@@ -1069,7 +1083,7 @@ border: 0 ;
 
 			.nama{
 				padding-top: 10px;
-				font-family: Segoe-UI;
+				font-family: Segoe-UI-Bold;
 				color:#FBB72B;
 				font-weight: 700;
 				padding-left: 0;
@@ -1157,7 +1171,7 @@ border: 0 ;
 					margin: 0;
 					color:#fff;
 					font-weight: 500;
-					font-family: Segoe-UI	;
+					font-family: Segoe-UI-Bold	;
 				}
 
 				p{
@@ -1204,7 +1218,7 @@ border: 0 ;
 					padding: 3px;
 					padding-left: 10px;
 					h4{
-						font-family: Segoe-UI;
+						font-family: Segoe-UI-Bold;
 						font-weight: 500;
 						margin:0;
 					}
@@ -1353,8 +1367,8 @@ border: 0 ;
 	.col-2{
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4);
-		margin-left: 120px;
+		width: calc(100% / 4 - 30px);
+		margin-left: 150px;
 
 		span{
 			font-size:12px;
@@ -1384,8 +1398,8 @@ border: 0 ;
 
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4);
-		margin-left: 120px;
+		width: calc(100% / 4 - 40px);
+
 
 		span{
 			font-size:12px;
@@ -1414,8 +1428,8 @@ border: 0 ;
 	.col-4{
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4);
-		margin-left: 120px;
+		width: calc(100% / 4 - 100px);
+	
 
 		span{
 			font-size:12px;
