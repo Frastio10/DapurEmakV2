@@ -10,6 +10,11 @@
 	src:url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
+@font-face{
+	font-family:Segoe UI;
+	src:url(../fonts/Segoe UI.ttf);
+}
+
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
 }
@@ -1067,6 +1072,8 @@ border: 0 ;
 				font-family: Segoe UI;
 				color:#FBB72B;
 				font-weight: 700;
+				padding-left: 0;
+
 			}
 
 			.ket{
@@ -1075,6 +1082,7 @@ border: 0 ;
 				font-weight: 500;
 				font-size: 14px;
 				margin-bottom: 40px;
+				padding-left: 0;
 			}
 
 			a{
@@ -1084,9 +1092,10 @@ border: 0 ;
 				color: #888888;
 				font-family: Segoe UI;
 				border-radius: 30px;
-				padding: 1px 20px 1px 20px;
+				padding: 1px 15px 1px 15px;
 				font-size: 14px;
-				margin-left:110px;
+
+				margin-left: 50%;
 			}
 		}
 	}
@@ -1456,7 +1465,7 @@ footer{
 //iPad
 @include breakpoint-down(lg){
 	.none-res{
-		display: block;
+		display: block !important;
 	}
 
 	.container{
@@ -1479,25 +1488,28 @@ footer{
 		overflow: hidden;
 		width: 100%;
 		float: left;
-		transition: 1s;
-		position: fixed;
+		transition: .5s;
+		position: absolute;
 		top: 62px;
+	
 
 		ul{
 
 			width: 100%;
 
 			li{
-				width: calc(100% - 10px);
-				height: 100px;
+				width: calc(100%);
+				height: 50px !important;
 				box-sizing: border-box;
 				padding-top: 10px;
-				padding-bottom: 15px;
+				padding-bottom: 10px;
 				height: 40px;
 				position: relative;
-				overflow: hidden;		
+						
 				background: #fff;
-				border-bottom: 1px solid #888;
+
+
+				
 
 
 				a{
@@ -1509,12 +1521,13 @@ footer{
 	}
 
 	.lower-menu-active{
-		height: 300px;
+		height: 310px;
 		display: block;
 		top: 62px;
-		position: fixed;
+		position: absolute;
 		z-index: 50;
-		transition: 1s;
+		transition: .5s;
+		float: left;
 	}
 
 	header{

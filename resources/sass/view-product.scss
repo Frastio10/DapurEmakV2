@@ -10,6 +10,10 @@
 	src:url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
+.m-center{
+	margin: 0 auto !important;
+}
+
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
 }
@@ -84,6 +88,8 @@ body{
 .mb-25{
 	margin-bottom: 25px;	
 }
+
+
 
 .nav-line{
 	width: 100%;
@@ -573,13 +579,15 @@ p{
 	}
 
 	.product-img{
-		width: 300px;
+		width: 30%;
+		float: right;	
 	}
 }
 
 
 
 .left{
+	float: left;
 	width: 57.8%;
 }
 
@@ -700,4 +708,32 @@ p{
 
 .makanan{
 	padding-left: 3px;
+}
+
+.right{
+	width: 42.2%;
+	float: right;
+	position: relative;
+	box-sizing: border-box;
+
+
+
+	.pesan-box{
+		width: 470px;
+		height: 800px;
+		padding-top: 49px;
+		box-sizing: border-box;
+		border:1px solid #888888;
+		overflow: hidden;
+		position: relative;
+
+		.pesan-title{
+			width: 100%;
+			position: relative;
+			text-align: center;
+		}
+
+	}
+
+
 }
