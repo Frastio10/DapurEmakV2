@@ -782,11 +782,13 @@ p{
 	width: 100%;
 	border-top: solid 0.5px #707070;
 	border-bottom: solid 0.5px #707070;
-	height: 280px;
+	overflow: hidden;
+	box-sizing: border-box;
 	padding-top: 45px;
+	padding-bottom: 30px;
 	
 	.col-1{
-		max-width: 200px;
+		width: calc(100% / 4);
 		float: left;
 
 		.wrapper{
@@ -819,8 +821,8 @@ p{
 	.col-2{
 		float: left;
 		padding-top: 5px;
-		max-width: 80px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 30px);
+		margin-left: 150px;
 
 		span{
 			font-size:12px;
@@ -847,10 +849,11 @@ p{
 	}
 
 	.col-3{
+
 		float: left;
 		padding-top: 5px;
-		max-width: 100px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 40px);
+
 
 		span{
 			font-size:12px;
@@ -879,8 +882,8 @@ p{
 	.col-4{
 		float: left;
 		padding-top: 5px;
-		max-width: 150px;
-		margin-left: 120px;
+		width: calc(100% / 4 - 100px);
+	
 
 		span{
 			font-size:12px;

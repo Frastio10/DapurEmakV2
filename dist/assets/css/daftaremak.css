@@ -815,12 +815,15 @@ p {
   width: 100%;
   border-top: solid 0.5px #707070;
   border-bottom: solid 0.5px #707070;
-  height: 280px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 45px;
+  padding-bottom: 30px;
 }
 
 .row-10 .col-1 {
-  max-width: 200px;
+  width: calc(100% / 4);
   float: left;
 }
 
@@ -853,8 +856,8 @@ p {
 .row-10 .col-2 {
   float: left;
   padding-top: 5px;
-  max-width: 80px;
-  margin-left: 120px;
+  width: calc(100% / 4 - 30px);
+  margin-left: 150px;
 }
 
 .row-10 .col-2 span {
@@ -884,8 +887,7 @@ p {
 .row-10 .col-3 {
   float: left;
   padding-top: 5px;
-  max-width: 100px;
-  margin-left: 120px;
+  width: calc(100% / 4 - 40px);
 }
 
 .row-10 .col-3 span {
@@ -915,8 +917,7 @@ p {
 .row-10 .col-4 {
   float: left;
   padding-top: 5px;
-  max-width: 150px;
-  margin-left: 120px;
+  width: calc(100% / 4 - 100px);
 }
 
 .row-10 .col-4 span {

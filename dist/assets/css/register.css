@@ -69,6 +69,15 @@
   src: url("../fonts/Segoe-UI.ttf");
 }
 
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url("../fonts/Segoe-UI-Bold.ttf");
+}
+
+.ff-segbold {
+  font-family: Segoe-UI-Bold;
+}
+
 .absolute {
   position: absolute;
 }
@@ -231,8 +240,8 @@ body {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   background: #FBB72B;
   margin: 0 auto;

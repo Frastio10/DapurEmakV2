@@ -743,11 +743,22 @@ p{
 	width: 100%;
 	padding-top: 20px;
 	height: 380px;
+
+	.masaksekitar-wrapper{
+
+		.masakan-wrapper:first-child{
+			margin-left: 0 !important;	
+		}
+
+		.masakan-wrapper:nth-child(5) {
+			margin-right: 0 !important;			
+		}
+	}
 }
 
 .masakan-wrapper{
 	position: relative;
-	width: calc(20% - 30px);
+	width: calc(20% - 25px);
 	margin-left: 15px;
 	margin-right: 15px;
 	float: left;
@@ -763,6 +774,8 @@ p{
 	height: 100%;
 	transition: .3s;
 }
+
+
 
 .masakan-img{
 	height: 100%;
@@ -997,6 +1010,17 @@ border: 0 ;
 .row-7{
 	width: 100%;
 	height: 380px;
+
+	.masaksekitar-wrapper{
+
+		.masakan-wrapper:first-child{
+			margin-left: 0 !important;	
+		}
+
+		.masakan-wrapper:nth-child(5) {
+			margin-right: 0 !important;			
+		}
+	}
 }
 
 
@@ -1049,10 +1073,18 @@ border: 0 ;
 	width: 100%;
 	height: 370px;
 
+	.emak-card:nth-child(1){
+		margin-left: 0;	
+	}
+
+	.emak-card:nth-child(4){
+		margin-right: 0;	
+	}
+
 	.emak-card{
 		width: calc(25% - 20px);
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 13px;
+		margin-right: 13px;
 		box-shadow:0 1px 10px 0 rgba(0,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.1);
 		float: left;
 
@@ -1330,8 +1362,10 @@ border: 0 ;
 	width: 100%;
 	border-top: solid 0.5px #707070;
 	border-bottom: solid 0.5px #707070;
-	height: 280px;
+	overflow: hidden;
+	box-sizing: border-box;
 	padding-top: 45px;
+	padding-bottom: 30px;
 	
 	.col-1{
 		width: calc(100% / 4);
@@ -1536,7 +1570,7 @@ footer{
 	}
 
 	.lower-menu-active{
-		height: 310px;
+		height: 370px;
 		display: block;
 		top: 62px;
 		position: absolute;
@@ -2129,7 +2163,7 @@ footer{
 
 
 	.row-12{
-		height: 610px;
+		overflow: hidden;
 
 		.col-1{
 			max-width: 100%;
