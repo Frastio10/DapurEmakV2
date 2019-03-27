@@ -1101,15 +1101,20 @@ footer{
 	float: right;
 
 	img{
-
+		
 		border-radius: 5px;
 		overflow: hidden;
 	}
 
-	p{
-		max-width: 100%;
-		margin-bottom: 15px	;
-		overflow: hidden;
+	.main-img{
+		width: 100%;	
+	}
+	.text{
+		p{
+			max-width: 100%;
+			margin-bottom: 15px	;
+			overflow: hidden;
+		}
 	}
 }
 //rate
@@ -1187,6 +1192,211 @@ textarea{
 
 		p{
 			margin-top: 25px;
+		}
+	}
+}
+
+.res1, .res-n{
+	display: none;	
+}
+
+
+
+@include breakpoint-down(xl){
+	.res1, .res-n{
+	display: block;	
+}
+	#nav-icon1{
+			display: block;
+		}
+
+		#nav-line{
+			display: none;
+		}
+
+		
+			.none-res{
+			display: block !important;
+		}
+
+		.container{
+			max-width: 90%;
+			position: relative;
+		}
+
+		.upper-nav{
+			display: none;
+
+		}	
+
+		#nav-line{
+			display: none;
+		}
+
+		.lower-menu{
+			padding-top: 0;
+			height: 0;
+			overflow: hidden;
+			width: 100%;
+			float: left;
+			transition: .5s;
+			position: absolute;
+			top: 62px;
+		
+
+			ul{
+
+				width: 100%;
+
+				li{
+					width: calc(100%);
+					height: 50px !important;
+					box-sizing: border-box;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					height: 40px;
+					position: relative;
+							
+					background: #fff;
+
+
+					
+
+
+					a{
+						margin-top: 0;
+					}
+
+				}
+			}
+		}
+
+		.lower-menu-active{
+			height: 310px;
+			display: block;
+			top: 62px;
+			position: absolute;
+			z-index: 50;
+			transition: .5s;
+			float: left;
+		}
+
+		header{
+			height: 70px;
+			padding-top: 0;
+			position: fixed;
+			z-index: 99;
+			background: #fff;
+			width: 100%;
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+		}
+
+		
+		
+		.left{
+			display: none;	
+			width: 0;	
+		}
+
+		.right{
+			padding-top: 100px;	
+			width: 100%;	
+		}
+
+		.tinggal{
+			width:unset;
+
+			p{
+				margin-bottom: 10px !important;
+			}
+		}
+
+		.res-1{
+			display: block;	
+			overflow: hidden;
+			padding-bottom: 10px;	
+
+		}
+
+		.res-n{
+			margin-bottom: 20px;	
+		}
+
+		.comment-section{
+			width: 100%;	
+		}
+
+		.comment-text{
+			width: 100% !important;	
+		}
+
+		.row-12{
+
+		.col-1{
+
+		}
+
+		.col-2{
+			margin-left: 30px;
+
+		}
+
+		.col-3{
+			margin-left: 30px; 
+		}
+
+		.col-4{
+			width: calc(100% / 4 - 10px);
+			margin-left: 20px; 
+		}
+	}
+
+	.ulasan-1{
+		.img{
+			img{
+				height: 75px;
+				width: 75px;	
+			}
+		}
+	}
+}
+
+@include breakpoint-down(md){
+	.row-12{
+		height: 610px;
+
+		.col-1{
+			min-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
+			}
 		}
 	}
 }
