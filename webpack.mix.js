@@ -16,6 +16,7 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/view-product.scss', 'dist/assets/css')
    .sass('resources/sass/articlelist.scss', 'dist/assets/css')
    .sass('resources/sass/product-favorit.scss', 'dist/assets/css')
+   .sass('resources/sass/profil-emak.scss', 'dist/assets/css')
 
    .options({
     processCssUrls: false, 

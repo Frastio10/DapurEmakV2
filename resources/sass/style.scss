@@ -476,7 +476,7 @@ p{
 
 .lower-nav h3{
 	font-family: OpenSans-Bold;
-	padding-top: 5px;
+	padding-top: 6px;
 	padding-bottom: 7px;
 	float: left;
 	margin:0;
@@ -720,6 +720,7 @@ p{
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
+	overflow: hidden;
 }
 
 .row-2 h2{
@@ -741,13 +742,14 @@ p{
 
 .row-3{
 	width: 100%;
-	padding-top: 20px;
-	height: 380px;
+	padding-top: 0px;
+	overflow: hidden;	
+	padding-bottom: 30px;	
 
 	.masaksekitar-wrapper{
 
 		.masakan-wrapper:first-child{
-			margin-left: 0 !important;	
+			margin-left: 0;	
 		}
 
 		.masakan-wrapper:nth-child(5) {
@@ -908,7 +910,7 @@ border: 0 ;
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
-
+	overflow: hidden;	
 	h2{
 		margin: 0;
 	}
@@ -922,8 +924,9 @@ border: 0 ;
 
 .row-5{
 	width: 100%;
-	padding-top: 20px;
-	height: 360px;
+	padding-top: 0px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 
 	.video-1{
 		width: calc(50% - 15px);
@@ -991,10 +994,11 @@ border: 0 ;
 }
 
 .row-6{
-	padding-top: 0px;
+	padding-top: 10px;
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
+	overflow: hidden;	
 
 	h2{
 		margin: 0;
@@ -1009,7 +1013,8 @@ border: 0 ;
 
 .row-7{
 	width: 100%;
-	height: 380px;
+	padding-bottom: 30px;	
+	overflow: hidden;	
 
 	.masaksekitar-wrapper{
 
@@ -1062,7 +1067,8 @@ border: 0 ;
 
 .row-8{
 	width: 100%;
-	height: 50px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 	h2{
 		margin: 0;
 		float: left;
@@ -1071,8 +1077,8 @@ border: 0 ;
 
 .row-9{
 	width: 100%;
-	height: 370px;
-
+	overflow: hidden;
+	padding-bottom: 30px;		
 	.emak-card:nth-child(1){
 		margin-left: 0;	
 	}
@@ -1149,7 +1155,8 @@ border: 0 ;
 
 .row-10{
 	width: 100%;
-	height: 50px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 
 	h2{
 		margin: 0;
@@ -1159,7 +1166,8 @@ border: 0 ;
 
 .row-11{
 	width: 100%;
-	height: 380px;
+	overflow: hidden;	
+	padding-bottom: 50px;	
 
 	.news{
 		width: 100%;
@@ -1394,7 +1402,7 @@ border: 0 ;
 		p{
 			color: #888888;
 			font-family: Segoe-UI;
-			font-size:13px;
+			font-size:14px;
 		}
 	}
 
@@ -1405,7 +1413,7 @@ border: 0 ;
 		margin-left: 150px;
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1422,7 +1430,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -1436,7 +1444,7 @@ border: 0 ;
 
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1453,7 +1461,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -1466,7 +1474,7 @@ border: 0 ;
 	
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1497,7 +1505,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 
 				}
 			}
@@ -1513,6 +1521,8 @@ footer{
 
 //iPad
 @include breakpoint-down(lg){
+
+
 	.none-res{
 		display: block !important;
 	}
@@ -1640,13 +1650,10 @@ footer{
 		margin-left: 5px;
 
 	}
-
-	.row-3{
-		height: 320px;
-	}
-
+		
+	
 	.masakan-wrapper{
-		width: calc(25% - 30px);
+		width: calc(25% - 23px);
 		height: 250px;
 
 
@@ -1679,13 +1686,10 @@ footer{
 		display: none;
 	}
 
-	.row-5{
-		height: 250px;
+	.masakan-wrapper:nth-child(2){
+		margin-left: 0 !important;	
 	}
-
-	.row-7{
-		height: 400px;
-	}
+	
 
 	.favorit-wrapper{
 			width: calc(25% - 19px);
@@ -1725,10 +1729,10 @@ footer{
 	}
 
 	.row-9{
-		height: 800px;
+		
 
 		.emak-card{
-			width: calc(50% - 20px);
+			width: calc(50% - 15px);
 			margin-top: 20px;
 			
 			.emak-img{
@@ -1748,8 +1752,25 @@ footer{
 		}
 	}
 
+.emak-card:nth-child(1){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(2){
+		margin-right: 0;	
+	}
+
+.emak-card:nth-child(3){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(4){
+		margin-right: 0;	
+	}
+
+
 	.row-11{
-		height: 900px;
+		
 
 
 		.news{
@@ -1849,16 +1870,17 @@ footer{
 		}
 
 		.col-2{
-			margin-left: 50px;
+			margin-left: 30px;
 
 		}
 
 		.col-3{
-			margin-left: 50px; 
+			margin-left: 30px; 
 		}
 
 		.col-4{
-			margin-left: 50px; 
+			width: calc(100% / 4 - 10px);
+			margin-left: 20px; 
 		}
 	}
 
@@ -1891,7 +1913,7 @@ footer{
 	}
 
 	.banner-left{
-			width: 100%;
+			width: 85%;
 
 			@include padding-y(50px);
 
@@ -1939,7 +1961,7 @@ footer{
 	}
 
 	.row-2{
-		height: 30px;	
+		
 
 		.slngkp{
 			margin-top: 10px;
@@ -1948,12 +1970,12 @@ footer{
 	}
 
 	.row-3{
-		margin-top: 20px;
-		height: 600px;
+		
+		
 	}
 
 	.masakan-wrapper{
-			width: calc(50% - 30px);
+			width: calc(50% - 15px);
 			margin-top: 20px;
 
 
@@ -1968,12 +1990,23 @@ footer{
 			}
 		}
 
+	.masakan-wrapper:nth-child(odd) .card{
+		margin-right: 0;	
+	}
+	
+	.masakan-wrapper:nth-child(even){
+		margin-left: 0 	;	
+	}
+
+	.masakan-wrapper:nth-child(odd){
+		margin-right: 0 	;	
+	}
 	.row-4{
-		height: 40px;
+		
 	}
 
 	.row-5{
-		height: 480px;
+		
 
 		.video-1{
 			width: 100%;
@@ -1989,7 +2022,7 @@ footer{
 	}
 
 	.row-7{
-		height: 600px;
+		
 
 		.favorit-wrapper{
 			width: calc(50% - 19px);
@@ -2002,7 +2035,7 @@ footer{
 	}
 
 	.row-9{
-		height: 700px;
+		
 
 		.emak-card{
 			height: 287px;
@@ -2029,7 +2062,7 @@ footer{
 	}
 
 	.row-11{
-		height: 1000px;
+		
 
 
 		.news{
@@ -2166,7 +2199,7 @@ footer{
 		overflow: hidden;
 
 		.col-1{
-			max-width: 100%;
+			min-width: 100%;
 		}
 
 		.col-2{
@@ -2221,6 +2254,14 @@ footer{
 			width: 15px;
 		}
 	}
+
+	.masakan-wrapper:nth-child(5) .card {
+		margin-right: 0;	
+	}	
+
+	.masakan-wrapper:nth-child(1){
+		margin-left: 0 !important	;	
+	}	
 }
 
 

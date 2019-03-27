@@ -521,7 +521,7 @@ p {
 
 .lower-nav h3 {
   font-family: OpenSans-Bold;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 7px;
   float: left;
   margin: 0;
@@ -762,6 +762,7 @@ p {
   width: 100%;
   padding-bottom: 20px;
   display: block;
+  overflow: hidden;
 }
 
 .row-2 h2 {
@@ -783,12 +784,13 @@ p {
 
 .row-3 {
   width: 100%;
-  padding-top: 20px;
-  height: 380px;
+  padding-top: 0px;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .row-3 .masaksekitar-wrapper .masakan-wrapper:first-child {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
 .row-3 .masaksekitar-wrapper .masakan-wrapper:nth-child(5) {
@@ -963,6 +965,7 @@ p {
   width: 100%;
   padding-bottom: 20px;
   display: block;
+  overflow: hidden;
 }
 
 .row-4 h2 {
@@ -977,8 +980,9 @@ p {
 
 .row-5 {
   width: 100%;
-  padding-top: 20px;
-  height: 360px;
+  padding-top: 0px;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .row-5 .video-1 {
@@ -1048,10 +1052,11 @@ p {
 }
 
 .row-6 {
-  padding-top: 0px;
+  padding-top: 10px;
   width: 100%;
   padding-bottom: 20px;
   display: block;
+  overflow: hidden;
 }
 
 .row-6 h2 {
@@ -1066,7 +1071,8 @@ p {
 
 .row-7 {
   width: 100%;
-  height: 380px;
+  padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .row-7 .masaksekitar-wrapper .masakan-wrapper:first-child {
@@ -1113,7 +1119,8 @@ p {
 
 .row-8 {
   width: 100%;
-  height: 50px;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .row-8 h2 {
@@ -1123,7 +1130,8 @@ p {
 
 .row-9 {
   width: 100%;
-  height: 370px;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .row-9 .emak-card:nth-child(1) {
@@ -1197,7 +1205,8 @@ p {
 
 .row-10 {
   width: 100%;
-  height: 50px;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .row-10 h2 {
@@ -1207,7 +1216,8 @@ p {
 
 .row-11 {
   width: 100%;
-  height: 380px;
+  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .row-11 .news {
@@ -1444,7 +1454,7 @@ p {
 .row-12 .col-1 p {
   color: #888888;
   font-family: Segoe-UI;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .row-12 .col-2 {
@@ -1455,7 +1465,7 @@ p {
 }
 
 .row-12 .col-2 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1475,7 +1485,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .row-12 .col-3 {
@@ -1485,7 +1495,7 @@ p {
 }
 
 .row-12 .col-3 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1505,7 +1515,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .row-12 .col-4 {
@@ -1515,7 +1525,7 @@ p {
 }
 
 .row-12 .col-4 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1547,7 +1557,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 footer {
@@ -1655,11 +1665,8 @@ footer {
     width: 22%;
     margin-left: 5px;
   }
-  .row-3 {
-    height: 320px;
-  }
   .masakan-wrapper {
-    width: calc(25% - 30px);
+    width: calc(25% - 23px);
     height: 250px;
   }
   .masakan-wrapper .masakan {
@@ -1690,11 +1697,8 @@ footer {
   .masakan-wrapper:nth-child(5n+1) {
     display: none;
   }
-  .row-5 {
-    height: 250px;
-  }
-  .row-7 {
-    height: 400px;
+  .masakan-wrapper:nth-child(2) {
+    margin-left: 0 !important;
   }
   .favorit-wrapper {
     width: calc(25% - 19px);
@@ -1714,11 +1718,8 @@ footer {
   .masakfavorit-wrapper:nth-child(5n+1) {
     display: none;
   }
-  .row-9 {
-    height: 800px;
-  }
   .row-9 .emak-card {
-    width: calc(50% - 20px);
+    width: calc(50% - 15px);
     margin-top: 20px;
   }
   .row-9 .emak-card .emak-img {
@@ -1731,8 +1732,17 @@ footer {
   .row-9 .emak-card .emak-detail a {
     margin-left: 150px;
   }
-  .row-11 {
-    height: 900px;
+  .emak-card:nth-child(1) {
+    margin-left: 0;
+  }
+  .emak-card:nth-child(2) {
+    margin-right: 0;
+  }
+  .emak-card:nth-child(3) {
+    margin-left: 0;
+  }
+  .emak-card:nth-child(4) {
+    margin-right: 0;
   }
   .row-11 .news {
     width: 100%;
@@ -1805,13 +1815,14 @@ footer {
     width: 100%;
   }
   .row-12 .col-2 {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .row-12 .col-3 {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .row-12 .col-4 {
-    margin-left: 50px;
+    width: calc(100% / 4 - 10px);
+    margin-left: 20px;
   }
 }
 
@@ -1835,7 +1846,7 @@ footer {
     width: 0;
   }
   .banner-left {
-    width: 100%;
+    width: 85%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -1881,19 +1892,12 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .row-2 {
-    height: 30px;
-  }
   .row-2 .slngkp {
     margin-top: 10px;
     float: left;
   }
-  .row-3 {
-    margin-top: 20px;
-    height: 600px;
-  }
   .masakan-wrapper {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
     margin-top: 20px;
   }
   .masakan-wrapper .zoom {
@@ -1904,11 +1908,14 @@ footer {
     width: 100%;
     height: 100%;
   }
-  .row-4 {
-    height: 40px;
+  .masakan-wrapper:nth-child(odd) .card {
+    margin-right: 0;
   }
-  .row-5 {
-    height: 480px;
+  .masakan-wrapper:nth-child(even) {
+    margin-left: 0;
+  }
+  .masakan-wrapper:nth-child(odd) {
+    margin-right: 0;
   }
   .row-5 .video-1 {
     width: 100%;
@@ -1924,9 +1931,6 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .row-7 {
-    height: 600px;
-  }
   .row-7 .favorit-wrapper {
     width: calc(50% - 19px);
     margin-top: 20px;
@@ -1934,9 +1938,6 @@ footer {
   .rating {
     position: absolute;
     z-index: 3;
-  }
-  .row-9 {
-    height: 700px;
   }
   .row-9 .emak-card {
     height: 287px;
@@ -1953,9 +1954,6 @@ footer {
   }
   .row-9 .down {
     margin-top: 20px;
-  }
-  .row-11 {
-    height: 1000px;
   }
   .row-11 .news .main-news .main-img {
     height: 215px;
@@ -2048,7 +2046,7 @@ footer {
     overflow: hidden;
   }
   .row-12 .col-1 {
-    max-width: 100%;
+    min-width: 100%;
   }
   .row-12 .col-2 {
     min-width: 100%;
@@ -2088,6 +2086,12 @@ footer {
   }
   .rating img {
     width: 15px;
+  }
+  .masakan-wrapper:nth-child(5) .card {
+    margin-right: 0;
+  }
+  .masakan-wrapper:nth-child(1) {
+    margin-left: 0 !important;
   }
 }
 

@@ -12,26 +12,30 @@
 
 @font-face{
 	font-family:Segoe-UI;
-	src:url("../fonts/Segoe-UI.ttf");
+	src: url(../fonts/Segoe-UI.ttf);
 }
+
 
 @font-face{
 	font-family:Segoe-UI-Bold;
 	src: url(../fonts/Segoe-UI-Bold.ttf);
 }
 
-.ff-segbold{
-	font-family: Segoe-UI-Bold;
-}
-
-
 .bshad-thin{
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
+}
+
+.f-yellow{
+	color: #FBB72B !important;
 }
 
 body{
 	margin: 0;
 	padding: 0;
+}
+
+.ff-segbold{
+	font-family: Segoe-UI-Bold;
 }
 
 .pt-10{
@@ -472,7 +476,7 @@ p{
 
 .lower-nav h3{
 	font-family: OpenSans-Bold;
-	padding-top: 5px;
+	padding-top: 6px;
 	padding-bottom: 7px;
 	float: left;
 	margin:0;
@@ -568,7 +572,7 @@ p{
 	background: url(../images/content/bg_hdr.png);
 	color: #fff;
 	display: block;
-	padding-top: 50px;
+	padding-top: 100px;
 	height: 470px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -716,6 +720,7 @@ p{
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
+	overflow: hidden;
 }
 
 .row-2 h2{
@@ -737,13 +742,25 @@ p{
 
 .row-3{
 	width: 100%;
-	padding-top: 20px;
-	height: 380px;
+	padding-top: 0px;
+	overflow: hidden;	
+	padding-bottom: 30px;	
+
+	.masaksekitar-wrapper{
+
+		.masakan-wrapper:first-child{
+			margin-left: 0;	
+		}
+
+		.masakan-wrapper:nth-child(5) {
+			margin-right: 0 !important;			
+		}
+	}
 }
 
 .masakan-wrapper{
 	position: relative;
-	width: calc(20% - 30px);
+	width: calc(20% - 25px);
 	margin-left: 15px;
 	margin-right: 15px;
 	float: left;
@@ -760,6 +777,8 @@ p{
 	transition: .3s;
 }
 
+
+
 .masakan-img{
 	height: 100%;
 	width: calc(100%);
@@ -773,29 +792,6 @@ p{
 	border-radius: 5px;
 }
 
-.zoom { 
-	border-radius: 5px;
-	width: 105%; 
-	float:left;
-	z-index: 1;
-    -webkit-transition: all .3s ease-out; 
-    -moz-transition: all .3s ease-out; 
-    -o-transition: all .3s ease-out; 
- 	 transition: all .3s ease-out; 
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
-}
-
-.zoom:hover { 
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
-    M11=2, M12=-0, M21=0, M22=2);
-  
-}
 
 .image-food { 
 margin: 0; 
@@ -807,7 +803,10 @@ border: 0 ;
 	position: absolute;	
 	background-color: #fff;
 	width: calc(100% - 10px);
-	border-radius:3px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -815,8 +814,6 @@ border: 0 ;
 	z-index: 11;
 	right: 0;
 	box-shadow:0 0px 0px 0 rgba(0,0,0,0.0);
-	border-top-right-radius: 0;
-	border-top-left-radius:0;
 	
 	.logo-masakan{
 		background: #FBB72B;
@@ -913,7 +910,7 @@ border: 0 ;
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
-
+	overflow: hidden;	
 	h2{
 		margin: 0;
 	}
@@ -927,8 +924,9 @@ border: 0 ;
 
 .row-5{
 	width: 100%;
-	padding-top: 20px;
-	height: 360px;
+	padding-top: 0px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 
 	.video-1{
 		width: calc(50% - 15px);
@@ -996,10 +994,11 @@ border: 0 ;
 }
 
 .row-6{
-	padding-top: 0px;
+	padding-top: 10px;
 	width: 100%;
 	padding-bottom: 20px;
 	display: block;
+	overflow: hidden;	
 
 	h2{
 		margin: 0;
@@ -1014,7 +1013,19 @@ border: 0 ;
 
 .row-7{
 	width: 100%;
-	height: 380px;
+	padding-bottom: 30px;	
+	overflow: hidden;	
+
+	.masaksekitar-wrapper{
+
+		.masakan-wrapper:first-child{
+			margin-left: 0 !important;	
+		}
+
+		.masakan-wrapper:nth-child(5) {
+			margin-right: 0 !important;			
+		}
+	}
 }
 
 
@@ -1056,7 +1067,8 @@ border: 0 ;
 
 .row-8{
 	width: 100%;
-	height: 50px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 	h2{
 		margin: 0;
 		float: left;
@@ -1065,12 +1077,20 @@ border: 0 ;
 
 .row-9{
 	width: 100%;
-	height: 370px;
+	overflow: hidden;
+	padding-bottom: 30px;		
+	.emak-card:nth-child(1){
+		margin-left: 0;	
+	}
+
+	.emak-card:nth-child(4){
+		margin-right: 0;	
+	}
 
 	.emak-card{
 		width: calc(25% - 20px);
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 13px;
+		margin-right: 13px;
 		box-shadow:0 1px 10px 0 rgba(0,0,0,0.2),0 0px 0px 0 rgba(0,0,0,0.1);
 		float: left;
 
@@ -1093,7 +1113,7 @@ border: 0 ;
 			
 
 			span{
-				font-family: Segoe-UI;
+				font-family: Segoe-UI-Bold;
 				color: #888888;
 				font-weight: 700;
 				font-size: 12px;
@@ -1101,10 +1121,11 @@ border: 0 ;
 
 			.nama{
 				padding-top: 10px;
-				font-family: Segoe-UI;
+				font-family: Segoe-UI-Bold;
 				color:#FBB72B;
 				font-weight: 700;
 				padding-left: 0;
+
 			}
 
 			.ket{
@@ -1123,9 +1144,10 @@ border: 0 ;
 				color: #888888;
 				font-family: Segoe-UI;
 				border-radius: 30px;
-				padding: 1px 20px 1px 20px;
+				padding: 1px 15px 1px 15px;
 				font-size: 14px;
-				margin-left:110px;
+
+				margin-left: 50%;
 			}
 		}
 	}
@@ -1133,7 +1155,8 @@ border: 0 ;
 
 .row-10{
 	width: 100%;
-	height: 50px;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 
 	h2{
 		margin: 0;
@@ -1143,7 +1166,8 @@ border: 0 ;
 
 .row-11{
 	width: 100%;
-	height: 380px;
+	overflow: hidden;	
+	padding-bottom: 50px;	
 
 	.news{
 		width: 100%;
@@ -1346,8 +1370,10 @@ border: 0 ;
 	width: 100%;
 	border-top: solid 0.5px #707070;
 	border-bottom: solid 0.5px #707070;
-	height: 280px;
+	overflow: hidden;
+	box-sizing: border-box;
 	padding-top: 45px;
+	padding-bottom: 30px;
 	
 	.col-1{
 		width: calc(100% / 4);
@@ -1376,7 +1402,7 @@ border: 0 ;
 		p{
 			color: #888888;
 			font-family: Segoe-UI;
-			font-size:13px;
+			font-size:14px;
 		}
 	}
 
@@ -1387,7 +1413,7 @@ border: 0 ;
 		margin-left: 150px;
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1404,7 +1430,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -1418,7 +1444,7 @@ border: 0 ;
 
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1435,7 +1461,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -1448,7 +1474,7 @@ border: 0 ;
 	
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1479,7 +1505,7 @@ border: 0 ;
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 
 				}
 			}
@@ -1495,6 +1521,8 @@ footer{
 
 //iPad
 @include breakpoint-down(lg){
+
+
 	.none-res{
 		display: block !important;
 	}
@@ -1519,24 +1547,27 @@ footer{
 		overflow: hidden;
 		width: 100%;
 		float: left;
-		transition: 1s;
-		position: fixed;
+		transition: .5s;
+		position: absolute;
 		top: 62px;
+	
 
 		ul{
 
 			width: 100%;
 
 			li{
-				width: calc(100% - 10px);
-				height: 100px;
+				width: calc(100%);
+				height: 50px !important;
 				box-sizing: border-box;
 				padding-top: 10px;
-				padding-bottom: 15px;
+				padding-bottom: 10px;
 				height: 40px;
 				position: relative;
-				overflow: hidden;		
+						
 				background: #fff;
+
+
 				
 
 
@@ -1549,12 +1580,13 @@ footer{
 	}
 
 	.lower-menu-active{
-		height: 300px;
+		height: 370px;
 		display: block;
 		top: 62px;
-		position: fixed;
+		position: absolute;
 		z-index: 50;
-		transition: 1s;
+		transition: .5s;
+		float: left;
 	}
 
 	header{
@@ -1564,8 +1596,7 @@ footer{
 		z-index: 99;
 		background: #fff;
 		width: 100%;
-		box-shadow: 0 0px 3px 0px rgba(0,0,0,0.5);
-
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 	}
 
 	#nav-icon1{
@@ -1619,13 +1650,10 @@ footer{
 		margin-left: 5px;
 
 	}
-
-	.row-3{
-		height: 320px;
-	}
-
+		
+	
 	.masakan-wrapper{
-		width: calc(25% - 30px);
+		width: calc(25% - 23px);
 		height: 250px;
 
 
@@ -1658,13 +1686,10 @@ footer{
 		display: none;
 	}
 
-	.row-5{
-		height: 250px;
+	.masakan-wrapper:nth-child(2){
+		margin-left: 0 !important;	
 	}
-
-	.row-7{
-		height: 400px;
-	}
+	
 
 	.favorit-wrapper{
 			width: calc(25% - 19px);
@@ -1704,10 +1729,10 @@ footer{
 	}
 
 	.row-9{
-		height: 800px;
+		
 
 		.emak-card{
-			width: calc(50% - 20px);
+			width: calc(50% - 15px);
 			margin-top: 20px;
 			
 			.emak-img{
@@ -1727,8 +1752,25 @@ footer{
 		}
 	}
 
+.emak-card:nth-child(1){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(2){
+		margin-right: 0;	
+	}
+
+.emak-card:nth-child(3){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(4){
+		margin-right: 0;	
+	}
+
+
 	.row-11{
-		height: 900px;
+		
 
 
 		.news{
@@ -1828,16 +1870,17 @@ footer{
 		}
 
 		.col-2{
-			margin-left: 50px;
+			margin-left: 30px;
 
 		}
 
 		.col-3{
-			margin-left: 50px; 
+			margin-left: 30px; 
 		}
 
 		.col-4{
-			margin-left: 50px; 
+			width: calc(100% / 4 - 10px);
+			margin-left: 20px; 
 		}
 	}
 
@@ -1870,7 +1913,7 @@ footer{
 	}
 
 	.banner-left{
-			width: 100%;
+			width: 85%;
 
 			@include padding-y(50px);
 
@@ -1918,7 +1961,7 @@ footer{
 	}
 
 	.row-2{
-		height: 30px;	
+		
 
 		.slngkp{
 			margin-top: 10px;
@@ -1927,12 +1970,12 @@ footer{
 	}
 
 	.row-3{
-		margin-top: 20px;
-		height: 600px;
+		
+		
 	}
 
 	.masakan-wrapper{
-			width: calc(50% - 30px);
+			width: calc(50% - 15px);
 			margin-top: 20px;
 
 
@@ -1947,12 +1990,23 @@ footer{
 			}
 		}
 
+	.masakan-wrapper:nth-child(odd) .card{
+		margin-right: 0;	
+	}
+	
+	.masakan-wrapper:nth-child(even){
+		margin-left: 0 	;	
+	}
+
+	.masakan-wrapper:nth-child(odd){
+		margin-right: 0 	;	
+	}
 	.row-4{
-		height: 40px;
+		
 	}
 
 	.row-5{
-		height: 480px;
+		
 
 		.video-1{
 			width: 100%;
@@ -1968,7 +2022,7 @@ footer{
 	}
 
 	.row-7{
-		height: 600px;
+		
 
 		.favorit-wrapper{
 			width: calc(50% - 19px);
@@ -1981,7 +2035,7 @@ footer{
 	}
 
 	.row-9{
-		height: 700px;
+		
 
 		.emak-card{
 			height: 287px;
@@ -2008,7 +2062,7 @@ footer{
 	}
 
 	.row-11{
-		height: 1000px;
+		
 
 
 		.news{
@@ -2142,10 +2196,10 @@ footer{
 
 
 	.row-12{
-		height: 610px;
+		overflow: hidden;
 
 		.col-1{
-			max-width: 100%;
+			min-width: 100%;
 		}
 
 		.col-2{
@@ -2193,6 +2247,21 @@ footer{
 	#submit{
 		width: 20%;
 	}
+
+	.rating{
+
+		img{
+			width: 15px;
+		}
+	}
+
+	.masakan-wrapper:nth-child(5) .card {
+		margin-right: 0;	
+	}	
+
+	.masakan-wrapper:nth-child(1){
+		margin-left: 0 !important	;	
+	}	
 }
 
 

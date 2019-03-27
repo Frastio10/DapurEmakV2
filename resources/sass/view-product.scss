@@ -488,7 +488,7 @@ p{
 
 .lower-nav h3{
 	font-family: OpenSans-Bold;
-	padding-top: 5px;
+	padding-top: 6px;
 	padding-bottom: 7px;
 	float: left;
 	margin:0;
@@ -757,6 +757,16 @@ p{
 	
 }
 
+.date-wrapper{
+	position: relative;	
+}
+
+#calendar{
+	right: 5px;
+	top: 10px;			
+	float: left;
+}
+
 .right{
 	width: 42.2%;
 	float: right;
@@ -842,7 +852,7 @@ p{
 	  padding: 0px;
 	}
 
-	input#number {
+	input#number, #tanggal {
 	  text-align: left;
 	  float: left;
 	  border: 1px solid #ddd;

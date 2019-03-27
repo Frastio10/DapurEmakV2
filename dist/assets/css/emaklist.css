@@ -1303,12 +1303,12 @@ footer {
 
 @media screen and (min-width: 360px) and (max-width: 549px) {
   .card {
-    width: calc(50% - 20px) !important;
+    width: calc(50% - 10px) !important;
     height: 210px !important;
     margin-right: 20px;
   }
-  .masakan-wrapper a:nth-child(2) .card {
-    margin: 0 !important;
+  a:nth-child(2) .card {
+    margin-right: 0 !important;
   }
   .banner-left {
     max-width: 100%;

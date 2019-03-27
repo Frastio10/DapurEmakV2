@@ -639,3 +639,13 @@ p{
 .star-rating label:hover ~ label {
   color:#fc0;
 }
+
+//end rate
+textarea{
+	border: none;
+}
+
+.comment-text{
+	width: 50%;	
+	border-bottom: 	1px solid #000;
+}
