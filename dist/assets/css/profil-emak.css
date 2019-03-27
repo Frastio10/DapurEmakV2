@@ -1409,9 +1409,6 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .row-12 {
-    height: 610px;
-  }
   .row-12 .col-1 {
     min-width: 100%;
   }
