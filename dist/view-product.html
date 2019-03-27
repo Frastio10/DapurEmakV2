@@ -61,7 +61,7 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 					<span class="ff-osbold f-20 f-yellow">Rp. 35.000,-</span>
 				</div>
 				<div class="pesan">
-					<a href="" class="bg-yellow">Pesan</a>
+					<a href="#buy" id="pesann" class="ff-osregular bg-yellow">Pesan</a>
 				</div>
 			</div>
 			<div class="product-img fright">
@@ -154,9 +154,57 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 			</div>
 
 			<div class="right">
-				<div class="pesan-box fright relative">
-					<div class="pesan-title" class="textcenter">
-						<span class="f-30 f-yellow ff-osbold textcenter m-center">Pesan</span>
+				<div class="pesan-box fright relative" id="pesan-box">
+					<div class="container">
+						<div class="pesan-title overflow-hidden" class="textcenter">
+							<span class="f-30 f-yellow ff-osbold textcenter m-center" id="buy">Pesan</span>
+						</div>
+						<div class="porsi mt-30 overflow-hidden">
+							<p class="ff-osregular f-15 mb-10">Jumlah porsi per hari</p>
+							<div class="jumlahporsi">
+							  <input type="number" id="number" value="0" placeholder="1 Porsi" />
+							  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+							  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+							</div>									
+						</div>
+						<div class="tanggal mt-15 overflow-hidden">
+							
+							<div class="tanggal2">
+								<p class="ff-osregular f-15 mb-10">Tanggal Pemesanan</p>
+							  	<input type="date" id="number" value="0" placeholder="1 Porsi" />
+							  	<label for="number" class="absolute">
+							  		<img src="assets/images/icon/calendar.png" alt="">
+							  	</label>
+							</div>
+							
+							<div class="durasi">
+							  	<p class="ff-osregular f-15 mb-10">Durasi</p>	
+							  	<input type="text" id="durasi" placeholder="7 Hari">
+							 </div>	
+							 <span class="ff-osregular f-13 f-grey mt-5">Sampaj Jumat, 22 maret 2019</span>				
+							 <span class="nav-line"></span>
+						</div>
+
+						<div class="bayar mt-15">
+							<div class="harga mb-10">
+								<span class="ff-osregular f-15">Harga</span><span class="ff-osregular f-15 fright" id="price">25,000</span>
+							</div>
+							<div class="jumlah mb-10">
+								<span class="ff-osregular f-15">Jumlah Beli</span><span class="ff-osregular f-15 fright" id="jumbel">0</span>
+							</div>
+							<div class="lamadurasi">
+								<span class="ff-osregular f-15">Durasi</span><span class="ff-osregular f-15 fright">7 Hari</span>
+							</div>
+							<span class="nav-line mt-10 mb-10"></span>
+							<div class="subtotal">
+								<span class="ff-osregular f-15">Subtotal</span><span class="ff-osregular f-15 fright" id="subtotal">0</span>
+							</div>
+						</div>
+					
+							
+								
+							
+						
 					</div>
 				</div>
 			</div>
@@ -233,4 +281,6 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 	</footer>
 	
 </body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/view-product.js"></script>
 </html>

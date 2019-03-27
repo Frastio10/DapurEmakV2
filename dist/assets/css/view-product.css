@@ -118,6 +118,14 @@ body {
   text-align: center;
 }
 
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+
 .top {
   top: 0;
 }
@@ -273,6 +281,10 @@ body {
   margin-top: 40px;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+
 .py-25 {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -298,8 +310,16 @@ body {
   margin-top: 40px;
 }
 
-.mt-2 {
-  margin-top: 15px;
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
 }
 
 .mt-15 {
@@ -308,6 +328,10 @@ body {
 
 .mb-15 {
   margin-bottom: 15px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
 }
 
 .fleft {
@@ -805,6 +829,13 @@ p {
   padding-left: 3px;
 }
 
+.pesan-box-active {
+  height: 500px !important;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1 !important;
+}
+
 .right {
   width: 42.2%;
   float: right;
@@ -814,12 +845,15 @@ p {
 }
 
 .right .pesan-box {
-  width: 470px;
-  height: 800px;
-  padding-top: 49px;
+  opacity: 0;
+  border: 1px solid #888888;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 420px;
+  height: 500px;
+  padding-top: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid #888888;
   overflow: hidden;
   position: relative;
 }
@@ -828,6 +862,108 @@ p {
   width: 100%;
   position: relative;
   text-align: center;
+}
+
+.right .jumlahporsi {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.right .value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  float: right;
+  margin: 0px;
+  width: 14%;
+  height: 43px;
+  text-align: center;
+  vertical-align: middle;
+  background: #888888;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.right .value-button:hover {
+  cursor: pointer;
+  background: #fbb72b;
+}
+
+.right #decrease {
+  padding-top: 8px !important;
+}
+
+.right #increase {
+  padding: 9px 0;
+}
+
+.right #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+.right input#number {
+  text-align: left;
+  float: left;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.right input[type=number]::-webkit-inner-spin-button,
+.right input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.right .tanggal {
+  width: 100%;
+}
+
+.right .tanggal .tanggal2 {
+  float: left;
+  width: calc(70%);
+  margin-right: 5px;
+}
+
+.right .tanggal .tanggal2 input {
+  width: 100% !important;
+  float: right;
+}
+
+.right .durasi {
+  width: calc(29% - 5px);
+  float: right;
+}
+
+.right #durasi {
+  width: calc(100% - 3px);
+  float: right;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  float: left;
+  border: 1px solid #ddd;
+  margin: 0px;
+  height: 40px;
+  border-radius: 5px;
 }
 
 .row-12 {
