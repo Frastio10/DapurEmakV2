@@ -992,7 +992,7 @@ footer{
 	}
 
 	.lower-menu-active{
-		height: 370px;
+		height: 360px;
 		display: block;
 		top: 62px;
 		position: absolute;
@@ -1064,7 +1064,7 @@ footer{
 	}
 
 	.row-3{
-		height: 320px;
+		overflow: hidden;
 	}
 	
 	.emak-card{
@@ -1088,3 +1088,286 @@ footer{
 		}
 
 }
+
+@include breakpoint-down(xl){
+	.row-10{
+
+		.col-1{
+
+		}
+
+		.col-2{
+			margin-left: 30px;
+
+		}
+
+		.col-3{
+			margin-left: 30px; 
+		}
+
+		.col-4{
+			width: calc(100% / 4 - 10px);
+			margin-left: 20px; 
+		}
+	}
+}
+
+@include  breakpoint-down(lg){
+	.banner{
+		height: 420px;
+	}
+
+	.banner-right{
+		width: 0%;
+	}
+
+	.banner-left{
+		padding-top: 70px;
+		width: 85%;
+
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	.cari-wrapper{
+		width: calc(40%);
+	}
+
+	.row-10{
+
+		.col-1{
+
+		}
+
+		.col-2{
+			margin-left: 50px;
+
+		}
+
+		.col-3{
+			margin-left: 50px; 
+		}
+
+		.col-4{
+			margin-left: 50px; 
+		}
+	}	
+		
+
+		.emak-card{
+			width: calc(50% - 15px);
+			margin-top: 20px;
+			
+			.emak-img{
+				height: 175px;
+
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.emak-detail{
+				a{
+					margin-left: 150px;
+				}
+			}
+		}
+	
+
+.emak-card:nth-child(1){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(2){
+		margin-right: 0;	
+	}
+
+.emak-card:nth-child(3){
+		margin-left: 0;	
+	}
+
+.emak-card:nth-child(4){
+	margin-top: 20px;	
+		margin-right: 0;	
+	}
+
+	.logo-wrapper{
+		padding-top: 13px;	
+	}
+}
+
+@include breakpoint-down(md){
+	.row-10{
+		
+
+		.col-1{
+			min-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+@include breakpoint-down(sm){
+	.banner{
+		height: 530px;
+
+	}
+
+	.banner-right{
+	 	width: 0;
+	}
+
+		.banner-left{
+		max-width: 100%;
+
+		h2{
+			max-width: 100%;
+		}
+
+		.location{
+			width: calc(100% - 30px) !important;
+			@include padding(15px);	
+			height: 163px;
+			position: relative;	
+			box-sizing: border-box;
+
+			#cari{
+				width: calc(100% - 10px);
+				position: relative;
+			}
+
+			.cari-wrapper{
+				width: 100%;
+				position: relative;
+			}
+
+			#lokasi{
+				width: calc(100% - 10px);
+				position: relative;
+				margin-left: 0;
+
+			}
+
+			.lokasi-wrapper{
+				width: 100%;
+				position: relative;
+					margin-left: 0;
+					margin-top: 10px;
+			}
+		
+			.lokasi-wrapper:after{
+				margin-right: 10px;
+			}
+
+			#submit{
+				width: 100%;
+				position: relative;
+				margin-top: 10px;
+			}
+		}
+	}
+
+		
+
+		.emak-card{
+			height: 287px;
+
+			.emak-img{
+				height: auto;
+			}
+
+			.emak-detail{
+
+				a{
+					position: relative;
+					float: right;
+					margin-left: 0;
+					bottom: 15px;
+					right: 8px;
+				}
+			}
+		}
+
+		.ket{
+			margin-bottom: 	25px !important;
+		}
+}
+
+@include breakpoint-down(xs){
+	.banner-left{
+		max-width: 100%;
+
+		h2{
+			max-width: 100%;
+		}
+
+		.location{
+			width: calc(100% - 30px) !important;
+			@include padding(15px);	
+			height: 163px;
+			position: relative;	
+			box-sizing: border-box;
+
+			#cari{
+				width: calc(100% - 10px);
+				position: relative;
+			}
+
+			.cari-wrapper{
+				width: 100%;
+				position: relative;
+			}
+
+			#lokasi{
+				width: calc(100% - 10px);
+				position: relative;
+			}
+
+			.lokasi-wrapper{
+				width: 100%;
+				position: relative;
+			}
+		
+			.lokasi-wrapper:after{
+				margin-right: 10px;
+			}
+
+			#submit{
+				width: 100%;
+				position: relative;
+			}
+		}
+	}
+};

@@ -1005,7 +1005,7 @@ footer {
     margin-top: 0;
   }
   .lower-menu-active {
-    height: 370px;
+    height: 360px;
     display: block;
     top: 62px;
     position: absolute;
@@ -1063,7 +1063,7 @@ footer {
     margin-left: 5px;
   }
   .row-3 {
-    height: 320px;
+    overflow: hidden;
   }
   .emak-card {
     width: calc(50% - 20px);
@@ -1078,5 +1078,219 @@ footer {
   }
   .emak-card .emak-detail a {
     margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .row-10 .col-2 {
+    margin-left: 30px;
+  }
+  .row-10 .col-3 {
+    margin-left: 30px;
+  }
+  .row-10 .col-4 {
+    width: calc(100% / 4 - 10px);
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .banner {
+    height: 420px;
+  }
+  .banner-right {
+    width: 0%;
+  }
+  .banner-left {
+    padding-top: 70px;
+    width: 85%;
+  }
+  .banner-left h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cari-wrapper {
+    width: calc(40%);
+  }
+  .row-10 .col-2 {
+    margin-left: 50px;
+  }
+  .row-10 .col-3 {
+    margin-left: 50px;
+  }
+  .row-10 .col-4 {
+    margin-left: 50px;
+  }
+  .emak-card {
+    width: calc(50% - 15px);
+    margin-top: 20px;
+  }
+  .emak-card .emak-img {
+    height: 175px;
+  }
+  .emak-card .emak-img img {
+    width: 100%;
+    height: auto;
+  }
+  .emak-card .emak-detail a {
+    margin-left: 150px;
+  }
+  .emak-card:nth-child(1) {
+    margin-left: 0;
+  }
+  .emak-card:nth-child(2) {
+    margin-right: 0;
+  }
+  .emak-card:nth-child(3) {
+    margin-left: 0;
+  }
+  .emak-card:nth-child(4) {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .logo-wrapper {
+    padding-top: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row-10 .col-1 {
+    min-width: 100%;
+  }
+  .row-10 .col-2 {
+    min-width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .row-10 .col-2 ul {
+    margin-top: 15px;
+  }
+  .row-10 .col-3 {
+    min-width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .row-10 .col-3 ul {
+    margin-top: 15px;
+  }
+  .row-10 .col-4 {
+    min-width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .row-10 .col-4 ul {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner {
+    height: 530px;
+  }
+  .banner-right {
+    width: 0;
+  }
+  .banner-left {
+    max-width: 100%;
+  }
+  .banner-left h2 {
+    max-width: 100%;
+  }
+  .banner-left .location {
+    width: calc(100% - 30px) !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 163px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .banner-left .location #cari {
+    width: calc(100% - 10px);
+    position: relative;
+  }
+  .banner-left .location .cari-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .banner-left .location #lokasi {
+    width: calc(100% - 10px);
+    position: relative;
+    margin-left: 0;
+  }
+  .banner-left .location .lokasi-wrapper {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .banner-left .location .lokasi-wrapper:after {
+    margin-right: 10px;
+  }
+  .banner-left .location #submit {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+  }
+  .emak-card {
+    height: 287px;
+  }
+  .emak-card .emak-img {
+    height: auto;
+  }
+  .emak-card .emak-detail a {
+    position: relative;
+    float: right;
+    margin-left: 0;
+    bottom: 15px;
+    right: 8px;
+  }
+  .ket {
+    margin-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 549px) {
+  .banner-left {
+    max-width: 100%;
+  }
+  .banner-left h2 {
+    max-width: 100%;
+  }
+  .banner-left .location {
+    width: calc(100% - 30px) !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 163px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .banner-left .location #cari {
+    width: calc(100% - 10px);
+    position: relative;
+  }
+  .banner-left .location .cari-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .banner-left .location #lokasi {
+    width: calc(100% - 10px);
+    position: relative;
+  }
+  .banner-left .location .lokasi-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .banner-left .location .lokasi-wrapper:after {
+    margin-right: 10px;
+  }
+  .banner-left .location #submit {
+    width: 100%;
+    position: relative;
   }
 }

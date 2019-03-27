@@ -340,7 +340,7 @@
 		<div class="container">
 			<div class="col-1">
 				<div class="wrapper">
-					<div class="logo"></div>
+					<img src="logo.png" class="logo" alt="">
 					<h3>DAPUR EMAK</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet,
@@ -404,7 +404,16 @@
 
 	<footer></footer>
 </body>
-<!-- <script src="assets/js/app.js"></script> -->
+<script src="assets/js/jquery.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		    $(this).toggleClass('open');
+		    $('.lower-menu').toggleClass('lower-menu-active');
+		  });
+		});
+	</script>
 </html>
 
 
