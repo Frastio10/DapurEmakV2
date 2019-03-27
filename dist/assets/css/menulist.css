@@ -1270,9 +1270,6 @@ footer {
     position: relative;
     margin-top: 10px;
   }
-  .row-10 {
-    height: 610px;
-  }
   .row-10 .col-1 {
     max-width: 100%;
   }
@@ -1350,9 +1347,6 @@ footer {
   .banner-left .location #submit {
     width: 100%;
     position: relative;
-  }
-  .row-10 {
-    height: 610px;
   }
   .row-10 .col-1 {
     max-width: 100%;
