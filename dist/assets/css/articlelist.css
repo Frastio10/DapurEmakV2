@@ -912,9 +912,6 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  .row-12 {
-    height: 610px;
-  }
   .row-12 .col-1 {
     max-width: 100%;
   }
@@ -1091,9 +1088,6 @@ footer {
 }
 
 @media screen and (min-width: 360px) and (max-width: 549px) {
-  .row-10 {
-    height: 610px;
-  }
   .row-10 .col-1 {
     max-width: 100%;
   }
