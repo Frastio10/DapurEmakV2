@@ -109,7 +109,7 @@ body{
 .nav-line{
 	width: 100%;
 	height: 1px;
-	background:#999;
+	background:#888888;
 	display:block;
 	position: relative;
 	margin-top: 25px;
@@ -200,6 +200,16 @@ body{
 .m-0{
 	margin: 0;
 }
+
+.pb-30{
+	padding-bottom: 30px;
+}
+
+
+.pb-20{
+	padding-bottom: 20px;
+}
+
 
 .pt-40{
 	padding-top: 40px;
@@ -555,10 +565,11 @@ p{
 .product-detail{
 	width: 100%;
 	overflow: hidden;
-	box-sizing: border-box;
+
 	padding-top: 160px;
 	justify-content: center;
 	align-items: center;
+	
 
 	.product-desc{
 		width: 69.6%;
@@ -597,4 +608,34 @@ p{
 		width: 30%;
 		float: right;	
 	}
+}
+
+//star rate
+.star-rating {
+
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
 }
