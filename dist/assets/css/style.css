@@ -1159,6 +1159,8 @@ p {
 }
 
 .row-9 .emak-card .emak-img img {
+  -o-object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 150px;
 }

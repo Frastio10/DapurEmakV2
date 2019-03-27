@@ -337,7 +337,7 @@ header {
 #nav-line {
   width: 100%;
   height: 1px;
-  background: #999;
+  background: #e6e6e6;
   display: block;
   position: relative;
   -webkit-backface-visibility: hidden;
@@ -1161,6 +1161,8 @@ p {
 .row-9 .emak-card .emak-img img {
   width: 100%;
   height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .row-9 .emak-card .emak-detail {
@@ -1200,7 +1202,7 @@ p {
   color: #888888;
   font-family: Segoe-UI;
   border-radius: 30px;
-  padding: 1px 15px 1px 15px;
+  padding: 5px 20px 5px 20px;
   font-size: 14px;
   margin-left: 50%;
 }
