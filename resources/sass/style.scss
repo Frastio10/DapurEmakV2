@@ -569,7 +569,7 @@ p{
 	display: flex;
 	position: relative;
 	width: 100%;
-	background: url(../images/content/bg_hdr.png);
+	background: url(../images/content/bg_6.jpg);
 	color: #fff;
 	display: block;
 	padding-top: 100px;
@@ -742,7 +742,7 @@ p{
 
 .row-3{
 	width: 100%;
-	padding-top: 0px;
+	padding-top: 15px;
 	overflow: hidden;	
 	padding-bottom: 30px;	
 
@@ -1013,7 +1013,8 @@ border: 0 ;
 
 .row-7{
 	width: 100%;
-	padding-bottom: 30px;	
+	padding-bottom: 30px;
+	padding-top: 15px;		
 	overflow: hidden;	
 
 	.masaksekitar-wrapper{
@@ -1078,6 +1079,7 @@ border: 0 ;
 .row-9{
 	width: 100%;
 	overflow: hidden;
+	padding-top: 18px;	
 	padding-bottom: 30px;		
 	.emak-card:nth-child(1){
 		margin-left: 0;	

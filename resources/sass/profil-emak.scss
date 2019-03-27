@@ -173,6 +173,14 @@ body{
 	margin-top: 15px;
 }
 
+.fleft{
+	float: left;	
+}
+
+.fright{
+	float: right;	
+}
+
 @import "./header";
 
 @font-face{
@@ -592,6 +600,7 @@ p{
 	padding-left: 0px;
 }
 
+
 #nav-kanan li{
 	float: left;
 	padding-left: 15px;
@@ -958,3 +967,32 @@ footer{
 }
 
 // end footer
+
+
+.left{
+	padding-top: 100px;
+	width: 30%;
+	float: left;	
+
+	.box{
+		padding-top: 15px;
+		box-sizing: border-box;
+		height: 287px;
+		width: 85%;	
+		float: left;	
+		border-radius: 5px;
+		 box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+
+		 .nama{
+		 	padding-top: 15px;
+
+		 }
+	}	
+}
+
+.profile-pict{
+	width: 60px;
+	height: 60px;	
+	border-radius:100%;
+	float: right;	
+}

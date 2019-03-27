@@ -237,6 +237,14 @@ body {
   margin-top: 15px;
 }
 
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
 /**
 ** this for first setup
 **/
@@ -1069,4 +1077,33 @@ p {
 footer {
   width: 100%;
   height: 30px;
+}
+
+.left {
+  padding-top: 100px;
+  width: 30%;
+  float: left;
+}
+
+.left .box {
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 287px;
+  width: 85%;
+  float: left;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.left .box .nama {
+  padding-top: 15px;
+}
+
+.profile-pict {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  float: right;
 }
