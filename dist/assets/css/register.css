@@ -417,6 +417,6 @@ img {
 
 @media screen and (min-width: 360px) and (max-width: 549px) {
   .right .register {
-    margin-top: 30%;
+    margin-top: 25%;
   }
 }

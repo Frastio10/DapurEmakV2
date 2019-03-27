@@ -113,9 +113,17 @@
   color: #FBB72B !important;
 }
 
+.none-1 {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.circle {
+  border-radius: 100%;
 }
 
 .ff-segbold {
@@ -124,6 +132,10 @@ body {
 
 .pt-10 {
   padding-top: 10px;
+}
+
+.pt-40 {
+  padding-top: 40px;
 }
 
 .block {
@@ -1180,12 +1192,95 @@ footer {
 
 .right {
   padding-top: 100px;
+  width: 70%;
+  float: right;
 }
 
 .right img {
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .right p {
   max-width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.star-rating {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+  font-size: 1.5em;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  width: 5em;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: #f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+
+textarea {
+  border: none;
+}
+
+.comment-section {
+  width: 45%;
+}
+
+.comment-text {
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.kirim {
+  float: right;
+  background: #fbb72b;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  width: 30%;
+  height: 25px;
+}
+
+.ulasan .profilepict {
+  height: 67px;
+  width: 67px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.ulasan .img {
+  float: left;
+}
+
+.ulasan .ket {
+  float: left;
+  margin-left: 10px;
+}
+
+.ulasan .ket p {
+  margin-top: 25px;
 }

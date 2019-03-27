@@ -131,11 +131,11 @@ body{
 }
 
 .f-19{
-	font-size: 19px !important;
+	font-size: 19px ;
 }
 
 .f-20{
-	font-size: 20px !important;
+	font-size: 20px;
 }
 
 .f-41{
@@ -584,6 +584,7 @@ p{
 	padding-top: 160px;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 30px;
 
 	.product-desc{
 		width: 69.6%;
@@ -942,7 +943,7 @@ p{
 		p{
 			color: #888888;
 			font-family: Segoe-UI;
-			font-size:13px;
+			font-size:14px;
 		}
 	}
 
@@ -953,7 +954,7 @@ p{
 		margin-left: 150px;
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -970,7 +971,7 @@ p{
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -984,7 +985,7 @@ p{
 
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1001,7 +1002,7 @@ p{
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 				}
 			}
 		}
@@ -1014,7 +1015,7 @@ p{
 	
 
 		span{
-			font-size:12px;
+			font-size:14px;
 			color: #888888;
 			font-family: Segoe-UI;
 			font-weight: bold;
@@ -1045,7 +1046,7 @@ p{
 					color: #888888;
 					text-decoration: none;
 					font-family: Segoe-UI;
-					font-size:11px;
+					font-size:14px;
 
 				}
 			}
@@ -1057,4 +1058,264 @@ p{
 footer{
 	width: 100%;
 	height: 30px;
+}
+
+
+@include breakpoint-down(md){
+	.pesan-box{
+		display: none;
+	}
+		.upper-nav{
+		display: none;
+
+	}	
+
+	#nav-icon1{
+		display: block;
+	}
+
+	#nav-line{
+		display: none;
+	}
+
+	.logo-wrapper{
+		margin-top: 13px;
+	}
+	
+		.none-res{
+		display: block !important;
+	}
+
+	.container{
+		max-width: 90%;
+		position: relative;
+	}
+
+	.upper-nav{
+		display: none;
+
+	}	
+
+	#nav-line{
+		display: none;
+	}
+
+	.lower-menu{
+		padding-top: 0;
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+		float: left;
+		transition: .5s;
+		position: absolute;
+		top: 62px;
+	
+
+		ul{
+
+			width: 100%;
+
+			li{
+				width: calc(100%);
+				height: 50px !important;
+				box-sizing: border-box;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				height: 40px;
+				position: relative;
+						
+				background: #fff;
+
+
+				
+
+
+				a{
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+
+	.lower-menu-active{
+		height: 310px;
+		display: block;
+		top: 62px;
+		position: absolute;
+		z-index: 50;
+		transition: .5s;
+		float: left;
+	}
+
+	header{
+		height: 70px;
+		padding-top: 0;
+		position: fixed;
+		z-index: 99;
+		background: #fff;
+		width: 100%;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+	}
+
+	#nav-icon1{
+		display: block;
+		float: right;
+	}
+
+	.none-1{
+		display: none;
+	}
+
+	.none-2{
+		display: block;
+	}
+	
+	.product-detail{
+		padding-top: 80px;
+
+		.product-desc{
+
+		}
+
+		.product-img{
+			width: 100%;
+			height: 200px;
+
+			img{
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+				height: 100%;	
+			}
+		}
+
+		.product-desc2{
+			padding-top: 10px;
+			width: 100%;
+
+			h3{
+				font-size: 20px !important;
+			}
+
+			p{
+				padding-top: 10px;
+			}
+
+			.price-wrapper{
+				margin-top: 15px;
+			}
+
+			.pesan{
+				margin-top: 15px;
+			}
+
+			.pesan2{
+				padding: 5px 50px 5px 50px ;
+			}
+		}
+	}
+
+	.left{
+		width: 100%;
+
+		.nav-line{
+			display: none;
+		}
+
+		.makanan{
+			overflow: unset;
+			width: 46% !important;
+			float: left;
+			margin-right:25px;
+
+			.card{
+				width: 100%;
+				height: 220px;
+				margin-bottom: 20px;
+
+				img{
+					object-fit: cover;
+				}
+			}
+			
+
+		}
+
+		.detail-product{
+			h4{
+
+				font-size: 16px;
+			}
+
+			p{
+				font-size: 15px;
+			}
+
+			a{
+				padding-left:20px;
+				padding-right:20px;
+				font-size: 14px;
+			}
+		}
+
+		.makanan-2, .makanan-4{
+			margin-right: 0 !important;	
+		}
+
+		.makanan:nth-child(even) .masakan{
+			width: 45% !important;
+			float: left;
+			margin-right: 0;
+
+
+			.card{
+				width: 100%;
+			}
+		}
+	}
+
+	.right{
+		width: 0;
+	}
+}
+
+@include breakpoint-down(lg){
+	.row-12{
+		overflow: hidden;
+
+		.col-1{
+			min-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+	}
 }

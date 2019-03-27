@@ -569,13 +569,14 @@ p{
 	display: flex;
 	position: relative;
 	width: 100%;
-	background: url(../images/content/bg_6.jpg);
-	color: #fff;
+	background: url(../images/content/bg_11.jpg);
+	color: #fbb72b;
 	display: block;
 	padding-top: 100px;
 	height: 470px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	object-fit: cover;
 }
 
 .banner:before{
@@ -1147,7 +1148,7 @@ border: 0 ;
 				color: #888888;
 				font-family: Segoe-UI;
 				border-radius: 30px;
-				padding: 1px 15px 1px 15px;
+				padding: 5px 20px 5px 20px;
 				font-size: 14px;
 
 				margin-left: 50%;
@@ -1371,8 +1372,8 @@ border: 0 ;
 
 .row-12{
 	width: 100%;
-	border-top: solid 0.5px #707070;
-	border-bottom: solid 0.5px #707070;
+	border-top: solid 0.5px #e6e6e6;
+	border-bottom: solid 0.5px #e6e6e6;
 	overflow: hidden;
 	box-sizing: border-box;
 	padding-top: 45px;

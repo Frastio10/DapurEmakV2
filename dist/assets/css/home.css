@@ -615,8 +615,8 @@ p {
   display: flex;
   position: relative;
   width: 100%;
-  background: url(../images/content/bg_6.jpg);
-  color: #fff;
+  background: url(../images/content/bg_8.jpg);
+  color: #fbb72b;
   display: block;
   padding-top: 100px;
   height: 470px;
@@ -646,7 +646,8 @@ p {
 }
 
 .banner-left h2 {
-  max-width: 60%;
+  font-size: 30px;
+  max-width: 75%;
 }
 
 .location {
@@ -665,6 +666,7 @@ p {
   border-radius: 8px;
   border: 1px #888888 solid;
   padding-left: 10px;
+  font-size: 14px;
 }
 
 #lokasi {
@@ -673,6 +675,7 @@ p {
   border-radius: 8px;
   border: 1px #888888 solid;
   padding-left: 10px;
+  font-size: 14px;
 }
 
 .cari-wrapper {

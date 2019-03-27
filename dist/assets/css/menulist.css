@@ -944,7 +944,7 @@ p {
 .row-10 .col-1 p {
   color: #888888;
   font-family: Segoe-UI;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .row-10 .col-2 {
@@ -955,7 +955,7 @@ p {
 }
 
 .row-10 .col-2 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -975,7 +975,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .row-10 .col-3 {
@@ -985,7 +985,7 @@ p {
 }
 
 .row-10 .col-3 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1005,7 +1005,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .row-10 .col-4 {
@@ -1015,7 +1015,7 @@ p {
 }
 
 .row-10 .col-4 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1047,7 +1047,7 @@ p {
   color: #888888;
   text-decoration: none;
   font-family: Segoe-UI;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 footer {
