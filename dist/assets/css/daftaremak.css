@@ -616,7 +616,8 @@ p {
   position: relative;
   width: 100%;
   background: url(../images/content/bg_4.jpg);
-  color: #fff;
+  color: #fbb72b;
+  font-family: Segoe-UI-Bold !important;
   display: block;
   padding-top: 50px;
   height: 500px;
