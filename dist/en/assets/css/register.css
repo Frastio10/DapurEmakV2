@@ -1,0 +1,422 @@
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+@font-face {
+  font-family: Segoe-UI;
+  src: url("../fonts/Segoe-UI.ttf");
+}
+
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url("../fonts/Segoe-UI-Bold.ttf");
+}
+
+.ff-segbold {
+  font-family: Segoe-UI-Bold;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.dec-none {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.ff-seg {
+  font-family: 'Segoe-UI';
+}
+
+.f-23 {
+  font-family: 23px;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.mr-auto {
+  margin: 0 auto;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.f-center {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.yellow {
+  color: #FBB72B;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.secondary {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-wrapper {
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.left .slide-1, .left .slide-2, .left .slide-3 {
+  position: relative;
+  width: 100%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.left .slide-1 .text, .left .slide-2 .text, .left .slide-3 .text {
+  max-width: 556px;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.left .slide-1 .text .quote, .left .slide-2 .text .quote, .left .slide-3 .text .quote {
+  margin-top: 60px;
+  width: 566px;
+  position: relative;
+}
+
+.left .slide-1 .text .quote p, .left .slide-2 .text .quote p, .left .slide-3 .text .quote p {
+  font-size: 25px;
+  text-align: center;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+.slide-2 .logo {
+  background: #fff;
+}
+
+.slide-2 .name {
+  color: #fff;
+}
+
+.slide-2 p {
+  color: #fff;
+}
+
+.slide-3 {
+  background: #FBB72B;
+  height: 100vh;
+}
+
+.slide-3 .logo {
+  background: #fff;
+}
+
+.slide-3 .name {
+  color: #fff;
+}
+
+.slide-3 p {
+  color: #fff;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #FBB72B;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 25px;
+  color: #FBB72B;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -ms-flexbox !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+  background: none;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.right .nama-depan {
+  width: calc(50% - 15px);
+  float: left;
+  margin-right: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.right .nama {
+  width: 100%;
+  height: 40px;
+  padding-left: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0.5px #999 solid;
+  margin-top: 5px;
+}
+
+.right .nama-belakang {
+  width: calc(50% - 15px);
+  float: left;
+  margin-left: 15px;
+}
+
+.right .nama-wrapper {
+  margin-top: 45px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.right .register {
+  width: 73.6%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.right .input-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.right .input {
+  width: 100%;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 12px;
+  border-radius: 5px;
+  border: 0.5px #999 solid;
+  margin-top: 5px;
+}
+
+.right #submit {
+  margin-top: 20px;
+  background: #FBB72B;
+  color: #fff;
+  border: none;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  list-style: none;
+  margin-top: 0;
+  position: absolute;
+  bottom: 10%;
+}
+
+.slick-dots li {
+  float: left;
+  margin-left: 5px;
+}
+
+.slick-dots li button {
+  background: #fff;
+  border: none;
+  font-size: 0;
+  width: 30px;
+  height: 2px;
+  opacity: 0.4;
+}
+
+.slick-dots .slick-active button {
+  opacity: 1;
+}
+
+.slick-list {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1220px) {
+  .left {
+    width: 50%;
+  }
+  .left .text {
+    max-width: 70% !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .left .text .quote {
+    max-width: 100%;
+  }
+  .left .text .quote p {
+    max-width: 100%;
+  }
+  .right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    width: 100%;
+  }
+  .left .text {
+    max-width: 70% !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .left .text .quote {
+    max-width: 100%;
+  }
+  .left .text .quote p {
+    max-width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 549px) {
+  .right .register {
+    margin-top: 25%;
+  }
+}

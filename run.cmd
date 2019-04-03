@@ -1,1 +1,1 @@
-npm run watch  & node server.js
+npm run watch

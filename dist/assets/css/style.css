@@ -144,7 +144,8 @@ body {
 }
 
 .container {
-  max-width: 86%;
+  width: 100%;
+  max-width: 1160px;
   margin: 0 auto;
   position: relative;
 }
@@ -762,7 +763,7 @@ p {
 .row-2 {
   padding-top: 50px;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   display: block;
   overflow: hidden;
 }
@@ -788,7 +789,7 @@ p {
   width: 100%;
   padding-top: 15px;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .row-3 .masaksekitar-wrapper .masakan-wrapper:first-child {
@@ -965,7 +966,7 @@ p {
 .row-4 {
   padding-top: 0px;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: block;
   overflow: hidden;
 }
@@ -984,7 +985,7 @@ p {
   width: 100%;
   padding-top: 0px;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .row-5 .video-1 {
@@ -1054,9 +1055,9 @@ p {
 }
 
 .row-6 {
-  padding-top: 10px;
+  padding-top: 0px;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   display: block;
   overflow: hidden;
 }
@@ -1073,7 +1074,7 @@ p {
 
 .row-7 {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   padding-top: 15px;
   overflow: hidden;
 }
@@ -1123,7 +1124,7 @@ p {
 .row-8 {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .row-8 h2 {
@@ -1135,7 +1136,7 @@ p {
   width: 100%;
   overflow: hidden;
   padding-top: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .row-9 .emak-card:nth-child(1) {
@@ -1243,49 +1244,49 @@ p {
 .row-11 .news .main-news .main-img {
   width: 100%;
   position: relative;
-  height: 337.4px;
+  overflow: hidden;
 }
 
-.row-11 .news .main-news .main-img img {
+.row-11 .news .main-news .main-img .main-img-content {
   width: 100%;
   height: 275px;
 }
 
-.row-11 .news .main-news .main-news-text {
-  display: none;
-}
-
-.row-11 .news .main-news .news-overlay {
+.row-11 .news .main-news .main-img .news-overlay {
   height: calc(70px - 25px);
   width: calc(100% - 20px);
   position: absolute;
-  bottom: 0;
+  bottom: 1%;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.6);
 }
 
-.row-11 .news .main-news .news-overlay h3 {
+.row-11 .news .main-news .main-img .news-overlay h3 {
   margin: 0;
   color: #fff;
   font-weight: 500;
   font-family: Segoe-UI-Bold;
 }
 
-.row-11 .news .main-news .news-overlay p {
+.row-11 .news .main-news .main-img .news-overlay p {
   float: left;
   color: #fff;
   font-family: Segoe-UI;
 }
 
-.row-11 .news .main-news .news-overlay img {
+.row-11 .news .main-news .main-img .news-overlay img {
   float: left;
   color: #fff;
   width: 12px;
   margin-top: 5px;
   margin-left: 15px;
   margin-right: 5px;
+}
+
+.row-11 .news .main-news .main-news-text {
+  display: none;
 }
 
 .row-11 .news .secondary-news {
@@ -1755,17 +1756,16 @@ footer {
   }
   .row-11 .news .main-news {
     width: 100%;
-    height: 337.4px;
   }
-  .row-11 .news .main-news .main-img img {
-    height: auto;
+  .row-11 .news .main-news .main-img {
+    position: relative;
   }
   .row-11 .news .main-news .main-news-text {
     display: block;
     width: 100%;
-    height: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 30px;
   }
   .row-11 .news .main-news .main-news-text p {
     font-size: 13px;
@@ -1782,7 +1782,7 @@ footer {
     height: 400px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 200px;
+    margin-top: 0px;
     margin-bottom: 0;
   }
   .row-11 .news .secondary-news .news-1 {
@@ -1952,7 +1952,10 @@ footer {
     height: 287px;
   }
   .row-9 .emak-card .emak-img {
-    height: auto;
+    height: 105px;
+  }
+  .row-9 .emak-card .emak-img img {
+    height: 100%;
   }
   .row-9 .emak-card .emak-detail a {
     position: relative;
@@ -1968,7 +1971,7 @@ footer {
     height: 215px;
   }
   .row-11 .news .main-news .news-overlay {
-    bottom: 120px;
+    bottom: 0px;
   }
 }
 
@@ -2031,6 +2034,23 @@ footer {
   .rating img {
     width: 15px;
   }
+  .emak-card {
+    height: 287px;
+  }
+  .emak-card .emak-img {
+    height: 105px;
+  }
+  .emak-card .emak-img img {
+    height: 100%;
+  }
+  .emak-card .emak-detail a {
+    float: unset !important;
+    position: relative;
+    text-align: center !important;
+    margin-left: 0;
+    bottom: 8px !important;
+    right: 0 !important;
+  }
   .row-11 .main-news .main-img {
     height: 160px !important;
   }
@@ -2039,7 +2059,7 @@ footer {
     position: relative;
     padding: 8px !important;
     height: 40px !important;
-    bottom: 173px !important;
+    bottom: 0;
   }
   .row-11 .main-news .news-overlay h3 {
     font-size: 15px;

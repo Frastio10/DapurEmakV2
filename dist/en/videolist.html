@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image" href="logo.png" sizes="16x16">
+	<link rel="stylesheet" href="assets/css/videolist.css">
+	<title>Video | Dapur Emak</title>
+</head>
+<body>
+		<header>
+			<div class="container">
+				<div class="lower-nav nav-none">
+					<a href="home.html" class="logo-top">
+						<div class="logo-wrapper">
+							<img src="logo.png" id="logo" alt="">
+						<h3 style="color:#FBB72B">DAPUR EMAK</h3>
+
+						</div>
+					</a>
+					<div id="nav-icon1">
+				  		<span></span>
+				  		<span></span>
+				 		<span></span>
+					</div>
+					<div class="lower-menu relative">
+						<ul class="f-14">
+							<li><a href="home.html">Beranda</a></li>
+							<li><a href="dapurlist.html">Masakan</a></li>
+							<li><a href="menulist.html">Menu</a></li>
+							<li><a href="emaklist.html">Cari Emak</a></li>
+							<li><a href="articlelist.html">Berita</a></li>
+							<li class="none none-res">
+								<div class="dropdown">
+								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
+								  <div class="dropdown-content">
+								    <a href="#"><img src="assets/images/icon/id.svg"> ID</a>
+								    <a href="#"><img src="assets/images/icon/en.svg"> EN</a>
+								  </div>
+								</div>
+							</li>
+							<li class="none none-res">
+								<a href="login.html">Masuk</a> / <a href="register.html">Register</a>
+							</li>
+							<li><a href="register.html" class="daftar">Daftar</a></li>
+						
+						</ul>			
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="row-10 overflow-hidden py-25">
+		<div class="container">
+			<div class="col-1">
+				<div class="wrapper">
+					<img src="logo.png"class="logo">
+					<h3>DAPUR EMAK</h3>
+				</div>
+				<p>Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit,sed do
+				euismod temporincididunt ut
+				labore et dolor magna aliqua</p>
+			</div>
+			<div class="col-2">
+				<span>Navigation</span>
+				<ul>
+					<li><a href="home.html">Beranda</a></li>
+							<li><a href="dapurlist.html">Masakan</a></li>
+							<li><a href="menulist.html">Menu</a></li>
+							<li><a href="emaklist.html">Cari Emak</a></li>
+							<li><a href="articlelist.html">Berita</a></li>
+				</ul>
+			</div>
+
+			<div class="col-3">
+				<span>Other</span>
+				<ul>
+					<li><a href="">Pekerjaan</a></li>
+					<li><a href="">Tim</a></li>
+					<li><a href="">Dapur Emak App</a></li>
+					<li><a href="">Berita</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-4">
+				<span>Contact Us</span>
+				<ul>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/map-pin(1).png" alt="">
+						</div>
+						<a href="">Ciambar , Pos 3345, Indonesia.</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/phone.png" alt="">
+						</div>
+						<a href="">+62 000-000-000</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/mail.png" alt="">
+						</div>
+						<a href="">info@dapuremak.com</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/globe.png" alt="">
+						</div>
+						<a href="">www.dapuremak.com</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>		
+	</div>
+
+	<footer></footer>
+</body>
+<script src="assets/js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		    $(this).toggleClass('open');
+		    $('.lower-menu').toggleClass('lower-menu-active');
+		  });
+		});		
+	</script>
+</html>

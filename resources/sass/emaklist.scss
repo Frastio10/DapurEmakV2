@@ -39,6 +39,46 @@
 	@include padding-y(100px);
 }
 
+.pb-20{
+	padding-bottom: 20px;	
+}
+
+.pb-15{
+	padding-bottom: 15px;	
+}
+
+.pb-10{
+	padding-bottom: 10px;	
+}
+
+.pt-20{
+	padding-top: 20px;	
+}
+
+.pt-15{
+	padding-top: 15px;	
+}
+
+.pt-10{
+	padding-top: 10px;	
+}
+
+.pt-25{
+	padding-top: 25px;	
+}
+
+.pt-30{
+	padding-top: 30px;	
+}
+
+.pt-35{
+	padding-top: 35px;	
+}
+
+.pt-40{
+	padding-top: 40px;	
+}
+
 .pt-100{
 	padding-top: 100px;
 }
@@ -673,7 +713,7 @@ p{
 	width: 100%;
 	height: 1px;
 	display: block;
-	margin-top: 25px;
+	margin-top: 10px;
 		background:#e6e6e6;
 }
 
@@ -837,7 +877,7 @@ border: 0 ;
     }
 
     p {
-      padding: 0 1rem;
+      padding: 0;
       font-size: 16px;
       font-weight: 300;
     }
@@ -876,8 +916,8 @@ border: 0 ;
 
 .row-10{
 	width: 100%;
-	border-top: solid 0.5px #707070;
-	border-bottom: solid 0.5px #707070;
+	border-top: solid 0.5px #e6e6e6;
+	border-bottom: solid 0.5px #e6e6e6;
 	overflow: hidden;
 	box-sizing: border-box;
 	padding-top: 45px;
@@ -1310,7 +1350,7 @@ footer{
 		
 
 		.col-1{
-			max-width: 100%;
+			min-width: 100%;
 		}
 
 		.col-2{
@@ -1411,7 +1451,7 @@ footer{
 	
 
 		.col-1{
-			max-width: 100%;
+			min-width: 100%;
 		}
 
 		.col-2{
