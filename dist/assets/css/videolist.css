@@ -711,6 +711,8 @@ p {
 
 .like, .comment, .share {
   cursor: pointer;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
 }
 
 .left {
@@ -722,6 +724,8 @@ p {
 
 .left .liked {
   fill: #3ea6ff;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
 }
 
 .left .f-blue {

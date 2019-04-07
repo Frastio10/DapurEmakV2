@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 
 
+
 $(window).bind("load", function() {
   var width = $(window).width();
   if (width >= 980) {
@@ -40,6 +41,12 @@ $(window).bind("load", function() {
 
    }
 });
+
+$('.popup-trigger').click(function(e){
+  $('.popup-area').addClass('activex');
+  var data = $(this).data('url');
+  $('.vids-1').attr('src',data);
+})
 
 $('#vid-1').click(function(e){
   $('.popup-area').addClass('activex');

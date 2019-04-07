@@ -19,8 +19,20 @@
 	overflow: hidden;
 }
 
+.overflow-y-hidden{
+	overflow-y: hidden;
+}
+
 .py-25{
 	@include padding-y(25px);
+}
+
+.py-30{
+	@include padding-y(30px);
+}
+
+.py-35{
+	@include padding-y(35px);
 }
 
 .pb-25{

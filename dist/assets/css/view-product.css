@@ -831,7 +831,7 @@ p {
 }
 
 .pesan-box-active {
-  height: 500px !important;
+  height: 520px !important;
   -webkit-transition: .5s;
   transition: .5s;
   opacity: 1 !important;
@@ -975,6 +975,17 @@ p {
   margin: 0px;
   height: 40px;
   border-radius: 5px;
+}
+
+#pesan-button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  background: #fbb72b;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
 .row-12 {

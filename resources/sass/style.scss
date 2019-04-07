@@ -25,6 +25,11 @@
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.05);
 }
 
+.container-x{
+	max-width: 90%;
+	margin: 0 auto;
+}
+
 .f-yellow{
 	color: #FBB72B !important;
 }
@@ -288,6 +293,7 @@ header{
 	position: relative;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform:translate3d(0,0,0);
+	
 }
 
 // #nav-line::before{
@@ -414,7 +420,7 @@ p{
 	font-family: OpenSans-Regular;
 }
 
-.dropdown {
+.dropdown, .dropdown2 {
   position: relative;
   display: inline-block;
 }
