@@ -150,3 +150,8 @@ DropDown0.prototype = {
                 $('.wrapper-dropdown-0').removeClass('active');
             });
         });
+
+
+$('popup-trigger').click(function(){
+    
+});

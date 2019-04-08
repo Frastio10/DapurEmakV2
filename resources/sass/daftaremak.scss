@@ -86,6 +86,10 @@ body{
 	-webkit-transform:translate3d(0,0,0);
 }
 
+.f-yellow{
+	color: #fbb72b !important;
+}
+
 .f-48{
 	font-size: 48px !important;
 }
@@ -263,6 +267,14 @@ header{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s;
+
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
+
+
 }
 
 

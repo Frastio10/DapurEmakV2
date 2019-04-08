@@ -90,7 +90,7 @@ body{
 }
 
 .f-yellow{
-	color: #fbb72b;
+	color: #fbb72b !important;
 }
 
 .dec-none{
@@ -99,6 +99,10 @@ body{
 
 .bg-grey{
 	background: #888888;
+}
+
+.f-default{
+	color: #000;
 }
 
 .f-grey{
@@ -317,6 +321,12 @@ header{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s;
+
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
 }
 
 
@@ -700,8 +710,8 @@ p{
 }
 
 .col-left{
-	width: calc(50% - 20px);
-	margin-right: 40px;
+	width: calc(25% - 20px);
+	margin-right: 25px;
 	float: left;
 }
 
@@ -710,7 +720,7 @@ p{
 }
 
 .col-right{
-	width: calc(50% - 20px);
+	width: calc(25% - 20px);
 
 	float: right;
 }

@@ -98,6 +98,7 @@
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
+  vertical-align: center;
 }
 
 .m-center {
@@ -112,6 +113,10 @@
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+.round {
+  border-radius: 100%;
 }
 
 .bg-none {
@@ -157,6 +162,13 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.p-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .py-25 {
@@ -332,6 +344,10 @@ body {
   position: relative;
 }
 
+.block {
+  display: block;
+}
+
 .container-x {
   max-width: 90%;
   margin: 0 auto;
@@ -447,6 +463,13 @@ body {
 
 .mt-2 {
   margin-top: 15px;
+}
+
+.popup-list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  display: list-item;
 }
 
 header {
@@ -611,6 +634,23 @@ p {
   color: #000;
 }
 
+.radio-button {
+  display: block;
+  float: left;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  background: #EBEBEB;
+}
+
+#carimasakan:checked #carimasakan-trigger {
+  background: #fbb72b !important;
+}
+
+#cariemak:checked #cariemak-trigger {
+  background: #fbb72b !important;
+}
+
 .daftar {
   border: 1px solid #000;
   padding: 5px 30px 8px 30px;
@@ -768,6 +808,18 @@ p {
 
 #nav-icon1 span:nth-child(2) {
   top: 10px;
+}
+
+.popup-area-search {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.popup-area-search .popup-wrapper-search {
+  background: #9ff;
+  width: 60%;
+  height: 100px;
 }
 
 #nav-icon1 span:nth-child(3) {

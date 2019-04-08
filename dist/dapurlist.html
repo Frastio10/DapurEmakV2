@@ -9,10 +9,39 @@
 	<title>Masakan | Dapur Emak</title>
 </head>
 <body>
+	<div class="popup-area-search flex f-center">
+		<div class="popup-wrapper-search">
+			<form action="">
+				<div class="search-box w-100">
+					<input type="text" class="w-100 b-box">
+				</div>
+				<div class="filter">
+					<p class="ff-segbold">Filter</p>
+
+					<ul class="l-none popup-list">
+						<li class="fleft">
+							<label for="cariemak">
+								<span id="cariemak-trigger" class="radio-button"></span>
+								<span class="radio-text ff-seg f-16">Cari Emak</span>
+								<input type="radio" class="non" id="cariemak" name="filter">
+							</label>
+						</li>
+						<li>
+							<label for="carimasakan">
+								<span id="carimasakan-trigger" class="radio-button "></span>
+								<span class="radio-text ff-seg f-16">Cari Masakan</span>
+								<input type="radio" class="noe" id="carimasakan" name="filter">
+							</label>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="lower-nav nav-none">
-				<a href="home.html" class="logo-top">
+				<a href="index.html" class="logo-top">
 					<div class="logo-wrapper">
 						<img src="logo.png" id="logo" alt="">
 						<h3 style="color:#FBB72B">DAPUR EMAK</h3>
@@ -26,11 +55,11 @@
 					</div>
 					<div class="lower-menu relative">
 						<ul class="f-14">
-							<li><a href="home.html">Beranda</a></li>
+							<li><a href="index.html">Beranda</a></li>
 							<li><a href="dapurlist.html" class="f-yellow">Masakan</a></li>
-							<li><a href="menulist.html">Menu</a></li>
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
+							<li><img src="assets/images/icon/search.png" alt="" class="popup-trigger"></li>
 							<li class="none none-res">
 								<div class="dropdown">
 								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
@@ -1546,13 +1575,13 @@
 				<div class="row w-100 overflow-hidden">
 					<div class="page-nav m-center textcenter flex f-center">
 						<ul class="l-none f-seg ">
-							<li class="fleft"><a href="?page=0" class="dec-none"><img src="assets/images/icon/left-arr.png" alt=""></a></li>
-							<li class="fleft"><a href="?page=1" class="dec-none f-grey">1</a></li>
+							<li class="fleft"><a href="#page=0" class="dec-none"><img src="assets/images/icon/left-arr.png" alt=""></a></li>
+							<li class="fleft"><a href="#page=1" class="dec-none f-grey">1</a></li>
 							<li class="fleft"><span class="page-limit"></span></li>
-							<li class="fleft"><a href="?page=2" class="dec-none">2</a></li>
+							<li class="fleft"><a href="#page=2" class="dec-none">2</a></li>
 							<li class="fleft"><span class="page-limit"></span></li>
-							<li class="fleft"><a href="?page=3" class="dec-none">3</a></li>
-							<li class="fleft"><a href="?page=10" class="dec-none"><img src="assets/images/icon/right-arr.png" alt=""></a></li>
+							<li class="fleft"><a href="#page=3" class="dec-none">3</a></li>
+							<li class="fleft"><a href="#page=10" class="dec-none"><img src="assets/images/icon/right-arr.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
@@ -1575,7 +1604,7 @@
 			<div class="col-2">
 				<span>Navigation</span>
 				<ul>
-					<li><a href="home.html">Beranda</a></li>
+					<li><a href="index.html">Beranda</a></li>
 							<li><a href="dapurlist.html">Masakan</a></li>
 							<li><a href="menulist.html">Menu</a></li>
 							<li><a href="emaklist.html">Cari Emak</a></li>

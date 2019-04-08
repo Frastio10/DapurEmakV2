@@ -235,8 +235,22 @@ header{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s;
+
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
 }
 
+.search, .search-s{
+	transition: .3s;
+	cursor: pointer;
+}
+
+.search-s:hover .search{
+	fill:#E1A01B;
+}
 
 .upper-nav{
 	width: 100%;
@@ -395,6 +409,12 @@ p{
 #nav-kanan li a{
 	text-decoration: none;
 	color: #000;
+	transition: .3s;
+
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
 }
 
 .daftar{
@@ -510,6 +530,12 @@ p{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s;
+
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
 }
 
 
@@ -678,6 +704,11 @@ p{
 	width: 180px;
 	color: #fff;
 	cursor: pointer;
+	transition: .3s;
+
+	&:hover{
+		background: #F1AA19;
+	}
 }
 
 .card {

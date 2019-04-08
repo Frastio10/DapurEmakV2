@@ -298,6 +298,23 @@ header {
   text-decoration: none;
   color: #000;
   font-family: OpenSans-Regular;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.lower-menu ul li a:hover {
+  color: #fbb72b !important;
+  border-color: #fbb72b !important;
+}
+
+.search, .search-s {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.search-s:hover .search {
+  fill: #E1A01B;
 }
 
 .upper-nav {
@@ -432,6 +449,13 @@ p {
 #nav-kanan li a {
   text-decoration: none;
   color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#nav-kanan li a:hover {
+  color: #fbb72b !important;
+  border-color: #fbb72b !important;
 }
 
 .daftar {
@@ -554,6 +578,13 @@ p {
   text-decoration: none;
   color: #000;
   font-family: OpenSans-Regular;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.lower-menu ul li a:hover {
+  color: #fbb72b !important;
+  border-color: #fbb72b !important;
 }
 
 #nav-icon1 {
@@ -722,6 +753,12 @@ p {
   width: 180px;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#submit:hover {
+  background: #F1AA19;
 }
 
 .card {
