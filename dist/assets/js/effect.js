@@ -152,6 +152,10 @@ DropDown0.prototype = {
         });
 
 
-$('popup-trigger').click(function(){
-    
+$('.popup-trigger').click(function(){
+    $('.popup-area-search').toggleClass('popup-active');
+});
+
+$('.close-popup').click(function(){
+    $('.popup-area-search').removeClass('popup-active');
 });

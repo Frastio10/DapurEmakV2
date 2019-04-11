@@ -427,6 +427,13 @@ header {
   text-decoration: none;
   color: #000;
   font-family: OpenSans-Regular;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.lower-menu ul li a:hover {
+  color: #fbb72b !important;
+  border-color: #fbb72b !important;
 }
 
 .upper-nav {

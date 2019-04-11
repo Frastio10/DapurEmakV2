@@ -20,6 +20,11 @@
 	src:url("../fonts/Segoe-UI-Bold.ttf");
 }
 
+.f-yellow{
+	color: #fbb72b !important;
+}
+
+
 
 .ff-segbold{
 	font-family: Segoe-UI-Bold;
@@ -344,6 +349,12 @@ header{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s ease;
+
+	&:hover{
+		color: #fbb72b	!important;
+		border-color: #fbb72b !important;
+	}
 }
 
 

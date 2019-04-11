@@ -350,6 +350,13 @@ header{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s ease;
+
+	&:hover{
+		color: #fbb72b !important;
+		border-color: #fbb72b !important;
+	}
+
 }
 
 

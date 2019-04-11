@@ -5,7 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image" href="logo.png" sizes="16x16">
+	<script src="assets/js/jquery.js"></script>
 	<link rel="stylesheet" href="assets/css/view-product.css">
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+	<script src="assets/js/jquery-ui.min.js"></script>
 	<title>Product | Dapur Emak</title>
 
 </head>
@@ -26,9 +29,9 @@
 			 	</div>
 				<div class="lower-menu relative">
 					<ul class="f-14">
-						<li><a href="home.html">Beranda</a></li>
-						<li><a href="dapurlist.html">Masakan</a></li>
-						<li><a href="menulist.html">Menu</a></li>
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="dapurlist.html"class="f-yellow">Masakan</a></li>
+						<!-- <li><a href="menulist.html">Menu</a></li> -->
 						<li><a href="emaklist.html">Cari Emak</a></li>
 						<li><a href="articlelist.html">Berita</a></li>
 						<li class="none none-res">
@@ -184,7 +187,7 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 							<div class="tanggal2 relative">
 								<p class="ff-osregular f-15 mb-10">Tanggal Pemesanan</p>
 								<div class="date-wrapper">
-							  		<input type="date" id="tanggal" value="0" placeholder="1 Porsi" />
+							  		<input type="text" id="tanggal"/>
 							  		<label for="tanggal" class="absolute" id="calendar">
 							  			<img src="assets/images/icon/calendar.png" alt="">
 							  		</label>
@@ -195,7 +198,7 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 							  	<p class="ff-osregular f-15 mb-10">Durasi</p>	
 							  	<input type="text" id="durasi" placeholder="7 Hari">
 							 </div>	
-							 <span class="ff-osregular f-13 f-grey mt-5">Sampaj Jumat, 22 maret 2019</span>				
+							 <span class="ff-osregular f-13 f-grey mt-5">Sampai Jumat, 22 maret 2019</span>				
 							 <span class="nav-line"></span>
 						</div>
 
@@ -296,7 +299,6 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 	</footer>
 	
 </body>
-<script src="assets/js/jquery.js"></script>
 <script src="assets/js/view-product.js"></script>
 <script>
 		$(document).ready(function(){
@@ -305,5 +307,9 @@ kemudian di lilitkan pada bamboo , sangat sedap dan menggigit lidah jika dimakan
 		    $('.lower-menu').toggleClass('lower-menu-active');
 		  });
 		});
+
+  		$( function() {
+   			$( "#tanggal" ).datepicker();
+ 		} );
 	</script>
 </html>

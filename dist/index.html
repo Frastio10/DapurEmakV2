@@ -12,15 +12,46 @@
 	<title>Beranda | Dapur Emak</title>
 </head>
 <body>
-	<div class="popup-area">
-			<div class="popup-wrapper">
-				<div class="popup-vid">
-					<div class="close-vid">
-						<img src="assets/images/icon/close.png" alt="">
-					</div>
-				</div>
-			</div>
+	<div class="popup-area-search flex f-center fixed ">
+		<div class="close-popup round">
+			<img src="assets/images/icon/close-white.png" alt="">
 		</div>
+		<div class="popup-wrapper-search fleft">
+			
+			<form action="">
+				<div class="search-box w-100 relative">
+					<input type="text" class="w-100 b-box f-18 " placeholder="Cari masakan atau emak disini">
+					<button type="submit" class="search-button right">
+						<img src="assets/images/icon/search.png" alt="" class=" search-submit">
+					</button>
+				</div>
+				<div class="filter">
+					<p class="ff-seg">Filter</p>
+					<ul class="l-none filter-list">
+						<li>
+							<div class="fleft carisemua filter-search">
+							  <input type="radio" id="radio01" name="radio" />
+							  <label for="radio01"><span></span>Semua</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft cariemak filter-search">
+							 <input type="radio" id="radio02" name="radio" />
+							 <label for="radio02"><span></span>Cari Emak</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft carimasakan filter-search">
+							 <input type="radio" id="radio03" name="radio" />
+							 <label for="radio03"><span></span>Cari Masakan</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+			
+		</div>
+	</div>
 	<header>
 		<div class="header-wrapper">
 			<div class="container">
@@ -46,11 +77,11 @@
 						</a>
 						<div class="lower-menu">
 							<ul class="f-14">
-								<li><a href="index.html">Beranda</a></li>
+								<li><a href="index.html" class="f-yellow">Beranda</a></li>
 								<li><a href="dapurlist.html">Masakan</a></li>
 								<li><a href="emaklist.html">Cari Emak</a></li>
 								<li><a href="articlelist.html">Berita</a></li>
-								<li class="search-s">
+								<li class="search-s popup-trigger">
 									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
   										<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
 									</svg>
@@ -93,7 +124,7 @@
 							<li><a href="dapurlist.html">Masakan</a></li>
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
-							<li class="search-s">
+							<li class="search-s popup-trigger">
 								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
  									<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
 								</svg>
@@ -143,7 +174,7 @@
 			<h2 class="ff-segbold">Masakan Sekitar Kamu</h2>
 			<p class="ff-seg f-15 desc">Semua masakan yang kami buat sesuai yang anda inginkan</p>
 			<div class="slngkp-wrp">
-				<a href="masakan.html" class="ff-segbold f-18 slngkp down none-3">Selengkapnya</a>
+				<a href="dapurlist.html" class="ff-segbold f-18 slngkp down none-3">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -155,7 +186,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc36.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc36.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan radius-5">
 							<img src="logo.png" class="logo-masakan">
@@ -173,7 +204,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc41.png" class="lazy image-food" >
+							<img data-src="assets/images/content/pc41.png" class="lazy image-food" >
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -191,7 +222,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc14.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc14.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -209,7 +240,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc12.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc12.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -227,7 +258,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc9.png" class="lazy image-food radius-8">
+							<img data-src="assets/images/content/pc9.png" class="lazy image-food radius-8">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -296,7 +327,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc36.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc36.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -321,7 +352,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc41.png" class="lazy image-food" >
+							<img data-src="assets/images/content/pc41.png" class="lazy image-food" >
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -346,7 +377,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc14.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc14.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -371,7 +402,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc12.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc12.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -396,7 +427,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc9.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc9.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -577,7 +608,7 @@
 				<ul>
 					<li><a href="index.html">Beranda</a></li>
 							<li><a href="dapurlist.html">Masakan</a></li>
-							<li><a href="menulist.html">Menu</a></li>
+							<!-- <li><a href="menulist.html">Menu</a></li> -->
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
 				</ul>
@@ -626,16 +657,15 @@
 		</div>		
 	</div>
 
-	<footer>
-	</footer>
-
 </body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/effect.js"></script>
 <script src="assets/js/jquery.lazy.min.js"></script>
 <script>
 	 $(function() {
         $('.lazy').Lazy();
+        placeholder : "data:image/assets/images/page/loader.svg"
     });
 </script>
 </html>

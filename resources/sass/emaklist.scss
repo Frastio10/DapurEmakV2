@@ -254,6 +254,10 @@ body{
 	position: relative;
 }
 
+.none{
+	display: none;
+}
+
 .absolute{
 	position: absolute;
 }
@@ -386,14 +390,7 @@ body{
 	margin-top: 15px;
 }
 
-.popup-list{
 
-	li{
-		@include padding-y(10px);
-		padding-right: 20px;
-		display: list-item;
-	}
-}
 
 header{
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
@@ -577,22 +574,7 @@ p{
 	color: #000;
 }
 
-.radio-button{
-	display: block;
-	float: left;
-	border-radius: 100%;
-	height: 20px;
-	width: 20px;
-	background: #EBEBEB;
-}
 
-#carimasakan:checked #carimasakan-trigger{
-	background: #fbb72b !important;
-}
-
-#cariemak:checked #cariemak-trigger{
-	background: #fbb72b !important;
-}
 
 .daftar{
 	border: 1px solid #000;
@@ -744,19 +726,133 @@ p{
   top: 10px;
 }
 
+//search popup
+.filter{
+	
+	.filter-list{
+		margin-top: 10px;
+	}
+	
+	.filter-search{
+		margin-right: 20px;
+	}
+		
+	input[type="radio"] {
+	    display:none;
+	}
+	input[type="radio"] + label {
+	    color: #000;
+	    font-family:Arial, sans-serif;
+	    font-size:14px;
+	    cursor: pointer;
+	}
+	input[type="radio"] + label span {
+	    display:inline-block;
+	    width:19px;
+	    height:19px;
+	    margin:-1px 4px 0 0;
+	    vertical-align:middle;
+	    cursor:pointer;
+	    border-radius:  50%;
+	}
+
+	input[type="radio"] + label span {
+	     background-color:#ebebeb;
+	}
+
+	input[type="radio"]:checked + label span{
+	     background-color:#fbb72b;
+	}
+
+	input[type="radio"] + label span,
+	input[type="radio"]:checked + label span {
+	  transition:background-color 0.3s linear;
+	}
+
+	input[type="radio"] + label span,
+	input[type="radio"]:checked + label span {
+	  transition:background-color 0.3s linear;
+	}
+}
+.popup-list{
+
+	li{
+		@include padding-y(10px);
+		padding-right: 20px;
+		display: list-item;
+	}
+}
+
+.popup-trigger{
+	cursor: pointer;
+}
+
+.popup-active{
+	opacity: 1 !important;
+	z-index: 99999999999999999999999999 !important;
+	transition: .3s ease !important;
+}
+
 .popup-area-search{
 	width: 100%;
 	height: 100vh;
 	background: #fff;
+	z-index: -9999999;
+	transition: .3s ease;
+	opacity: 0;
+
+	.close-popup{
+		cursor: pointer;
+		top: 10%;
+		right: 10%;
+		position: absolute;
+		background: #fbb72b;
+		padding: 10px;
+		height: 10px;
+			width: 10px;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		vertical-align: middle;
+		
+		img{
+			width: 100%;	
+		}
+	}
 
 	.popup-wrapper-search{
-		background: #9ff;
+		
 		width: 60%;
 		height: 100px;
+		
+		.search-box{
+			margin-bottom: 20px;
+			position: relative;
+			overflow: hidden;
+			
+			.search-button{
+				background: none;
+				position: absolute;
+				right: 0;
+				border: none;
+				outline: none;
+				cursor: pointer;
 
+			}
+
+			input{
+				outline: none;
+				border: none;
+				float: left;
+				height: 35px;
+				border-bottom: 1px solid #fbb72b;
+				
+			}	
+		}
 		
 	}
 }
+//end search popup
 
 #nav-icon1 span:nth-child(3) {
   top: 20px;
@@ -855,6 +951,8 @@ p{
 		font-size: 14px;
 	}
 }
+
+
 
 .tab-content{
 	display: none;
@@ -1889,4 +1987,14 @@ footer{
 			}
 		}
 	}
+}
+
+//lazy
+img.lazy{
+	width: 100%;
+	height: 100%;
+	display: block;
+    background-image: url('../images/page/loader.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 30% !important;
 }
