@@ -12,7 +12,45 @@
 	<title>Daftar Emak | Dapur Emak</title>
 </head>
 <body>
-
+	<div class="popup-area-search flex f-center fixed ">
+		<div class="close-popup round">
+			<img src="assets/images/icon/close-white.png" alt="">
+		</div>
+		<div class="popup-wrapper-search fleft">
+			
+			<form action="">
+				<div class="search-box w-100 relative">
+					<input type="text" class="w-100 b-box f-18 " placeholder="Cari masakan atau emak disini">
+					<button type="submit" class="search-button right">
+						<img src="assets/images/icon/search.png" alt="" class=" search-submit">
+					</button>
+				</div>
+				<div class="filter">
+					<p class="ff-seg">Filter</p>
+					<ul class="l-none filter-list">
+						<li>
+							<div class="fleft carisemua filter-search">
+							  <input type="radio" id="radio01" name="radio" checked="true" />
+							  <label for="radio01"><span></span>Semua</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft cariemak filter-search">
+							 <input type="radio" id="radio02" name="radio" />
+							 <label for="radio02"><span></span>Cari Emak</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft carimasakan filter-search">
+							 <input type="radio" id="radio03" name="radio" />
+							 <label for="radio03"><span></span>Cari Masakan</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<header>
 		<div class="header-wrapper">
@@ -38,6 +76,11 @@
 							<!-- <li><a href="menulist.html">Menu</a></li> -->
 							<li><a href="emaklist.html" class="f-yellow">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
+							<li class="search-s popup-trigger">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  									<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
+								</svg>
+							</li>
 							<li class="none none-res">
 								<div class="dropdown">
 								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
@@ -405,7 +448,7 @@
 	
 </body>
 <script src="assets/js/jquery.js"></script>
-
+<script src="assets/js/effect.js"></script>
 	<script>
 		$(document).ready(function(){
 		  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){

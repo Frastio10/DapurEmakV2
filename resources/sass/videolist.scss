@@ -293,7 +293,8 @@ body{
 }
 
 header{
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
 	background: #fff;
 	height: 60px;
@@ -920,7 +921,7 @@ p{
 
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4 - 40px);
+		width: calc(100% / 4 - 50px);
 
 
 		span{
@@ -950,7 +951,7 @@ p{
 	.col-4{
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4 - 100px);
+		width: calc(100% / 4 - 80px);
 	
 
 		span{

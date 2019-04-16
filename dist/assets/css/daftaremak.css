@@ -273,9 +273,185 @@ body {
   overflow: hidden;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.f-center {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.l-none {
+  list-style: none;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.fleft {
+  float: left;
+}
+
+.filter .filter-list {
+  margin-top: 10px;
+}
+
+.filter .filter-search {
+  margin-right: 20px;
+}
+
+.filter input[type="radio"] {
+  display: none;
+}
+
+.filter input[type="radio"] + label {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.filter input[type="radio"] + label span {
+  background-color: #ebebeb;
+}
+
+.filter input[type="radio"]:checked + label span {
+  background-color: #fbb72b;
+}
+
+.filter input[type="radio"] + label span,
+.filter input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.filter input[type="radio"] + label span,
+.filter input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.popup-list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  display: list-item;
+}
+
+.popup-trigger {
+  cursor: pointer;
+}
+
+.popup-active {
+  opacity: 1 !important;
+  z-index: 99999999999999999999999999 !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+
+.popup-area-search {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: -9999999;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0;
+}
+
+.popup-area-search .close-popup {
+  cursor: pointer;
+  top: 10%;
+  right: 10%;
+  position: absolute;
+  background: #fbb72b;
+  padding: 10px;
+  height: 10px;
+  width: 10px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.popup-area-search .close-popup img {
+  width: 100%;
+}
+
+.popup-area-search .popup-wrapper-search {
+  width: 60%;
+  height: 100px;
+}
+
+.popup-area-search .popup-wrapper-search .search-box {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.popup-area-search .popup-wrapper-search .search-box .search-button {
+  background: none;
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup-area-search .popup-wrapper-search .search-box input {
+  outline: none;
+  border: none;
+  float: left;
+  height: 35px;
+  border-bottom: 1px solid #fbb72b;
+}
+
+.search-s {
+  cursor: pointer;
+}
+
+.search-s .search {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.search-s:hover .search {
+  fill: #E1A01B;
+}
+
 header {
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 10px;
@@ -770,6 +946,8 @@ p {
 .emak-card .emak-img {
   width: 100%;
   height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .emak-card .emak-img img {
@@ -815,6 +993,13 @@ p {
   padding: 5px 20px 5px 20px;
   font-size: 14px;
   margin-left: 50%;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.emak-card .emak-detail a:hover {
+  background: #fbb72b;
+  color: #fff;
 }
 
 .row-10 {
@@ -856,7 +1041,7 @@ p {
 .row-10 .col-1 p {
   color: #888888;
   font-family: Segoe-UI;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .row-10 .col-2 {
@@ -867,7 +1052,7 @@ p {
 }
 
 .row-10 .col-2 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -893,11 +1078,11 @@ p {
 .row-10 .col-3 {
   float: left;
   padding-top: 5px;
-  width: calc(100% / 4 - 40px);
+  width: calc(100% / 4 - 50px);
 }
 
 .row-10 .col-3 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -923,11 +1108,11 @@ p {
 .row-10 .col-4 {
   float: left;
   padding-top: 5px;
-  width: calc(100% / 4 - 100px);
+  width: calc(100% / 4 - 80px);
 }
 
 .row-10 .col-4 span {
-  font-size: 12px;
+  font-size: 14px;
   color: #888888;
   font-family: Segoe-UI;
   font-weight: bold;
@@ -1245,12 +1430,17 @@ footer {
   .emak-card .emak-img {
     height: auto;
   }
+  .emak-card .emak-detail {
+    padding-right: 20px !important;
+  }
   .emak-card .emak-detail a {
+    margin-top: 15px;
     position: relative;
     float: right;
     margin-left: 0;
     bottom: 15px;
     right: 8px;
+    padding: 5px 26px 5px 26px;
   }
   .ket {
     margin-bottom: 25px !important;

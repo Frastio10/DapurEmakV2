@@ -4,17 +4,22 @@
 
         var tab_id = $(this).attr('data-tab');
 
-        $('.tab-changer').removeClass('current');
+        $('.tab-content').removeClass('current');
         $('.tab-changer').removeClass('f-yellow');
         $('.tab-changer').addClass('f-grey');
-        $('.tab-content').removeClass('current');
+        $('.tab-changer').removeClass('svg-effect');
+        $('.tab-changer').removeClass('tab-changer-active');
+
 
         $(this).addClass('current');
         $(this).removeClass('f-grey');
         $(this).addClass('f-yellow');
+        $(this).addClass('svg-effect');
+        $(this).addClass('tab-changer-active');
+
 
         $("#"+tab_id).addClass('current');
       })
 
-    })
+    });
 
