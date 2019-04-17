@@ -79,6 +79,10 @@
   src: url(../fonts/Segoe-UI.ttf);
 }
 
+.dec-none {
+  text-decoration: none;
+}
+
 .bshad-thin {
   -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
@@ -241,8 +245,8 @@ body {
 }
 
 .py-25 {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pt-50 {
@@ -1150,6 +1154,42 @@ p {
 footer {
   width: 100%;
   height: 30px;
+}
+
+.page-nav {
+  margin-top: 30px;
+}
+
+.page-nav ul {
+  display: inline;
+}
+
+.page-nav ul li {
+  display: inline;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.page-nav ul li:first-child {
+  margin-right: 30px;
+}
+
+.page-nav ul li:last-child {
+  margin-left: 30px;
+}
+
+.page-nav ul li a {
+  font-family: segoe ui;
+  color: #999999;
+}
+
+.page-nav .page-limit {
+  background: #999999;
+  -webkit-transform: rotate(12deg);
+  transform: rotate(12deg);
+  height: 18px;
+  width: 1px;
+  display: block;
 }
 
 @media screen and (max-width: 980px) {

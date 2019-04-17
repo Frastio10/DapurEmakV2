@@ -640,6 +640,7 @@ p {
 }
 
 .dropbtn {
+  outline: none;
   background: none;
   color: #000;
   padding: 0px;
@@ -827,7 +828,7 @@ p {
   display: flex;
   position: relative;
   width: 100%;
-  background: url(../images/content/bg_11.jpg);
+  background: url(../images/page/banner-3.jpg);
   color: #fbb72b;
   display: block;
   padding-top: 100px;
@@ -874,6 +875,7 @@ p {
 }
 
 #cari {
+  outline: none;
   width: calc(100% - 10px);
   height: 35px;
   border-radius: 8px;
@@ -883,6 +885,7 @@ p {
 }
 
 #lokasi {
+  outline: none;
   width: calc(100% - 10px);
   height: 100%;
   border-radius: 8px;
@@ -922,6 +925,7 @@ p {
 }
 
 #submit {
+  outline: none;
   float: right;
   background: #FBB72B;
   border: none;
@@ -1001,12 +1005,13 @@ p {
   float: right;
   color: #FBB72B;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: segoe-ui !important;
 }
 
 .row-3 {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 30px;
   overflow: hidden;
   padding-bottom: 50px;
 }
@@ -1042,7 +1047,20 @@ p {
   height: 100%;
   width: calc(100%);
   z-index: 0;
+  position: relative;
   overflow: hidden;
+}
+
+.masakan-img:after {
+  position: absolute;
+  content: 'image by: https://pinterest.com';
+  z-index: 9999999999999999999;
+  color: #fff;
+  bottom: 55px;
+  left: 10px;
+  display: block;
+  font-family: segoe-ui;
+  font-size: 12px;
 }
 
 .masakan-img img {
@@ -1202,12 +1220,23 @@ p {
 
 .row-5 {
   width: 100%;
-  padding-top: 0px;
+  padding-top: 20px;
   overflow: hidden;
   padding-bottom: 50px;
 }
 
 .row-5 .video-1 {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  vertical-align: middle;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
   width: calc(50% - 15px);
   float: left;
   margin-right: 15px;
@@ -1221,13 +1250,8 @@ p {
 
 .row-5 .video-1 .video-click {
   position: absolute;
-  float: left;
   width: 50px;
   height: 50px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .row-5 .video-1 .video-click img {
@@ -1235,8 +1259,8 @@ p {
   z-index: 5;
   width: 50px;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .row-5 .video-1 .video-click img:hover {
@@ -1244,10 +1268,21 @@ p {
 }
 
 .row-5 .video-2 {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  vertical-align: middle;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
   width: calc(50% - 15px);
   float: left;
-  position: relative;
   margin-left: 15px;
+  position: relative;
 }
 
 .row-5 .video-2 img {
@@ -1257,13 +1292,8 @@ p {
 
 .row-5 .video-2 .video-click {
   position: absolute;
-  float: left;
   width: 50px;
   height: 50px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .row-5 .video-2 .video-click img {
@@ -1271,6 +1301,12 @@ p {
   z-index: 5;
   width: 50px;
   cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.row-5 .video-2 .video-click img:hover {
+  width: 60px;
 }
 
 .row-6 {
@@ -1294,7 +1330,7 @@ p {
 .row-7 {
   width: 100%;
   padding-bottom: 50px;
-  padding-top: 15px;
+  padding-top: 30px;
   overflow: hidden;
 }
 
@@ -1354,7 +1390,7 @@ p {
 .row-9 {
   width: 100%;
   overflow: hidden;
-  padding-top: 18px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -2206,6 +2242,15 @@ footer {
 }
 
 @media screen and (min-width: 360px) and (max-width: 549px) {
+  .popup-wrapper-search {
+    width: 90% !important;
+  }
+  .popup-wrapper-search .filter-search {
+    margin-right: 10px;
+  }
+  .popup-wrapper-search .filter {
+    margin-left: 20px;
+  }
   .banner-left {
     max-width: 100%;
   }
@@ -2351,6 +2396,15 @@ footer {
   }
   .masakan-wrapper:nth-child(1) {
     margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .banner-left {
+    max-width: 85%;
   }
 }
 

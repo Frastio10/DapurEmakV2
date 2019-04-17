@@ -21,6 +21,14 @@
 	src: url(../fonts/Segoe-UI-Bold.ttf);
 }
 
+.w-100{
+	width: 100%;
+}
+
+.l-none{
+	list-style: none;
+}
+
 .f-10{
 	font-size: 10px;
 }
@@ -1102,6 +1110,10 @@ footer{
 	margin-top: 30px;
 }
 
+#slidepanel{
+	display: none;
+}
+
 .right{
 	padding-top: 100px;
 	width: 70%;
@@ -1117,13 +1129,121 @@ footer{
 		width: 100%;	
 	}
 	.text{
+		padding-top: 20px;
 		p{
 			max-width: 100%;
 			margin-bottom: 15px	;
 			overflow: hidden;
+			word-spacing: 5		px;	
 		}
 	}
 }
+
+//comment-box
+
+.tab-3-content{
+	padding-right: 25px;
+}
+
+.comment-1{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.comment-box{
+	border: 1px #b6b6b6 solid;
+	border-radius: 8px;
+
+	
+	.comment-topside{
+		padding: 15px;
+		
+
+		.rating{
+
+			.rate-list{
+
+				li{
+					margin-right: 4px;
+
+					img{
+						width: 15px;
+						height: 15px;
+					}
+				}
+			}
+		}
+	}
+	
+	.comment-line{
+		background: #b6b6b6;
+		height: 1px;
+	}
+
+	.comment-bottomside{
+		display: flex;
+		vertical-align: middle;
+		align-items: center;
+		@include padding-x(15px);
+		@include padding-y(10px);
+		
+		.comment-button{
+		margin-left: auto;
+
+			a{
+				float: right;
+				text-decoration: none;
+				color: #fff;
+				background: #fbb72b;
+				@include padding-x(30px);
+				@include padding-y(5px);
+				border-radius: 30px;
+				transition: .3s ease;
+
+				&:hover{
+					background:#E1A01B;
+					-webkit-box-shadow: 0 22px 28px 0 rgba(0,0,0,.1);
+ 					box-shadow: 0 22px 28px 0 rgba(0,0,0,.1);
+				}
+			}
+		}
+
+		img{
+			margin-left: 10px;
+			cursor: pointer;
+		}
+	}
+}
+
+.question-box{
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	.comment-button{
+		margin-left: auto;
+
+		a{
+			float: right;
+			text-decoration: none;
+			color: #fff;
+			background: #fbb72b;
+			@include padding-x(8px);
+			@include padding-y(5px);
+			border-radius: 30px;
+			transition: .3s ease;
+
+			&:hover{
+				background:#E1A01B;
+				-webkit-box-shadow: 0 22px 28px 0 rgba(0,0,0,.1);
+	 			box-shadow: 0 22px 28px 0 rgba(0,0,0,.1);
+			}
+		}
+	}
+}
+
+//end-comment-box
+
 //rate
 .star-rating {
 
@@ -1165,7 +1285,7 @@ textarea{
 }
 
 .comment-text{
-	border-bottom: 2px solid #e6e6e6;
+
 	margin-bottom: 20px;
 	
 }

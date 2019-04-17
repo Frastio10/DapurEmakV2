@@ -28,7 +28,7 @@
 .f-center{
 	justify-content: center;
 	align-items: center;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 .m-center{
@@ -894,7 +894,66 @@ p{
   transform: rotate(-135deg);
 }
 
+.tab-2-parent{
+	
 
+	.box{
+		padding: 0px;
+	}
+
+	.left-consult{
+		padding-top: 5%;
+		width: 25%;
+		flex-wrap: wrap;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		img{
+			width: 80px;
+			
+		}
+	}
+	
+	.right-consult{
+		border-left: 1px #e6e6e6 solid;
+		width: 75%;
+		box-sizing: border-box;
+		padding: 15px;
+		.sendmessage{
+			float: right;
+			margin-top: 20px;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 25px;
+			background: #fbb72b;
+			padding-top: 4px;
+			padding-bottom: 7px;
+			@include padding-x(15px);
+			color: #fff;
+			font-family: segoe-ui;
+
+			img{
+				width: 20px;
+				margin-bottom: -5px;
+			}
+		}
+	}
+
+	.box-2{
+		margin-top: 20px;
+	
+
+		.left-consult{
+			padding-top: 20px;
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+
+		.sendmessage{
+			@include padding-x(30px);	
+		}
+	}
+}
 
 .page-limit{
 	background: #999999;
@@ -1033,7 +1092,18 @@ p{
  
     margin-right:30px;
     transition: all 0.25s;
-
+	
+	&:after{
+		position: absolute;
+		content:'image by: https://pinterest.com';
+		z-index: 9999999999999999999;
+		color: #fff;
+		bottom: 55px;
+		left: 10px;
+		display: block;
+		font-family: segoe-ui;
+		font-size: 12px;
+	}
 
 
 	 &:hover {
@@ -1057,6 +1127,8 @@ p{
     	position: relative;
     	object-fit: cover;
     	object-position: top;
+
+
     }
 
   }
@@ -1910,7 +1982,20 @@ footer{
 }
 
 @include breakpoint-down(xl){
+	.left{
+		display: none;
+	}
 
+	.right{
+		width: 100% !important;
+		padding-left: 0 !important;
+	}
+
+	.wrapper-dropdown-0,	
+	.wrapper-dropdown-1,	
+	.wrapper-dropdown-2 {
+		width: 160px;
+	}	
 }
 
 

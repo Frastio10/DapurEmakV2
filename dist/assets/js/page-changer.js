@@ -19,7 +19,7 @@
 
 
         $("#"+tab_id).addClass('current');
-      })
+      });
 
     });
 

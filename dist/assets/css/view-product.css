@@ -973,6 +973,7 @@ p {
 }
 
 .left .increment-wrapper .quantity-number {
+  outline: none;
   float: left;
   margin-left: 5px;
   margin-right: 5px;
@@ -1015,6 +1016,7 @@ p {
 }
 
 .left .catatan-wrapper input[type=text] {
+  outline: none;
   margin-top: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1037,7 +1039,7 @@ p {
 .left .buy-wrapper .heart-toggle {
   border: 1px solid #fbb72b;
   height: 40px;
-  width: 55px;
+  width: 40px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1049,7 +1051,7 @@ p {
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
-  border-radius: 25px;
+  border-radius: 100%;
   float: left;
   cursor: pointer;
   -webkit-transition: .3s ease;
@@ -1298,6 +1300,10 @@ path, rect {
 
 .right .seller-box a {
   text-decoration: none;
+}
+
+.right .seller-box .send {
+  text-decoration: none;
   background: #fbb72b;
   color: #fff;
   border-radius: 30px;
@@ -1310,7 +1316,7 @@ path, rect {
   transition: .3s ease;
 }
 
-.right .seller-box a:hover {
+.right .seller-box .send:hover {
   background: #E1A01B;
   -webkit-box-shadow: 0 22px 28px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 22px 28px 0 rgba(0, 0, 0, 0.1);
@@ -1832,6 +1838,17 @@ footer {
   .left .detail-box .detail-img {
     width: 100%;
     max-height: 400px;
+  }
+  .left .detail-box .detail-img:after {
+    position: absolute;
+    content: 'image by: https://pinterest.com';
+    z-index: 9999999999999999999;
+    color: #fff;
+    bottom: 55px;
+    left: 10px;
+    display: block;
+    font-family: segoe-ui;
+    font-size: 12px;
   }
   .left .detail-box .detail-img img {
     width: 100%;

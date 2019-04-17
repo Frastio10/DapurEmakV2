@@ -98,7 +98,7 @@
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .m-center {
@@ -957,6 +957,67 @@ p {
   transform: rotate(-135deg);
 }
 
+.tab-2-parent .box {
+  padding: 0px;
+}
+
+.tab-2-parent .left-consult {
+  padding-top: 5%;
+  width: 25%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tab-2-parent .left-consult img {
+  width: 80px;
+}
+
+.tab-2-parent .right-consult {
+  border-left: 1px #e6e6e6 solid;
+  width: 75%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.tab-2-parent .right-consult .sendmessage {
+  float: right;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  background: #fbb72b;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-family: segoe-ui;
+}
+
+.tab-2-parent .right-consult .sendmessage img {
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+.tab-2-parent .box-2 {
+  margin-top: 20px;
+}
+
+.tab-2-parent .box-2 .left-consult {
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.tab-2-parent .box-2 .sendmessage {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .page-limit {
   background: #999999;
   -webkit-transform: rotate(12deg);
@@ -1098,6 +1159,18 @@ p {
   margin-right: 30px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+}
+
+.card:after {
+  position: absolute;
+  content: 'image by: https://pinterest.com';
+  z-index: 9999999999999999999;
+  color: #fff;
+  bottom: 55px;
+  left: 10px;
+  display: block;
+  font-family: segoe-ui;
+  font-size: 12px;
 }
 
 .card:hover {
@@ -1866,6 +1939,21 @@ footer {
   }
   .row-10 .col-4 ul {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .wrapper-dropdown-0,
+  .wrapper-dropdown-1,
+  .wrapper-dropdown-2 {
+    width: 160px;
   }
 }
 
