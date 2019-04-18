@@ -15,6 +15,7 @@
 }
 
 
+
 .absolute{
 	position: absolute;
 }
@@ -97,6 +98,9 @@ body{
 	width: 200px;
 	height: 80px;
 	margin: 0 auto;
+	a{
+		outline: none;
+	}
 }
 
 
@@ -203,6 +207,13 @@ img{
 	background: none;
 	float: left;
 	box-sizing: border-box;
+
+	input[type=text],
+	input[type=password],
+	input[type=email]{
+		outline: none;
+		border-color: #eaeaea !important;
+	}
 
 	.nama-depan{
 		width: calc(50% - 15px);

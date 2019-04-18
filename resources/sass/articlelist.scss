@@ -730,10 +730,48 @@ p{
 	padding-left: 20px;	
 }
 
+.lower-menu ul li:last-child a:after{
+	display: none;
+}
+
+.current-page{
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px !important; 
+	  	left: 0; 
+	  	height: 1px; 
+	  	width: 100% !important;
+	  	transition: .4s ease;
+	}
+}
+
 .lower-menu ul li a{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
+	transition: .3s;
+	position: relative;
+	&:hover{
+		color:#fbb72b !important;
+		border-color: #fbb72b !important;
+	}
+
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px; 
+	  	left: 0; 
+	  	height: 2px; 
+	  	width: 0%;
+	  	transition: .4s ease;
+	}
+
+	&:hover:after{
+		width: 100%;
+	}
 }
 
 
@@ -807,22 +845,47 @@ p{
 	-webkit-transform:translate3d(0,0,0);
 }
 
+.art-r-1{
+	display: none;
+	margin: 0 !important; 
+}
+
+.article-left{
+	width: 60%;
+	float: left;
+	overflow: hidden;
+}
+
+.article-right{
+	width: calc(40% - 10px);
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+	box-sizing: border-box;
+
+	img{
+		width: 100%;
+	}
+}
+
 .main-article{
 	padding-top: 80px;
+	overflow: hidden;
+
 
 	h3{
-		float: left;	
 		clear: both;
-		max-width: 58%;
+		display: inline-block;
 
 	}
 
 	.main-img{
 		float: right;	
-		width: 450px;
-	
+		width: 100%;
+		height: 400px;
+		object-fit: cover;	
 		float: right;
-		margin-left: 10px;
+		
 
 		img{
 			width: 100%;
@@ -850,8 +913,8 @@ p{
 }
 
 	.info{
-		float: left;
-		width: 58%;
+
+		
 		margin-top: 10px;
 
 		.nama{
@@ -879,6 +942,8 @@ p{
     position: relative;
     top: 0;
     transition: .3s ease;
+    min-height: 350px;
+    max-height: 350px;
 	
 	&:hover {
       top: -15px;
@@ -900,6 +965,7 @@ p{
 	.news-list-img{
 		width: 100%;
 		object-fit: cover;
+		max-height: 130px;
 	}
 
 	.news-list-content{
@@ -1136,16 +1202,31 @@ footer{
 	.main-article{
 
 		h3{
-			max-width: 55%;
+		
 		}
 	}
 }
 
 @media screen and (max-width: 1170px){
+	.art-r-2{
+		display: none;
+	}
+	
+	.art-r-1{
+		display: block;	
+	}
+
+	.article-left{
+		width: 65%;
+	}
+
+	.article-right{
+		width: 100%;
+	}
 	.main-article{
 
 		h3{
-			max-width: 50%;
+			
 		}	
 
 		.info{

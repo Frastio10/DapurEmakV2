@@ -116,8 +116,8 @@ body{
 }
 
 .container {
-  width: 100%;
-  max-width: 1160px;
+  width: 90%;
+  //max-width: 1160px;
   margin: 0 auto;
   position: relative;
 }
@@ -693,6 +693,20 @@ p{
 	float: left;
 	list-style-type: none;
 	padding-left: 20px;	
+
+}
+
+.current-page{
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px !important; 
+	  	left: 0; 
+	  	height: 1px; 
+	  	width: 100% !important;
+	  	transition: .4s ease;
+	}
 }
 
 .lower-menu ul li a{
@@ -700,10 +714,25 @@ p{
 	color: #000;
 	font-family: OpenSans-Regular;
 	transition: .3s;
-
+	position: relative;
 	&:hover{
 		color:#fbb72b !important;
 		border-color: #fbb72b !important;
+	}
+
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px; 
+	  	left: 0; 
+	  	height: 2px; 
+	  	width: 0%;
+	  	transition: .4s ease;
+	}
+
+	&:hover:after{
+		width: 100%;
 	}
 }
 
@@ -809,7 +838,9 @@ p{
 
 .location{
 	width: 100%;
-	height: 37px;
+	overflow: hidden;
+	float: left;
+	box-sizing: border-box;
 	background: #fff;
 	padding: 20px 20px 23px 20px;
 	border-radius: 8px;
@@ -825,6 +856,12 @@ p{
 	border:1px #b3b3b3 solid;
 	padding-left: 10px;
 	font-size: 18px;
+	transition: .4s ease;
+
+	&:focus{
+		transition: .4s ease;
+		border-color: #000;
+	}
 }
 
 #lokasi{
@@ -907,7 +944,7 @@ p{
 
 
     &:hover {
-      top: -15px;
+      top: -8px;
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     }
 
@@ -954,7 +991,25 @@ p{
 	text-decoration: none;
 	font-weight: normal;
 	font-family:segoe-ui !important;
+	
+	position: relative;
+
+	&:after {
+  		content:""; 
+		background: #fbb72b; 
+  		position: absolute; 
+  		bottom: 0; 
+  		left: 0; 
+  		height: 1px; 
+  		width: 0%;
+  		transition: .4s ease;
+	}
 }
+
+.slngkp:hover:after{
+	width: 100% !important;
+}
+
 
 .row-3{
 	width: 100%;
@@ -1490,16 +1545,20 @@ border: 0 ;
 			.news-1{
 				width: 100%;
 				height: 135px;
+				box-sizing: border-box;
 
 				.news-img{
 					width: 30%;
 					height: 133.08px;
 					float: left;
+					overflow: hidden;
 
 
 					img{	
 						width: 100%;
+						object-fit: cover;
 						border-radius: 5px;
+						min-height: 100%;
 					}
 				}
 				.news-desc{
@@ -1556,16 +1615,20 @@ border: 0 ;
 				width: 100%;
 				margin-top: 7.5px;
 				height: 100%;
+				box-sizing: border-box;
+				overflow: hidden;
 
 				.news-img{
 					width: 30%;
 					height: 133.08px;
 					float: left;
-
-
+					box-sizing: border-box;
+			
 					img{	
 						width: 100%;
 						border-radius: 5px;
+						min-height: 100%;
+						object-fit: cover;
 					}
 				}
 				.news-desc{
@@ -1665,8 +1728,8 @@ border: 0 ;
 	.col-2{
 		float: left;
 		padding-top: 5px;
-		width: calc(100% / 4 - 30px);
-		margin-left: 150px;
+		width: calc(100% / 4 - 80px);
+		margin-left: 100px;
 
 		span{
 			font-size:14px;

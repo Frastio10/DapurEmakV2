@@ -374,6 +374,8 @@ body{
 	float: left;
 }
 
+
+
 //search popup
 .filter{
 	
@@ -571,16 +573,52 @@ header{
 	padding-left: 20px;	
 }
 
+.current-page{
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px !important; 
+	  	left: 0; 
+	  	height: 1px; 
+	  	width: 100% !important;
+	  	transition: .4s ease;
+	}
+}
+
+.lower-menu ul li:last-child a{
+	&:hover:after{
+		display: none;	
+	}
+}
+
 .lower-menu ul li a{
 	text-decoration: none;
 	color: #000;
 	font-family: OpenSans-Regular;
 	transition: .3s ease;
-
+	position: relative;
 	&:hover{
-		color: #fbb72b	!important;
+		color:#fbb72b !important;
 		border-color: #fbb72b !important;
 	}
+
+	&:after{
+		content:""; 
+		background: #fbb72b; 
+	  	position: absolute; 
+	  	bottom: -10px; 
+	  	left: 0; 
+	  	height: 2px; 
+	  	width: 0%;
+	  	transition: .4s ease;
+	}
+
+	&:hover:after{
+		width: 100%;
+	}
+
+	
 }
 
 
@@ -1147,13 +1185,15 @@ path{
 		align-items: center;	
 
 		&:before{
-			width: 12px;
-			height: 12px;
+			top: 0;
+			width: 12px !important;
+			height: 12px !important;
 			content:'';
 			background: #fbb72b;
 			border-radius: 100%;
 			margin-right: 5px;
 			margin-left: -13px;
+			display: inline-block;
 		}
 
 		&:first-child{
@@ -1294,7 +1334,7 @@ path{
 				@include padding-y(5px);
 				border-radius: 30px;
 				transition: .3s ease;
-
+			
 				&:hover{
 					background:#E1A01B;
 					-webkit-box-shadow: 0 22px 28px 0 rgba(0,0,0,.1);

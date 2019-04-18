@@ -169,6 +169,10 @@ body {
   margin: 0 auto;
 }
 
+.logo-wrapper a {
+  outline: none;
+}
+
 .left {
   width: 50%;
   height: 100vh;
@@ -278,6 +282,13 @@ img {
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.right input[type=text],
+.right input[type=password],
+.right input[type=email] {
+  outline: none;
+  border-color: #eaeaea !important;
 }
 
 .right .nama-depan {

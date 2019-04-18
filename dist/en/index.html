@@ -8,10 +8,55 @@
 	<meta name="description" content="Cari makanan enak cepat dan sehat dapur emak menjadi pilihan yang tepat">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="icon" type="image" href="logo.png" sizes="16x16">
+	<meta property="og:site_name" content="dapur emak">
+    <meta property="og:locale" content="id" initial="locale">
+    <meta property="og:title" content="dapur emak" initial="title">
+    <meta property="og:url" content="https://dapuremak.netlify.com" initial="url">
+    <meta property="og:type" content="e-commerce,makanan,dapuremak,emak,koki,pemasaran" initial="type">
+    <meta property="og:description" content="dapuremak adalah penyedia layanan e-commerce untuk para koki dari indonesia khususnya untuk para emak" initial="description">
 	<script src="assets/js/jquery.js"></script>
 	<title>Beranda | Dapur Emak</title>
 </head>
 <body>
+	<div class="popup-area-search flex f-center fixed ">
+		<div class="close-popup round">
+			<img src="assets/images/icon/close-white.png" alt="">
+		</div>
+		<div class="popup-wrapper-search fleft">
+			
+			<form action="">
+				<div class="search-box w-100 relative">
+					<input type="text" class="w-100 b-box f-18 " placeholder="Cari masakan atau emak disini">
+					<button type="submit" class="search-button right">
+						<img src="assets/images/icon/search.png" alt="" class=" search-submit">
+					</button>
+				</div>
+				<div class="filter">
+					<p class="ff-seg">Filter</p>
+					<ul class="l-none filter-list">
+						<li>
+							<div class="fleft carisemua filter-search">
+							  <input type="radio" id="radio01" name="radio" checked="true" />
+							  <label for="radio01"><span></span>Semua</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft cariemak filter-search">
+							 <input type="radio" id="radio02" name="radio" />
+							 <label for="radio02"><span></span>Cari Emak</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft carimasakan filter-search">
+							 <input type="radio" id="radio03" name="radio" />
+							 <label for="radio03"><span></span>Cari Masakan</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
 	<header>
 		<div class="header-wrapper">
 			<div class="container">
@@ -37,11 +82,15 @@
 						</a>
 						<div class="lower-menu">
 							<ul class="f-14">
-								<li><a href="home.html">Beranda</a></li>
+								<li><a href="index.html" class="f-yellow current-page">Beranda</a></li>
 								<li><a href="dapurlist.html">Masakan</a></li>
-								<li><a href="menulist.html">Menu</a></li>
 								<li><a href="emaklist.html">Cari Emak</a></li>
 								<li><a href="articlelist.html">Berita</a></li>
+								<li class="search-s popup-trigger">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  										<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
+									</svg>
+								</li>
 							</ul>
 						</div>
 				</div>
@@ -52,7 +101,7 @@
 								  <button class="dropbtn">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
 								  <div class="dropdown-content">
 								    <a href="#"><img src="assets/images/icon/id.svg"> ID</a>
-								    <a href="#"><img src="assets/images/icon/en.svg"> EN</a>
+								    <a href="en/index.html"><img src="assets/images/icon/en.svg"> EN</a>
 								  </div>
 								</div>							
 							</li>
@@ -63,7 +112,7 @@
 				</div>
 				<span id="nav-line"></span>
 				<div class="lower-nav nav-none">
-					<a href="home.html" class="logo-top">
+					<a href="index.html" class="logo-top">
 						<div class="logo-wrapper">
 							<img src="logo.png" id="logo">
 							<h3 class="ff-segbold f-yellow">DAPUR EMAK</h3>
@@ -76,11 +125,15 @@
 					</div>
 					<div class="lower-menu relative">
 						<ul class="f-14">
-							<li><a href="home.html">Beranda</a></li>
+							<li><a class= "f-yellow current-page" href="">Beranda</a></li>
 							<li><a href="dapurlist.html">Masakan</a></li>
-							<li><a href="menulist.html">Menu</a></li>
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
+							<li class="search-s popup-trigger">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+ 									<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
+								</svg>
+							</li>
 							<li class="none none-res">
 								<div class="dropdown">
 								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
@@ -126,7 +179,7 @@
 			<h2 class="ff-segbold">Masakan Sekitar Kamu</h2>
 			<p class="ff-seg f-15 desc">Semua masakan yang kami buat sesuai yang anda inginkan</p>
 			<div class="slngkp-wrp">
-				<a href="masakan.html" class="ff-segbold f-18 slngkp down none-3">Selengkapnya</a>
+				<a href="dapurlist.html" class="ff-segbold f-18 slngkp down none-3">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -135,10 +188,10 @@
 		<div class="container">
 			<div class="masaksekitar-wrapper">
 				<div class="masakan-wrapper">
-					<a href="view-product.html">
+					<a href="view-product-1.html?makanan=nasiuduk">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc36.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc36.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan radius-5">
 							<img src="logo.png" class="logo-masakan">
@@ -146,7 +199,7 @@
 						</div>
 						<div class="overlay-price top mt-2">
 							<h3 class="ff-segbold">Nasi Uduk</h3>
-							<h4 class="f-17 fw-700">RP. 25.000,-/ porsi</h4>
+							<h4 class="f-17 fw-700">RP. 15.000,-/ porsi</h4>
 						</div>
 					</div>
 					</a>
@@ -156,7 +209,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc41.png" class="lazy image-food" >
+							<img data-src="assets/images/content/pc41.png" class="lazy image-food" >
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -164,7 +217,7 @@
 						</div>
 						<div class="overlay-price top mt-2">
 							<h3 class="ff-segbold">Sate Kere</h3>
-							<h4 class="f-17 fw-700">RP. 25.000,-/ porsi</h4>
+							<h4 class="f-17 fw-700">RP. 18.000,-/ porsi</h4>
 						</div>
 					</div>
 					</a>
@@ -174,15 +227,15 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc14.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc14.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
 							<p>Emak Afni</p>
 						</div>
 						<div class="overlay-price top mt-2">
-							<h3 class="ff-segbold">Sate Kere</h3>
-							<h4 class="f-17 fw-700">RP. 22.000,-/ porsi</h4>
+							<h3 class="ff-segbold">Nasi Kuning</h3>
+							<h4 class="f-17 fw-700">RP. 20.000,-/ porsi</h4>
 						</div>
 					</div>
 					</a>
@@ -192,14 +245,14 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc12.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc12.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
 							<p>Emak Aah</p>
 						</div>
 						<div class="overlay-price top mt-2">
-							<h3 class="ff-segbold">Nasi Kuning</h3>
+							<h3 class="ff-segbold">Nasi Gepuk</h3>
 							<h4 class="f-17 fw-700">RP. 23.000,-/ porsi</h4>
 						</div>
 					</div>
@@ -210,7 +263,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc9.png" class="lazy image-food radius-8">
+							<img data-src="assets/images/content/pc9.png" class="lazy image-food radius-8">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -243,7 +296,7 @@
 		<div class="container">
 			<h2 class="ff-segbold">Tutorial Masak Dapur Emak</h2>
 			<p class="ff-seg f-15 desc">Belajar memasak dengan santai di Dapur Emak</p>
-			<a href="" class="ff-segbold f-18 slngkp none-3">Selengkapnya</a>
+			<a href="videolist.html" class="ff-segbold f-18 slngkp none-3">Selengkapnya</a>
 		</div>
 	</div>
 
@@ -279,7 +332,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc36.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc36.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -304,7 +357,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc41.png" class="lazy image-food" >
+							<img data-src="assets/images/content/pc41.png" class="lazy image-food" >
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -329,7 +382,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc14.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc14.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -354,7 +407,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc12.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc12.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -379,7 +432,7 @@
 					<a href="view-product.html">
 					<div class="card">
 						<div class="masakan-img">
-							<img src="assets/images/content/pc9.png" class="lazy image-food">
+							<img data-src="assets/images/content/pc9.png" class="lazy image-food">
 						</div>
 						<div class="nama-masakan">
 							<img src="logo.png" class="logo-masakan">
@@ -483,13 +536,14 @@
 		<div class="container">
 			<div class="news">
 				<div class="main-news">
-					<a href="articlelist.html">
+					<a href="articlelist.html?content=makanantradisional">
 					<div class="main-img">
 						<img class="main-img-content" src="assets/images/content/main-news.png" alt="">
 						<div class="news-overlay">
 						<h3 class="ff-segbold">Melestarikan Memasak Secara Tradisional</h3>
-						<p>Oleh: Amanda</p>
+						
 						<div class="date-wrapper">
+							<p>Oleh: Amanda</p>
 							<img src="assets/images/icon/calendar.png" alt="">
 							<p class="tgl">25 Agustus 2019</p>
 						</div>
@@ -499,7 +553,7 @@
 					<div class="main-news-text">
 						<div class="text-news">
 							<p>
-								Menjaga kelestarian makanan tradisional di tengah gempuran makanan asing sangat penting untuk dilakukan. Tidak hanya menjadi bagian yang tak terpisahkan dari budaya, menjaga eksistensi kuliner tradisional.. <a href="articlelist.html">Selengkapnya...</a>
+								Menjaga kelestarian makanan tradisional di tengah gempuran makanan asing sangat penting untuk dilakukan. Tidak hanya menjadi bagian yang tak terpisahkan dari budaya, menjaga eksistensi kuliner tradisional.. <a href="articlelist.html?content=makanantradisional">Selengkapnya...</a>
 							</p>
 						</div>
 					</div>
@@ -508,31 +562,34 @@
 				<div class="secondary-news">
 					<div class="news-1">
 						<div class="news-img">
-							<img src="assets/images/content/rempah.png" alt="">
+							<img src="assets/images/content/artikel 1.jpg" alt="">
 						</div>
 						<div class="news-desc">
-							<h4>Rempah sebagai penambah nafsu makan</h4>
-							<p>Oleh: Amanda</p>
-							<div class="date-wrapper">
+							<a href="article-1.html?content=darahtinggi" class="article-title">7 Makanan penurun darah tinggi</a>
+							<div class="date-wrapper overflow-hidden">
+								<p class="ff-segbold">Oleh: Amanda</p>
+								<p class="tgl">10 Agustus 2019</p>
 								<img src="assets/images/icon/calendar.png" alt="">
-								<p class="tgl">25 Agustus 2019</p>
 							</div>
+							
 							<p class="text-news">
-								Rempah-rempah adalah bagian tumbuhan yang beraroma atau berasa kuat yang digunakan dalam jumlah kecil di makanan sebagai.. <a href="articlelist.html">Selengkapnya...</a>
+								Makanan penurun darah tinggi bisa kamu dapatkan dengan mudah di Dapur Emak  Makanan ini bermanfaat untuk menurunkan tekanan darah tinggi yang kamu alami menjadi normal kemba.. <a href="articlelist.html">Selengkapnya...</a>
 							</p>
 						</div>
 					</div>
 					<div class="news-2">
 						<div class="news-img">
-							<img src="assets/images/content/rempah.png" alt="">
+							<img src="assets/images/content/artikel 2.jpg" alt="">
 						</div>
 						<div class="news-desc">
-							<h4>Rempah sebagai penambah nafsu makan</h4>
-							<p>Oleh: Amanda</p>
-							<p class="tgl">25 Agustus 2019</p>
-							<img src="assets/images/icon/calendar.png" alt="">
+							<a href="article-2.html?content=kejubakar" class="article-title">Keju bakar dari Enkerang</a>
+							<div class="date-wrapper overflow-hidden">
+								<p class="ff-segbold">Oleh: Amanda</p>
+								<p class="tgl">21 Agustus 2019</p>
+								<img src="assets/images/icon/calendar.png" alt="">
+							</div>
 							<p class="text-news">
-								Rempah-rempah adalah bagian tumbuhan yang beraroma atau berasa kuat yang digunakan dalam jumlah kecil di makanan sebagai.. <a href="articlelist.html">Selengkapnya...</a>
+								Hampir semua orang pasti sudah pernah menikmati kelezatan keju atau paling tidak mencicipinya. Bahan makanan yang berasal dari susu sapi ini ker.. <a href="article-2.html?content=darahtinggi">Selengkapnya...</a>
 							</p>
 						</div>
 					</div>
@@ -542,6 +599,7 @@
 		</div>
 	</div>
 
+
 	<div class="row-12">
 		<div class="container">
 			<div class="col-1">
@@ -549,17 +607,14 @@
 					<img src="logo.png" class="logo">
 					<h3 class="ff-segbold f-yellow">DAPUR EMAK</h3>
 				</div>
-				<p>Lorem ipsum dolor sit amet,
-				consectetur adipiscing elit,sed do
-				euismod temporincididunt ut
-				labore et dolor magna aliqua</p>
+				<p>Dapur Emak dapat membuat setiap orang dapat merasakan makanan tradisional khas buatan emak, dimanapun dan kapanpun</p>
 			</div>
 			<div class="col-2">
 				<span>Navigation</span>
 				<ul>
-					<li><a href="home.html">Beranda</a></li>
+					<li><a href="index.html">Beranda</a></li>
 							<li><a href="dapurlist.html">Masakan</a></li>
-							<li><a href="menulist.html">Menu</a></li>
+							<!-- <li><a href="menulist.html">Menu</a></li> -->
 							<li><a href="emaklist.html">Cari Emak</a></li>
 							<li><a href="articlelist.html">Berita</a></li>
 				</ul>
@@ -608,16 +663,15 @@
 		</div>		
 	</div>
 
-	<footer>
-	</footer>
-
 </body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/effect.js"></script>
 <script src="assets/js/jquery.lazy.min.js"></script>
 <script>
 	 $(function() {
         $('.lazy').Lazy();
+        placeholder : "data:image/assets/images/page/loader.svg"
     });
 </script>
 </html>

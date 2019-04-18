@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="dapur emak, masakan emak, dapur, emak, masakan dapur">
+	<meta name="description" content="Cari makanan enak cepat dan sehat dapur emak menjadi pilihan yang tepat">
+	<link rel="stylesheet" href="assets/css/checkout.css">
+	<link rel="icon" type="image" href="logo.png" sizes="16x16">
+	<meta property="og:site_name" content="dapur emak">
+    <meta property="og:locale" content="id" initial="locale">
+    <meta property="og:title" content="dapur emak" initial="title">
+    <meta property="og:url" content="https://dapuremak.netlify.com" initial="url">
+    <meta property="og:type" content="e-commerce,makanan,dapuremak,emak,koki,pemasaran" initial="type">
+    <meta property="og:description" content="dapuremak adalah penyedia layanan e-commerce untuk para koki dari indonesia khususnya untuk para emak" initial="description">
+	<script src="assets/js/jquery.js"></script>
+	<title>Checkout | Dapur Emak</title>
+</head>
+<body>
+	<!-- popup search -->
+	<div class="popup-area-search flex f-center fixed ">
+		<div class="close-popup round">
+			<img src="assets/images/icon/close-white.png" alt="">
+		</div>
+		<div class="popup-wrapper-search fleft">
+			
+			<form action="">
+				<div class="search-box w-100 relative">
+					<input type="text" class="w-100 b-box f-18 " placeholder="Cari masakan atau emak disini">
+					<button type="submit" class="search-button">
+						<img src="assets/images/icon/search.png" alt="" class=" search-submit">
+					</button>
+				</div>
+				<div class="filter">
+					<p class="ff-seg">Filter</p>
+					<ul class="l-none filter-list">
+						<li>
+							<div class="fleft carisemua filter-search">
+							  <input type="radio" id="radio01" name="radio" checked="true" />
+							  <label for="radio01"><span></span>Semua</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft cariemak filter-search">
+							 <input type="radio" id="radio02" name="radio" />
+							 <label for="radio02"><span></span>Cari Emak</label>
+							</div>
+						</li>
+						<li>
+							<div class="fleft carimasakan filter-search">
+							 <input type="radio" id="radio03" name="radio" />
+							 <label for="radio03"><span></span>Cari Masakan</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+	<!-- end popup search -->
+<header>
+		<div class="container">
+			<div class="lower-nav nav-none">
+				<a href="index.html" class="logo-top">
+					<div class="logo-wrapper">
+						<img src="logo.png" id="logo" alt="">
+						<h3 style="color:#FBB72B">DAPUR EMAK</h3>
+
+						</div>
+					</a>
+					<div id="nav-icon1">
+				  		<span></span>
+				  		<span></span>
+				 		<span></span>
+					</div>
+					<div class="lower-menu relative">
+						<ul class="f-14">
+							<li><a href="index.html">Beranda</a></li>
+							<li><a href="dapurlist.html" class="f-yellow current-page">Masakan</a></li>
+							<li><a href="emaklist.html">Cari Emak</a></li>
+							<li><a href="articlelist.html">Berita</a></li>
+							<li class="popup-trigger search-s">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  									<path class="search" d="M25.6,22.771l-6.163-6.188a9.855,9.855,0,0,0,2.453-6.489A10.291,10.291,0,0,0,11.439,0,10.291,10.291,0,0,0,.984,10.094,10.291,10.291,0,0,0,11.439,20.187c2.164,0,5.99-1.827,5.99-1.827l6.21,6.235a1.4,1.4,0,0,0,1.928.036A1.286,1.286,0,0,0,25.6,22.771ZM11.439,2.633a7.606,7.606,0,0,1,7.728,7.461,7.606,7.606,0,0,1-7.728,7.461,7.606,7.606,0,0,1-7.728-7.461A7.606,7.606,0,0,1,11.439,2.633Z" transform="translate(-0.984)" fill="#fbb72b"/>
+								</svg>
+							</li>
+							<li class="none none-res">
+								<div class="dropdown">
+								  <button class="dropbtn dropbtn-2 f-14">Ganti Bahasa <img src="assets/images/icon/chevron-left.png"></button>
+								  <div class="dropdown-content">
+								    <a href="#"><img src="assets/images/icon/id.svg"> ID</a>
+								    <a href="#"><img src="assets/images/icon/en.svg"> EN</a>
+								  </div>
+								</div>
+							</li>
+							<li class="none none-res">
+								<a href="login.html">Masuk</a> / <a href="register.html">Register</a>
+							</li>
+							<li><a href="register.html" class="daftar">Daftar</a></li>
+						
+						</ul>			
+					</div>
+				</div>
+			</div>
+	</header>
+
+	<div class="wrapper-all">
+		<div class="container">
+			<div class="row">
+				<div class="left fleft overflow-hidden fleft b-box">
+					<div class="left-box bg-grey w-100 b-box overflow-hidden">
+						<div class="item-1 checkout-item">
+							<div class="select-box w-100 b-box overflow-hidden bg-grey ff-segbold">
+								Alamat
+							</div>
+							<div class="select-content flex">
+								<div class="title-checkout">
+
+									<h4 class="ff-segbold f-black">Amanda Aprilia</h4>
+									<div class="increment-wrapper ff-seg">
+										+628576231702
+									</div>
+									<div class="increment-wrapper ff-seg">
+										Kp. Warunggombong  Rt 03 / 09  Desa Cibunarjaya  Kecamatan Ciambar  Kabupaten Sukabumi Jawabarat Indonesia bimasakti  / 43358
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="right">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="row-12">
+		<div class="container">
+			<div class="col-1">
+				<div class="wrapper">
+					<img src="logo.png" class="logo">
+					<h3 class="ff-segbold f-yellow">DAPUR EMAK</h3>
+				</div>
+				<p>Dapur Emak dapat membuat setiap orang dapat merasakan makanan tradisional khas buatan emak, dimanapun dan kapanpun</p>
+			</div>
+			<div class="col-2">
+				<span>Navigation</span>
+				<ul>
+					<li><a href="index.html">Beranda</a></li>
+							<li><a href="dapurlist.html">Masakan</a></li>
+							<!-- <li><a href="menulist.html">Menu</a></li> -->
+							<li><a href="emaklist.html">Cari Emak</a></li>
+							<li><a href="articlelist.html">Berita</a></li>
+				</ul>
+			</div>
+
+			<div class="col-3">
+				<span>Other</span>
+				<ul>
+					<li><a href="">Pekerjaan</a></li>
+					<li><a href="">Tim</a></li>
+					<li><a href="">Dapur Emak App</a></li>
+					<li><a href="">Berita</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-4">
+				<span>Contact Us</span>
+				<ul>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/map-pin(1).png" alt="">
+						</div>
+						<a href="https://www.google.com/maps/place/Ciambar,+Sukabumi,+West+Java,+Indonesia/@37.0625,-95.677068,4z/data=!4m5!3m4!1s0x2e68348cb118c72b:0xee61d9da918a372f!8m2!3d-6.8023034!4d106.8296372">Ciambar , Pos 3345, Indonesia.</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/phone.png" alt="">
+						</div>
+						<a href="">+62 000-000-000</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/mail.png" alt="">
+						</div>
+						<a href="">info@dapuremak.com</a>
+					</li>
+					<li>
+						<div class="logo">
+							<img src="assets/images/icon/globe.png" alt="">
+						</div>
+						<a href="">www.dapuremak.com</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>		
+	</div>
+	<!-- End footer -->
+</body>
+<script src="assets/js/effect.js"></script>
+<script src="assets/js/payment.js"></script>
+</html>

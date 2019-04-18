@@ -9,9 +9,10 @@ $(document).ready(function(){
 
 
 
+
 $(window).bind("load", function() {
   var width = $(window).width();
-  if (width >= 980) {
+  if (width >= 981) {
    $(window).scroll(function() {
     if ($(document).scrollTop() > 35) {
         $(".header-wrapper").addClass("bg-white");
@@ -40,6 +41,12 @@ $(window).bind("load", function() {
 
    }
 });
+
+// $('.popup-trigger').click(function(e){
+//   $('.popup-area').addClass('activex');
+//   var data = $(this).data('url');
+//   $('.vids-1').attr('src',data);
+// })
 
 $('#vid-1').click(function(e){
   $('.popup-area').addClass('activex');
