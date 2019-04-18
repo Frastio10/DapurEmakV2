@@ -1,0 +1,56 @@
+@import "./header";
+@import "fw.scss";
+
+.daftar{
+	border-color: #fbb72b !important;
+	color: #fbb72b !important;
+
+	&:hover{
+		color:#ffffff !important;
+		border-color: #fbb72b !important;
+		background: #fbb72b !important;
+	}
+}
+
+.row-11 .news .main-news .main-img .main-img-content{
+	height: 445px !important;
+	object-fit: cover;
+}
+
+.lower-menu, .logo-wrapper{
+	padding-top: 0 !important;
+}
+
+.row-11{
+
+	.news{
+
+		.secondary-news{
+			float: right;
+
+			.news-2{
+				margin-top: 17.5px;
+
+				&:first-child{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+.col-left{
+		margin-right: 21px !important;
+	}
+
+.row-1{
+	padding-top: 30px !important;
+
+	h2{
+		margin-bottom: 20px;
+	}
+}
+
+.row-4{
+	margin-top: 20px;
+}

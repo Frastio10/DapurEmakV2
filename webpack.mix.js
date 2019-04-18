@@ -20,6 +20,7 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/videolist.scss', 'dist/assets/css')
    .sass('resources/sass/payment.scss', 'dist/assets/css')
    .sass('resources/sass/checkout.scss', 'dist/assets/css')
+   .sass('resources/sass/artikellist.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

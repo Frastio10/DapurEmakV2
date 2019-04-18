@@ -88,6 +88,10 @@
   font-family: Segoe-Ui-Bold;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -358,6 +362,14 @@ body {
           justify-content: center;
 }
 
+.fright {
+  float: right;
+}
+
+.fleft {
+  float: left;
+}
+
 .l-none {
   list-style: none;
 }
@@ -368,6 +380,10 @@ body {
 
 .fleft {
   float: left;
+}
+
+.date-wrapper {
+  margin-left: 20px;
 }
 
 .filter .filter-list {
@@ -565,7 +581,7 @@ header {
 }
 
 .lower-menu ul li a:hover {
-  color: #fbb72b !important;
+  color: #fbb72b;
   border-color: #fbb72b !important;
 }
 
@@ -824,7 +840,7 @@ p {
 }
 
 .lower-menu ul li a:hover {
-  color: #fbb72b !important;
+  color: #fbb72b;
   border-color: #fbb72b !important;
 }
 
@@ -1058,6 +1074,11 @@ p {
 
 .row {
   width: 100%;
+}
+
+.row-11 {
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .row-12 {

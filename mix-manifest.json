@@ -13,5 +13,6 @@
     "/dist/assets/css/profil-emak.css": "/dist/assets/css/profil-emak.css",
     "/dist/assets/css/videolist.css": "/dist/assets/css/videolist.css",
     "/dist/assets/css/payment.css": "/dist/assets/css/payment.css",
-    "/dist/assets/css/checkout.css": "/dist/assets/css/checkout.css"
+    "/dist/assets/css/checkout.css": "/dist/assets/css/checkout.css",
+    "/dist/assets/css/artikellist.css": "/dist/assets/css/artikellist.css"
 }

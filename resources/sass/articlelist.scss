@@ -24,7 +24,9 @@
 	font-family: Segoe-Ui-Bold;
 }
 
-
+.clearfix{
+	clear: both;
+}
 
 .overflow-hidden{
 	overflow: hidden;
@@ -281,6 +283,14 @@ body{
 	justify-content: center;
 }
 
+.fright{
+	float: right;
+}
+
+.fleft{
+	float: left;
+}
+
 .l-none{
 	list-style: none;
 }
@@ -291,6 +301,10 @@ body{
 
 .fleft{
 	float: left;
+}
+
+.date-wrapper{
+	margin-left: 20px;
 }
 
 //search popup
@@ -483,7 +497,7 @@ header{
 	transition: .3s ease;
 
 	&:hover{
-		color:#fbb72b !important;
+		color:#fbb72b;
 		border-color: #fbb72b !important;
 	}
 }
@@ -754,7 +768,7 @@ p{
 	transition: .3s;
 	position: relative;
 	&:hover{
-		color:#fbb72b !important;
+		color:#fbb72b;
 		border-color: #fbb72b !important;
 	}
 
@@ -1003,6 +1017,11 @@ p{
 
 .text{
 
+}
+
+.row-11{
+	padding-top: 20px;
+	padding-bottom: 0;
 }
 
 .row-12{

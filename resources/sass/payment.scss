@@ -1087,6 +1087,25 @@ footer{
 //end increment
 
 @include breakpoint-down(lg){
+	.row-12{
+
+		.col-1{
+
+		}
+
+		.col-2{
+			margin-left: 50px;
+
+		}
+
+		.col-3{
+			margin-left: 50px; 
+		}
+
+		.col-4{
+			margin-left: 50px; 
+		}
+	}	
 	.none-res{
 		display: block !important;
 	}
@@ -1190,6 +1209,43 @@ footer{
 }
 
 @include breakpoint-down(sm){
+	.row-12{
+		
+
+		.col-1{
+			min-width: 100%;
+		}
+
+		.col-2{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-3{
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+
+		.col-4{
+			min-width: 100%;
+			margin-top: 30px;
+			margin-left: 0;
+
+			ul{
+				margin-top: 15px;
+			}
+		}
+	}
 	.checkout-item{
 
 		.select-content{

@@ -58,7 +58,7 @@
 }
 
 .container-x{
-	max-width: 90%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -117,7 +117,7 @@ body{
 
 .container {
   width: 90%;
-  //max-width: 1160px;
+  max-width: 1170px;
   margin: 0 auto;
   position: relative;
 }
@@ -406,7 +406,7 @@ header{
 	transition: .3s;
 
 	&:hover{
-		color:#fbb72b !important;
+		color:#fbb72b;
 		border-color: #fbb72b !important;
 	}
 }
@@ -578,15 +578,19 @@ p{
 	text-decoration: none;
 	color: #000;
 	transition: .3s;
+}
 
+#nav-kanan li a[href="register.html"]{
 	&:hover{
-		color:#fbb72b !important;
+		color:#fff !important;
 		border-color: #fbb72b !important;
+		background: #fbb72b;
 	}
 }
 
 .daftar{
-	border: 1px solid #000;
+	color: #fbb72b ;
+	border: 1px solid #fbb72b;
 	padding: 5px 30px 8px 30px;
 	border-radius: 20px; 
 }
@@ -716,7 +720,7 @@ p{
 	transition: .3s;
 	position: relative;
 	&:hover{
-		color:#fbb72b !important;
+		color:#fbb72b;
 		border-color: #fbb72b !important;
 	}
 

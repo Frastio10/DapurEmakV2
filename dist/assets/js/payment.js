@@ -26,7 +26,7 @@ $(document).on('change', '#select-all', function(event) {
 	$('.close-popup').click(function(){
 	    $('.popup-area-search').removeClass('popup-active');
 	});
-
+//popup 
 	$("#popup-button").click(function(){
 	    $('.popup-area').toggleClass('popup-actived');
 	});
@@ -42,4 +42,60 @@ $(document).on('change', '#select-all', function(event) {
 	$('.coupon-box').click(function(event) {
 		event.stopPropagation()
 	});
+// endpopup
 
+$(".addaddress").click(function(){
+	    $('.popup-area').toggleClass('popup-actived');
+	});
+
+	$('.popup-close').click(function(){
+	    $('.popup-area').removeClass('popup-actived');
+	});
+
+	$(".popup-area").click(function(event) {
+		$(this).removeClass('popup-actived');
+	});
+
+	$('.coupon-box').click(function(event) {
+		event.stopPropagation()
+	});
+
+$(".otheraddress").click(function(){
+	    $('.popup-area-2').toggleClass('popup-actived');
+	});
+
+	$('.popup-close').click(function(){
+	    $('.popup-area-2').removeClass('popup-actived');
+	});
+
+	$(".popup-area-2").click(function(event) {
+		$(this).removeClass('popup-actived');
+	});
+
+	$('.coupon-box').click(function(event) {
+		event.stopPropagation()
+	});
+
+
+
+$(document).on('click', '#trash-bin', function(event) {
+    event.preventDefault();
+
+    var obj = $(document).find('.check-item:checked');
+    var sint = 0;
+    setInterval(function() {
+        $(obj[sint]).closest('.checkout-item').slideUp('fast')
+        if (sint == obj.length) {
+            this.clearInterval();
+        }
+        sint += 1;
+    }, 400)
+
+});
+
+$(document).on('click', '.trash-bin', function(event) {
+    event.preventDefault();
+
+    var obj = $(document).find('.check-item:checked');
+     $(this).closest('.checkout-item').slideUp('fast')
+});

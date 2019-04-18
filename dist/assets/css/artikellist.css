@@ -1,0 +1,590 @@
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Segoe-UI;
+  src: url(../fonts/Segoe-UI.ttf);
+}
+
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url(../fonts/Segoe-UI-Bold.ttf);
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.f-center {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+.nav-line {
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  display: block;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.bg-none {
+  background: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bd-none {
+  border: none !important;
+}
+
+.bshad-none {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.f-yellow {
+  color: #FBB72B !important;
+}
+
+.f-grey {
+  color: #333333 !important;
+}
+
+.f-default {
+  color: #000 !important;
+}
+
+.dec-none {
+  text-decoration: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-35 {
+  padding-top: 35px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.my-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my-35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.f-black {
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-grey {
+  background: #FAFAFA;
+  border: 1px #eaeaea solid;
+}
+
+.b-box {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.top {
+  top: 0;
+}
+
+.none {
+  display: none;
+}
+
+.none-2 {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bshadow {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0);
+}
+
+.bshad-thin {
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+}
+
+.relative {
+  position: relative;
+}
+
+.none {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  max-width: 86%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.container-x {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.l-none {
+  list-style: none;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.f-48 {
+  font-size: 48px !important;
+}
+
+.f-11 {
+  font-size: 11px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-19 {
+  font-size: 19px !important;
+}
+
+.f-20 {
+  font-size: 20px !important;
+}
+
+.f-41 {
+  font-size: 41px !important;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+.f-30 {
+  font-size: 30px !important;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.f-25 {
+  font-size: 25px !important;
+}
+
+.f-26 {
+  font-size: 26px !important;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.f-17 {
+  font-size: 17px !important;
+}
+
+.f-31 {
+  font-size: 31px !important;
+}
+
+.f-15 {
+  font-size: 15px !important;
+}
+
+.f-13 {
+  font-size: 13px !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.ff-seg {
+  font-family: 'Segoe-UI';
+}
+
+.f-white {
+  color: #fff;
+}
+
+.ff-segbold {
+  font-family: 'Segoe-UI-Bold';
+}
+
+.bg-yellow {
+  background: #fbb72b;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.ff-osbold {
+  font-family: OpenSans-Bold;
+}
+
+.doww {
+  margin-top: 40px;
+}
+
+.mt-2 {
+  margin-top: 15px;
+}
+
+.daftar {
+  border-color: #fbb72b !important;
+  color: #fbb72b !important;
+}
+
+.daftar:hover {
+  color: #ffffff !important;
+  border-color: #fbb72b !important;
+  background: #fbb72b !important;
+}
+
+.row-11 .news .main-news .main-img .main-img-content {
+  height: 445px !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.lower-menu, .logo-wrapper {
+  padding-top: 0 !important;
+}
+
+.row-11 .news .secondary-news {
+  float: right;
+}
+
+.row-11 .news .secondary-news .news-2 {
+  margin-top: 17.5px;
+}
+
+.row-11 .news .secondary-news .news-2:first-child {
+  margin-top: 0;
+}
+
+.col-left {
+  margin-right: 21px !important;
+}
+
+.row-1 {
+  padding-top: 30px !important;
+}
+
+.row-1 h2 {
+  margin-bottom: 20px;
+}
+
+.row-4 {
+  margin-top: 20px;
+}
