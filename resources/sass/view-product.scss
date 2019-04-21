@@ -1061,12 +1061,17 @@ p{
 					margin-top: 2px;
 				}
 				
+				&:last-child{
+					max-width: 120px;
+				}
+
 				img{
 				
 				
 				}
 
 				p{
+					font-size: 13px;
 					text-align: center;
 					font-family: segoe-ui;
 					margin-top: 5px;

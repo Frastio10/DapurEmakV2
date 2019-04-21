@@ -1156,7 +1156,12 @@ p {
   margin-top: 2px;
 }
 
+.left .product-condition ul li:last-child {
+  max-width: 120px;
+}
+
 .left .product-condition ul li p {
+  font-size: 13px;
   text-align: center;
   font-family: segoe-ui;
   margin-top: 5px;

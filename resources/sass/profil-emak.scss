@@ -1532,6 +1532,17 @@ textarea{
 }
 
 @include breakpoint-down(md){
+	.comment-bottomside{
+		span{
+			float: left;
+			
+		}
+		img{
+			margin-left: 0 !important;
+			width: 25px !important;
+			height: 25px !important;
+		}
+	}
 	.row-12{
 	
 

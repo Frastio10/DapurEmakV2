@@ -1583,6 +1583,14 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .comment-bottomside span {
+    float: left;
+  }
+  .comment-bottomside img {
+    margin-left: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
   .row-12 .col-1 {
     min-width: 100%;
   }
