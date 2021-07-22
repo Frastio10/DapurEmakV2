@@ -1033,6 +1033,8 @@ p {
 }
 
 .emak-card .emak-img img {
+  object-fit: cover;
+  object-position: top;
   width: 100%;
   height: 150px;
 }
