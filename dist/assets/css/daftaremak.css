@@ -1076,7 +1076,7 @@ p {
   border-radius: 30px;
   padding: 5px 20px 5px 20px;
   font-size: 14px;
-  margin-left: 50%;
+  margin-left: auto;
   -webkit-transition: .4s ease;
   transition: .4s ease;
 }
