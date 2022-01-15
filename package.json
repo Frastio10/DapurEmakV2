@@ -35,6 +35,6 @@
     "node-watch": "^0.5.5",
     "path": "^0.12.7",
     "recursive-readdir": "^2.2.2",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.8.5"
   }
 }
